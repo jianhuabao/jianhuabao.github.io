@@ -15,10 +15,12 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-material.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":15,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":15,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
@@ -100,7 +102,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Cambiar a barra de navegación">
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -121,6 +123,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -131,40 +134,62 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Inicio</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>Sobre mi</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>Über</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categorías<span class="badge">15</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Kategorien<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archivo<span class="badge">61</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv<span class="badge">61</span></a>
 
   </li>
         <li class="menu-item menu-item-sitemap">
 
-    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Mapa del sitio</a>
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Sitemap</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Suche
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="algolia-results">
+  <div id="algolia-stats"></div>
+  <div id="algolia-hits"></div>
+  <div id="algolia-pagination" class="algolia-pagination"></div>
+</div>
+
+  
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -202,22 +227,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2019-05-29 01:09:12" itemprop="dateCreated datePublished" datetime="2019-05-29T01:09:12+08:00">2019-05-29</time>
+              <time title="Erstellt: 2019-05-29 01:09:12" itemprop="dateCreated datePublished" datetime="2019-05-29T01:09:12+08:00">2019-05-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
                 </span>
@@ -282,26 +307,26 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2019-05-29 01:06:12" itemprop="dateCreated datePublished" datetime="2019-05-29T01:06:12+08:00">2019-05-29</time>
+              <time title="Erstellt: 2019-05-29 01:06:12" itemprop="dateCreated datePublished" datetime="2019-05-29T01:06:12+08:00">2019-05-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
                 </span>
-                  , 
+                  . 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/%E5%85%B3%E4%BA%8EYouTube/" itemprop="url" rel="index"><span itemprop="name">关于YouTube</span></a>
                 </span>
@@ -375,26 +400,26 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2019-05-29 01:00:47" itemprop="dateCreated datePublished" datetime="2019-05-29T01:00:47+08:00">2019-05-29</time>
+              <time title="Erstellt: 2019-05-29 01:00:47" itemprop="dateCreated datePublished" datetime="2019-05-29T01:00:47+08:00">2019-05-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
                 </span>
-                  , 
+                  . 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/%E5%85%B3%E4%BA%8EYouTube/" itemprop="url" rel="index"><span itemprop="name">关于YouTube</span></a>
                 </span>
@@ -457,26 +482,26 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2019-05-29 00:56:24" itemprop="dateCreated datePublished" datetime="2019-05-29T00:56:24+08:00">2019-05-29</time>
+              <time title="Erstellt: 2019-05-29 00:56:24" itemprop="dateCreated datePublished" datetime="2019-05-29T00:56:24+08:00">2019-05-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
                 </span>
-                  , 
+                  . 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
                 </span>
@@ -550,26 +575,26 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2019-05-29 00:52:41" itemprop="dateCreated datePublished" datetime="2019-05-29T00:52:41+08:00">2019-05-29</time>
+              <time title="Erstellt: 2019-05-29 00:52:41" itemprop="dateCreated datePublished" datetime="2019-05-29T00:52:41+08:00">2019-05-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
                 </span>
-                  , 
+                  . 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
                 </span>
@@ -654,30 +679,30 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2019-05-29 00:50:34" itemprop="dateCreated datePublished" datetime="2019-05-29T00:50:34+08:00">2019-05-29</time>
+              <time title="Erstellt: 2019-05-29 00:50:34" itemprop="dateCreated datePublished" datetime="2019-05-29T00:50:34+08:00">2019-05-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
                 </span>
-                  , 
+                  . 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/google/" itemprop="url" rel="index"><span itemprop="name">google</span></a>
                 </span>
-                  , 
+                  . 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/google/%E5%85%B3%E4%BA%8EYouTube/" itemprop="url" rel="index"><span itemprop="name">关于YouTube</span></a>
                 </span>
@@ -810,22 +835,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2018-02-28 16:54:00" itemprop="dateCreated datePublished" datetime="2018-02-28T16:54:00+08:00">2018-02-28</time>
+              <time title="Erstellt: 2018-02-28 16:54:00" itemprop="dateCreated datePublished" datetime="2018-02-28T16:54:00+08:00">2018-02-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
                 </span>
@@ -900,22 +925,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2018-01-02 22:59:00" itemprop="dateCreated datePublished" datetime="2018-01-02T22:59:00+08:00">2018-01-02</time>
+              <time title="Erstellt: 2018-01-02 22:59:00" itemprop="dateCreated datePublished" datetime="2018-01-02T22:59:00+08:00">2018-01-02</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
                 </span>
@@ -1048,22 +1073,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2017-12-13 21:30:10" itemprop="dateCreated datePublished" datetime="2017-12-13T21:30:10+08:00">2017-12-13</time>
+              <time title="Erstellt: 2017-12-13 21:30:10" itemprop="dateCreated datePublished" datetime="2017-12-13T21:30:10+08:00">2017-12-13</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
                 </span>
@@ -1123,22 +1148,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
 
-              <time title="Creado por: 2017-11-06 20:39:00" itemprop="dateCreated datePublished" datetime="2017-11-06T20:39:00+08:00">2017-11-06</time>
+              <time title="Erstellt: 2017-11-06 20:39:00" itemprop="dateCreated datePublished" datetime="2017-11-06T20:39:00+08:00">2017-11-06</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Editado el</span>
-                <time title="Modificado por: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <span class="post-meta-item-text">Bearbeitet am</span>
+                <time title="Geändert am: 2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">En</span>
+              <span class="post-meta-item-text">in</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
                 </span>
@@ -1193,7 +1218,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Página anterior"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Página siguiente"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Vorherige Seite"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Nächste Seite"></i></a>
   </nav>
 
 
@@ -1237,10 +1262,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Tabla de contenidos
+          Inhaltsverzeichnis
         </li>
         <li class="sidebar-nav-overview">
-          Inicio
+          Übersicht
         </li>
       </ul>
 
@@ -1260,23 +1285,19 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">61</span>
-          <span class="site-state-item-name">entradas</span>
+          <span class="site-state-item-name">Artikel</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
         <span class="site-state-item-count">15</span>
-        <span class="site-state-item-name">categorías</span>
+        <span class="site-state-item-name">Kategorien</span>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">106</span>
-        <span class="site-state-item-name">tags</span>
+        <span class="site-state-item-name">schlagwörter</span>
       </div>
   </nav>
 </div>
-  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
-    Chat
-  </a>
-  </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
         <a href="https://twitter.com/realjianhua" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;realjianhua" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
@@ -1292,6 +1313,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -1348,6 +1373,13 @@
 
   
 
+
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
+<script src="/js/algolia-search.js"></script>
 
 
 
