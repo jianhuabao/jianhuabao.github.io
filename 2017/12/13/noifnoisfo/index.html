@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script data-ad-client="ca-pub-6033199950863877" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","width":280,"display":"post","padding":12,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="从Joox分析腾讯在国际扩张遇到的阻力由于版权合约限制，中国大陆的腾讯公司在国际上的产品推广与扩张显得心有余而力不足，类似于qq音乐，视频之类的服务限制了除了大陆地区之外的其他所有地区的IP请求服务。因此它于11年推出的通讯软体微信成了在全球扩张的主要产品，英文版本为WeChat。 [caption id&#x3D;”attachment_media-80” align&#x3D;”alignnone” width&#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vypr VPN支持joox music and Netflix">
+<meta property="og:url" content="http://yoursite.com/2017/12/13/noifnoisfo/index.html">
+<meta property="og:site_name" content="BE-HUMBLE">
+<meta property="og:description" content="从Joox分析腾讯在国际扩张遇到的阻力由于版权合约限制，中国大陆的腾讯公司在国际上的产品推广与扩张显得心有余而力不足，类似于qq音乐，视频之类的服务限制了除了大陆地区之外的其他所有地区的IP请求服务。因此它于11年推出的通讯软体微信成了在全球扩张的主要产品，英文版本为WeChat。 [caption id&#x3D;”attachment_media-80” align&#x3D;”alignnone” width&#x3D;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-2350327.jpeg">
+<meta property="article:published_time" content="2017-12-13T13:30:10.000Z">
+<meta property="article:modified_time" content="2020-02-27T08:11:51.380Z">
+<meta property="article:author" content="JIANHUA">
+<meta property="article:tag" content="百度侵权">
+<meta property="article:tag" content="计算机网络">
+<meta property="article:tag" content="WeChat">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-2350327.jpeg">
+
+<link rel="canonical" href="http://yoursite.com/2017/12/13/noifnoisfo/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Vypr VPN支持joox music and Netflix | BE-HUMBLE</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="BE-HUMBLE" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- hexo -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="9895360994"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BE-HUMBLE</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Highlight Tips Always</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/13/noifnoisfo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="JIANHUA">
+      <meta itemprop="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BE-HUMBLE">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Vypr VPN支持joox music and Netflix
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-12-13 21:30:10" itemprop="dateCreated datePublished" datetime="2017-12-13T21:30:10+08:00">2017-12-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">软件使用推荐与分享</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="从Joox分析腾讯在国际扩张遇到的阻力"><a href="#从Joox分析腾讯在国际扩张遇到的阻力" class="headerlink" title="从Joox分析腾讯在国际扩张遇到的阻力"></a>从Joox分析腾讯在国际扩张遇到的阻力</h2><p>由于版权合约限制，中国大陆的腾讯公司在国际上的产品推广与扩张显得心有余而力不足，类似于qq音乐，视频之类的服务限制了除了大陆地区之外的其他所有地区的IP请求服务。因此它于11年推出的通讯软体微信成了在全球扩张的主要产品，英文版本为WeChat。 [caption id=”attachment_media-80” align=”alignnone” width=”1880”]<img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-2350327.jpeg" alt="group of people performing on stage using musical instruments"> Photo by Wendy Wei on <a href="https://www.pexels.com/photo/group-of-people-performing-on-stage-using-musical-instruments-2350327/">Pexels.com</a>[/caption] WeChat在play上的下载量已经超过一亿，相当于微信的海外注册用户已经超过一亿 。但是大部分用户分布在东南亚地区，因此WeChat的全球扩张并不是非常顺利，相当于WeChat的用户还大部分局限于大陆地区的中国人，以及生活在大陆以外其他地区的华人。 腾讯在进一步扩大市场上面受到了阻力，如何更好的扩大微信用户群体？腾讯即微信之后，很快在东南亚地区和香港又推出了joox音乐服务。JOOX取得了很大的市场，一年之内在泰国的安卓市下载场排行榜上升到第六位，仅次于Spotify的用户。JOOX成功很大部分原因来自为特别这几个国家和地区提供了优惠的音乐服务政策。 这里涉及到一个版权问题，什么是版权？14年，15年出现了好多戏剧性狗咬狗的版权事件，14年12月酷狗起诉网易云音乐称其侵权200首歌曲，15年1月网易云音乐又起诉酷狗音乐侵权37张专辑，共300首歌曲；2月酷狗音乐又起诉阿里音乐旗下天天动听侵权，6月阿里音乐又起诉酷狗涉嫌侵权歌曲260首。2015年7月，中国版权局发布关于责令网络音乐服务商停止未经授权传播音乐的通知。这个当然不是最近两三年来侵权事件少的原因。这种牵扯到音乐版权的事情还得从05年百度音乐侵权事件开始，环球，索尼，华纳，大西洋等唱片公司控诉百度MP3侵权，要求公开赔礼道歉，赔偿损失167万人名币。从开始一直至今，国产音乐服务提供商仍不断面临来自国外版权公司的法律诉讼。<strong>人家告你一次你下架一个专辑</strong>。这才是16年八月我在网易云音乐还能下载所有Eminem歌曲为MP3格式，而在17年2月Eminem的歌突然一首歌曲也不能下载，全部升级为VIP的真正原因。不能因为大陆自己把自己关起来，就以为自己是老大了，不能因为很少有人听Eminem的音乐，就无视人家的版权著作，shady records和aftermath还是要你吃官司的。所以版权意识不是我们习惯性认为的，理所当然的想听哪一首歌，在百度音乐搜索一下就能循环播放，好多歌曲还可以免费下载为没有加密的MP3格式。对于play music Spotify apple music sound cloud Pandora来说，这样的功能只有在每月付费9.9美元后才能享受到的服务，要么只能当作radio来听。Joox用户享受着大相当于陆人使用qq音乐一样的服务体验。并且joox还支持WeChat和Facebook登陆方式，用户如果每天在这两个特定的朋友圈分享一首歌曲还会赠送12hourVIP。 Joox这个跳板起到了一箭双雕的作用，即打开了东南亚的音乐服务市场，又扩宽完善了东南亚的WeChat市场，joox市场前景良好，17年joox已经将目标瞄准到南非市场，未来会不会继续将服务推广到南亚，西亚，北非等地区呢？ 但腾讯重点目的还是主流的通讯软体WeChat在国际上的推广，joox做的铺垫很成功，而且对WeChat的扩张最有利的是和Facebook有了合作。合作是必不可少的，腾讯需要到国际互联网上找到合适的合作伙伴。但是从现在的形势来看，似乎除了这个对一直大陆市场虎视眈眈，垂涎三尺且愿意为中共舔屁股的Facebook，也找不到其他愿意和腾讯合作的或者有可以合作的领域的互联网公司。Facebook已经于2017年5月悄无声息的进入了大陆市场，但肯定不是它的主流服务。是一个换了身马甲的中文名叫彩色气球的图片分享应用程序，原名Facebook moments，Facebook想拥有大陆的巨大市场，它需要低头，它也需要找到大陆的合作伙伴，WeChat想更加国际化也得找这个巨头老大哥当合作伙伴。合作很重要，希望两个臭味相投的互联网公司可以擦出更<strong>灿烂</strong>的火花！ 注意到的话，Joox音乐服务特别加入了香港地区，这也是一步为WeChat的推广做铺垫的棋子。WhatsApp先入为主，香港人可能没有WeChat的联系方式，但是他们一定会给你WhatsApp。这里面做多牵扯到使用习惯和隐私方面的问题。就算腾讯在香港的注册用户也进一步增加了，面对欧美等国家他们会不会因为文化原因而不接受WeChat呢，扩张会不会受阻呢？有个美国人说，微信不会再美国取得成功的，why?beacause this is a Chinese application.这其实就是一种文化认同，就是欧美国家对中共控制下的中国一种潜在的敌意与不认同。他们民众非常在意自己基本的人权和隐私保护，而WeChat提供给他们只是来自政府的高密度审查，他们当心背后有一群大兄弟在看着他们。尽管微信在隐私声明里面明确表示WeChat已经获得某个机构的信息安全保护认证。2017年5月，俄罗斯联邦通讯局将WeChat列入黑名单，11日解除。差点又失去一个巨大的大兄弟市场。 WeChat在国际扩张中步履维艰，还会有好多机遇和挑战，面对版权，合作伙伴，隐私等多种因素，它能破除阻力，更进一步吗？</p>
+<h2 id="俄羅斯2018世界杯最新頂級折扣链接："><a href="#俄羅斯2018世界杯最新頂級折扣链接：" class="headerlink" title="俄羅斯2018世界杯最新頂級折扣链接："></a>俄羅斯2018世界杯最新頂級折扣链接：</h2><p><a href="https://www.acceleratorcn.net/zh/vyprvpn/world-cup-special?offer\_id=235&amp;aff\_id=4321">https://www.acceleratorcn.net/zh/vyprvpn/world-cup-special?offer\_id=235&amp;aff\_id=4321</a> <a href="https://joshuabao.blogspot.com/2017/12/0.html">https://joshuabao.blogspot.com/2017/12/0.html</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%99%BE%E5%BA%A6%E4%BE%B5%E6%9D%83/" rel="tag"># 百度侵权</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag"># 计算机网络</a>
+              <a href="/tags/WeChat/" rel="tag"># WeChat</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2017/11/06/thats-why-i-never-listen-any-chinese-pop-music/" rel="prev" title="That's why I never listen any Chinese pop music">
+      <i class="fa fa-chevron-left"></i> That's why I never listen any Chinese pop music
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/01/02/why-google-cloud-platform/" rel="next" title="Why Google Cloud Platform?">
+      Why Google Cloud Platform? <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#从Joox分析腾讯在国际扩张遇到的阻力"><span class="nav-number">1.</span> <span class="nav-text">从Joox分析腾讯在国际扩张遇到的阻力</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#俄羅斯2018世界杯最新頂級折扣链接："><span class="nav-number">2.</span> <span class="nav-text">俄羅斯2018世界杯最新頂級折扣链接：</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JIANHUA"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">JIANHUA</p>
+  <div class="site-description" itemprop="description">very welcome to my blog and hope you guys love and enjoy it!Thanks</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">61</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">106</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/realjianhua" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;realjianhua" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/baojianhua" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;baojianhua" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://youtube.com/c/JIANHUABAO" title="YouTube → https:&#x2F;&#x2F;youtube.com&#x2F;c&#x2F;JIANHUABAO" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/baojoshua" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;baojoshua" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:bjh27565?call|chat" title="Skype → skype:bjh27565?call|chat" rel="noopener" target="_blank"><i class="fa fa-fw fa-skype"></i></a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JIANHUABAO</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
+<!-- Google AdSense start -->
+<script data-ad-client="ca-pub-6033199950863877" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Google AdSense end -->
