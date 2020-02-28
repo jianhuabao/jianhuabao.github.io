@@ -667,7 +667,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-28 21:07:10" itemprop="dateModified" datetime="2020-02-28T21:07:10+08:00">2020-02-28</time>
+                <time title="修改时间：2020-02-28 21:11:13" itemprop="dateModified" datetime="2020-02-28T21:11:13+08:00">2020-02-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -699,130 +699,15 @@
 <p>启动<br>/etc/init.d/bt start</p>
 <p>重启<br>/etc/init.d/bt restart</p>
 <p>卸载<br>/etc/init.d/bt stop &amp;&amp; chkconfig –del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel</p>
-<p>查看当前面板端口<br>&lt;1–more–&gt;<br>cat /www/server/panel/data/port.pl</p>
-<p>修改面板端口，如要改成8881（centos 6 系统）</p>
-<p>echo ‘8881’ &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart<br>iptables -I INPUT -p tcp -m state –state NEW -m tcp –dport 8881 -j ACCEPT<br>service iptables save<br>service iptables restart</p>
-<p>修改面板端口，如要改成8881（centos 7 系统）</p>
-<p>echo ‘8881’ &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart<br>firewall-cmd –permanent –zone=public –add-port=8881/tcp<br>firewall-cmd –reload</p>
-<p>强制修改MySQL管理(root)密码，如要改成123456</p>
-<p>cd /www/server/panel &amp;&amp; python tools.py root 123456</p>
-<p>修改面板密码，如要改成123456</p>
-<p>cd /www/server/panel &amp;&amp; python tools.py panel 123456</p>
-<p>查看宝塔日志</p>
-<p>cat /tmp/panelBoot.pl</p>
-<p>查看软件安装日志</p>
-<p>cat /tmp/panelExec.log</p>
-<p>站点配置文件位置</p>
-<p>/www/server/panel/vhost</p>
-<p>删除域名绑定面板</p>
-<p>rm -f /www/server/panel/data/domain.conf</p>
-<p>清理登陆限制</p>
-<p>rm -f /www/server/panel/data/*.login</p>
-<p>查看面板授权IP</p>
-<p>cat /www/server/panel/data/limitip.conf</p>
-<p>关闭访问限制</p>
-<p>rm -f /www/server/panel/data/limitip.conf</p>
-<p>查看许可域名</p>
-<p>cat /www/server/panel/data/domain.conf</p>
-<p>关闭面板SSL</p>
-<p>rm -f /www/server/panel/data/ssl.pl &amp;&amp; /etc/init.d/bt restart</p>
-<p>查看面板错误日志</p>
-<p>cat /tmp/panelBoot</p>
-<p>查看数据库错误日志</p>
-<p>cat /www/server/data/*.err</p>
-<p>站点配置文件目录(nginx)</p>
-<p>/www/server/panel/vhost/nginx</p>
-<p>站点配置文件目录(apache)</p>
-<p>/www/server/panel/vhost/apache</p>
-<p>站点默认目录</p>
-<p>/www/wwwroot</p>
-<p>数据库备份目录</p>
-<p>/www/backup/database</p>
-<p>站点备份目录</p>
-<p>/www/backup/site</p>
-<p>站点日志</p>
-<p>/www/wwwlogs</p>
-<h2 id="Nginx服务管理"><a href="#Nginx服务管理" class="headerlink" title="Nginx服务管理"></a>Nginx服务管理</h2><p>nginx安装目录</p>
-<p>/www/server/nginx</p>
-<p>启动</p>
-<p>/etc/init.d/nginx start</p>
-<p>停止</p>
-<p>/etc/init.d/nginx stop</p>
-<p>重启</p>
-<p>/etc/init.d/nginx restart</p>
-<p>启载</p>
-<p>/etc/init.d/nginx reload</p>
-<p>nginx配置文件</p>
-<p>/www/server/nginx/conf/nginx.conf</p>
-<h2 id="Apache服务管理"><a href="#Apache服务管理" class="headerlink" title="Apache服务管理"></a>Apache服务管理</h2><p>apache安装目录</p>
-<p>/www/server/httpd</p>
-<p>启动</p>
-<p>/etc/init.d/httpd start</p>
-<p>停止</p>
-<p>/etc/init.d/httpd stop</p>
-<p>重启</p>
-<p>/etc/init.d/httpd restart</p>
-<p>启载</p>
-<p>/etc/init.d/httpd reload</p>
-<p>apache配置文件</p>
-<p>/www/server/apache/conf/httpd.conf</p>
-<h2 id="MySQL服务管理"><a href="#MySQL服务管理" class="headerlink" title="MySQL服务管理"></a>MySQL服务管理</h2><p>mysql安装目录</p>
-<p>/www/server/mysql</p>
-<p>phpmyadmin安装目录</p>
-<p>/www/server/phpmyadmin</p>
-<p>数据存储目录</p>
-<p>/www/server/data</p>
-<p>启动</p>
-<p>/etc/init.d/mysqld start</p>
-<p>停止</p>
-<p>/etc/init.d/mysqld stop</p>
-<p>重启</p>
-<p>/etc/init.d/mysqld restart</p>
-<p>启载</p>
-<p>/etc/init.d/mysqld reload</p>
-<p>mysql配置文件</p>
-<p>/etc/my.cnf</p>
-<h2 id="FTP服务管理"><a href="#FTP服务管理" class="headerlink" title="FTP服务管理"></a>FTP服务管理</h2><p>ftp安装目录</p>
-<p>/www/server/pure-ftpd</p>
-<p>启动</p>
-<p>/etc/init.d/pure-ftpd start</p>
-<p>停止</p>
-<p>/etc/init.d/pure-ftpd stop</p>
-<p>重启</p>
-<p>/etc/init.d/pure-ftpd restart</p>
-<p>ftp配置文件</p>
-<p>/www/server/pure-ftpd/etc/pure-ftpd.conf</p>
-<h2 id="PHP服务管理"><a href="#PHP服务管理" class="headerlink" title="PHP服务管理"></a>PHP服务管理</h2><p>php安装目录</p>
-<p>/www/server/php</p>
-<p>启动(请根据安装PHP版本号做更改，例如：/etc/init.d/php-fpm-54 start)</p>
-<p>/etc/init.d/php-fpm-{52|53|54|55|56|70|71} start</p>
-<p>停止(请根据安装PHP版本号做更改，例如：/etc/init.d/php-fpm-54 stop)</p>
-<p>/etc/init.d/php-fpm-{52|53|54|55|56|70|71} stop</p>
-<p>重启(请根据安装PHP版本号做更改，例如：/etc/init.d/php-fpm-54 restart)</p>
-<p>/etc/init.d/php-fpm-{52|53|54|55|56|70|71} restart</p>
-<p>启载(请根据安装PHP版本号做更改，例如：/etc/init.d/php-fpm-54 reload)</p>
-<p>/etc/init.d/php-fpm-{52|53|54|55|56|70|71} reload</p>
-<p>配置文件(请根据安装PHP版本号做更改，例如：/www/server/php/52/etc/php.ini)</p>
-<p>/www/server/php/{52|53|54|55|56|70|71}/etc/php.ini</p>
-<h2 id="Redis服务管理"><a href="#Redis服务管理" class="headerlink" title="Redis服务管理"></a>Redis服务管理</h2><p>redis安装目录</p>
-<p>/www/server/redis</p>
-<p>启动</p>
-<p>/etc/init.d/redis start</p>
-<p>停止</p>
-<p>/etc/init.d/redis stop</p>
-<p>redis配置文件</p>
-<p>/www/server/redis/redis.conf</p>
-<h2 id="Memcached服务管理"><a href="#Memcached服务管理" class="headerlink" title="Memcached服务管理"></a>Memcached服务管理</h2><p>memcached安装目录</p>
-<p>/usr/local/memcached</p>
-<p>启动</p>
-<p>/etc/init.d/memcached start</p>
-<p>停止</p>
-<p>/etc/init.d/memcached stop</p>
-<p>重启</p>
-<p>/etc/init.d/memcached restart</p>
-<p>启载</p>
-<p>/etc/init.d/memcached reload</p>
-
+<p>查看当前面板端口</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/06/01/bjbsdjkbjkds/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -872,7 +757,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <time title="修改时间：2020-02-28 21:12:39" itemprop="dateModified" datetime="2020-02-28T21:12:39+08:00">2020-02-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -897,42 +782,14 @@
       
           <p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/2017042105181745.jpg" alt=""></p>
 <p>◎译　　名　逃出绝命镇/访‧吓(港)</p>
-<p>◎片　　名　Get Out</p>
-<p>◎年　　代　2017</p>
-<p>◎国　　家　美国</p>
-<p>◎类　　别　悬疑/恐怖</p>
-<p>◎语　　言　英语</p>
-<p>◎字　　幕　中字</p>
-<p>◎上映日期　2017-01-23(圣丹斯电影节)/2017-02-24(美国)</p>
-<p>◎豆瓣评分　7.9/10 from 4000 users</p>
-<p>◎IMDb评分　8.2/10 from 43397 users</p>
-<p>◎文件格式　x264 + ACC</p>
-<p>◎视频尺寸　1280 x 720</p>
-<p>◎文件大小　1203 MB  </p>
-<p>◎片　　长　104 Mins</p>
-<p>◎导　　演　乔丹·皮尔 Jordan Peele</p>
-<p>◎主　　演　丹尼尔·卡卢亚 Daniel Kaluuya</p>
-<p>　　　　　　艾莉森·威廉姆斯 Allison Williams</p>
-<p>　　　　　　凯瑟琳·基纳 Catherine Keener</p>
-<p>　　　　　　布莱德利·惠特福德 Bradley Whitford</p>
-<p>　　　　　　卡赖伯·兰德里·琼斯 Caleb Landry Jones</p>
-<p>　　　　　　马库斯·亨德森 Marcus Henderson</p>
-<p>　　　　　　贝蒂·加布里埃尔 Betty Gabriel</p>
-<p>　　　　　　勒凯斯·斯坦菲尔德 Lakeith Stanfield</p>
-<p>　　　　　　斯蒂芬·鲁特 Stephen Root</p>
-<p>　　　　　　李雷尔·哈瓦瑞 LilRel Howery</p>
-<p>　　　　　　艾希礼·勒孔特·坎贝尔 Ashley LeConte Campbell</p>
-<p>　　　　　　卡伦·L·拉基 Caren L. Larkey</p>
-<p>　　　　　　朱莉·安·多恩 Julie Ann Doan</p>
-<p>　　　　　　杰拉尔丁·辛格 Geraldine Singer</p>
-<p>　　　　　　理查德·赫德 Richard Herd</p>
-<p>　　　　　　埃里卡·亚历山大 Erika Alexander</p>
-<p>◎简　　介</p>
-<p>　　黑人小伙克里斯（丹尼尔·卡卢亚 饰）和他的白人女朋友露丝（艾莉森·威廉姆斯 饰）相处到了见父母的阶段，她邀请他去自己父母家度周末。起初，克里斯把她家人过度热情的行为，解读为他们对女儿的跨种族恋爱的紧张应对。但随着时间的推移，一系列令人不安的发现使他认识到一个难以想象的真相，这一切背后是一个邪恶的种族阴谋。</p>
-<p>◎影片截图</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/201705100521296-1.jpg" alt=""></p>
-<p>下载链种子链接：<a href="https://mega.nz/#!47oAmQqA!q3yNgtFOqIwZPsy-5qZWXM4T5S67gC4SZaTNu3X5ypY">逃出绝命镇</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/05/31/uyrhiushkjf/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -982,7 +839,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-27 21:19:53" itemprop="dateModified" datetime="2020-02-27T21:19:53+08:00">2020-02-27</time>
+                <time title="修改时间：2020-02-28 21:13:29" itemprop="dateModified" datetime="2020-02-28T21:13:29+08:00">2020-02-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1011,17 +868,14 @@
       
           <p>今天分享一个可以省钱同时可以获得优质的spotify升级的音乐流媒体服务：如何注册spotify premium 日区账户，并获得3个月0.99usd的优惠，折合日元为100日元，人民币折合每月2块钱，更重要的是这种方法可以重复循环使用，在也不需要花几十块钱购买比较垃圾的国产音乐播放器了！！！</p>
 <p>1.准备好你之前已经准备好的日区PayPal账户，当然如果你可以轻松注册成功港区的PayPal也可以，注册日区spotify和港区的PayPal账户是同样的方法！我已经测试过了，港区要填的资料会比较多一点，需要填写护照或者特区身份证号码之类的，并且之后我验证的国内某行的虚拟单币卡ae,visa,以及国内的双币卡都不支持包括jcb，提示都是不支持或者添加失败！所以我最后选择更容易成功以及稳定的日区，这是文档步骤链接：<a href="https://joshuabao.blogspot.com/2019/05/paypalspotify-premium.html">注册日区PayPal</a></p>
-<p>2.用chrome或者edge浏览器打开spotify官网，哈哈当然不是，需要用到sotify之前给老用户发的邮件里面的优惠链接，直接去官网的话是没有前三个月新用户只需0.99usd的优惠政策的，这是邮件里面的优惠注册链接，我把复制过来，放在这里:<a href="https://www.spotify.com/us/intro/?utm_source=Spotify_premiumupsell&utm_medium=house_email&utm_campaign=2017q4_global_premiumbusiness_holiday_intro&utm_content=zz_en_world_email_holiday_intro_wave4_ali&checkout=false&splot=NSKXj2sFS0eANJ3GmpZEyA">0.99usdfor3months</a></p>
-<p>邮件里面虽然说是截至17年12月到期，但我最近试了，这个优惠链接是一直有效的！awesome</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-11.jpg" alt=""></p>
-<p>3.进去之后一定要注册一个心的spotify账户，如果之前浏览器登陆有旧账户，要提前退出登陆，然后重新进入链接，按步骤输入心得邮箱注册心得账户，到了选择付款方式的时候把你之前注册好的PayPal日区账户作为付款方式绑定你的心的spotify账户，大功告成！你现在可以现在这个世界上最潮的有最大曲库的流媒体服务了</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-12.jpg" alt=""></p>
-<p>4.记住在三个月会员到期之前你就可以取消账户的自动续费服务，三个月之内你可以随意听！还有不要把桌面端的音质质量设置太高，找到客户端的设置，进行调整我替大家亲身体验过了，真的耳朵听的很累🤣🤣！三个月之后spotify会恢复9.99usd每月的订阅价格！</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-13.jpg" alt=""></p>
-<iframe src="https://open.spotify.com/embed/track/7ccTcabbJlCJiIqtrSSwBk%3Fcontext%3Dspotify%253Aplaylist%253A37i9dQZF1DX1clOuib1KtQ" width="900" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-<p>这是我分享给大家的一首歌，谢谢！</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/05/31/gdrgdfdrh/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1071,7 +925,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-27 16:11:51" itemprop="dateModified" datetime="2020-02-27T16:11:51+08:00">2020-02-27</time>
+                <time title="修改时间：2020-02-28 21:14:22" itemprop="dateModified" datetime="2020-02-28T21:14:22+08:00">2020-02-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1099,22 +953,14 @@
 
       
           <p>1.准备一张国内的双币信用卡，visa，MasterCard，jcb都可以，jcb是日本的日本的信用卡卡组织，所以验证成功率最高，也最适合在日本消费，我的都是秒绑定成功的。这里我建议使用建行的卡，比较容易办下来，也有好多jcb的卡可供选择，大家尽量用中国的四大行的卡片！会比较安全和靠谱些！</p>
-<p>2.准备好日本的IP地址，因为日区PayPal从注册到成功必须全程VPN才会不发生其他账户锁定或者其他意外，所以你必须准备一个原生日本的IP地址，我这里用的是<a href="https://c449dc40-bf12-4abc-9884-def4b2378a44.realclearprivacy.biz/zh/world-cup-special?offer_id=235&aff_id=4321">VyprVPN</a>,包含变色龙协议的套餐，这是vyprVPN官网的百分之40的优惠链接：<a href="https://9c1dd274-bd05-46fe-9e90-ff981545f973.realclearprivacy.biz/world-cup-special?offer_id=235&aff_id=4321">vyprvpn</a></p>
-<p><a href="https://bit.ly/2rxwcPK"><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-8.jpg" alt=""></a></p>
-<p>3.用chrome浏览器登陆PayPal的日区官网：<a href="https://www.paypal.com/jp/webapps/mpp/home">paypal日区注册官网</a></p>
-<p><a href="https://www.paypal.com/jp/webapps/mpp/home"><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-9.jpg" alt=""></a></p>
-<p>4.用chrome浏览器自带的网页翻译功能将页面翻译成为你能看懂的语言，然后点击右上角的注册按钮进入另一个页面，选择个人账户的注册，点击，进入下个页面进行个人注册信息的填写和确认。</p>
-<p><a href="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js</a>  </p>
-<p>(adsbygoogle = window.adsbygoogle || []).push({<br>google_ad_client: “ca-pub-7008797193023202”,<br>enable_page_level_ads: true<br>});  </p>
-<p>5，接下来浏览器新建一个标签，谷歌搜索<a href="http://haoweichi.com/Others/ri_ben_ren_shen_fen_zi_liao">虚拟日本身份</a>，进入这个网站: <a href="http://haoweichi.com/Others/ri_ben_ren_shen_fen_zi_liao">http://haoweichi.com/Others/ri_ben_ren_shen_fen_zi_liao</a></p>
-<p>注意网站 页面3分钟更新一次 ，记得尽量不要和拥挤时间段用相同信息同时和其他人进行注册PayPal</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/image-1.png" alt=""></p>
-<p>选择随机生成的一个身份信息按要求对号入座填写在PayPal的注册页面，接下来的两个界面也是按照虚拟的信息进行填写，除了邮箱是你自己的可以收到验证码或链接的邮箱</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-6.jpg" alt=""></p>
-<p>6.验证：所有按要求和步骤注册完成之后会来到注册完成的界面，会要求你添加你的提前准备好的卡片信息！然后进行邮箱的验证，不需要添加银行账户，因为这并不是我们需要长期使用的PayPal账户。okay，邮箱和信用卡轻松完成验证之后，大功告成账户可以正常开始消费使用了😋😋</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-10.jpg" alt=""></p>
-<p>注意：之后登陆的话不要经常更换IP地址否则PayPal会经常提示验证你的手机号，尽量IP地址在你的原始地址和VPN的日本IP地址之间变换！</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/05/31/jbsfijbisbfi/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
