@@ -60,9 +60,9 @@
     
     
     
-      <category term="google" scheme="http://yoursite.com/tags/google/"/>
-    
       <category term="googlesearch" scheme="http://yoursite.com/tags/googlesearch/"/>
+    
+      <category term="google" scheme="http://yoursite.com/tags/google/"/>
     
   </entry>
   
@@ -621,9 +621,9 @@
     
       <category term="vps" scheme="http://yoursite.com/tags/vps/"/>
     
-      <category term="谷歌云服务器" scheme="http://yoursite.com/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="google" scheme="http://yoursite.com/tags/google/"/>
+    
+      <category term="谷歌云服务器" scheme="http://yoursite.com/tags/%E8%B0%B7%E6%AD%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="googlecloudplatform" scheme="http://yoursite.com/tags/googlecloudplatform/"/>
     
