@@ -3,12 +3,14 @@
   <entry>
     <title>Welcome guys and hope you enjoy here</title>
     <url>/2022/01/01/hello-world/</url>
-    <content><![CDATA[<p>致所有的外国朋友：<br> Very Welcome to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!<br><img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-908301.jpeg" alt="thank you"><br>致所有的中国朋友：</p>
-<p>爱好：热爱的歌手EMINEM喜欢的电影《老无所依》喜爱的运动篮球 22，喜欢上网，安卓粉，业余拍照。只分享一些真正有用，好用的东西 频道初衷:让更多人认识到世界很大，惊奇又美好，并不是只有为中国人专门定制的百度，qq，微信等特色玩意儿. 视频原则:不推荐任何毒瘤，垃圾软体或服务，视频中也不会出现任何来自大陆的类似360，腾讯，百度的流氓软体 心愿:希望中国的年轻一代都要以独立的人格为前提，对任何事物能拥有清晰的逻辑思维能力，不随波逐流，思想自由，兼容并包。也欢迎大家指支持和订阅我的部落格！</p>
+    <content><![CDATA[<blockquote class="blockquote-center"><p>Welcome guys and hope you enjoy here</p>
+</blockquote>
+<h2 id="致所有的外国朋友："><a href="#致所有的外国朋友：" class="headerlink" title="致所有的外国朋友："></a>致所有的外国朋友：</h2><p> Very Welcome to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!<br><img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-908301.jpeg" alt="thank you"></p>
+<h2 id="致所有的中国朋友："><a href="#致所有的中国朋友：" class="headerlink" title="致所有的中国朋友："></a>致所有的中国朋友：</h2><p>爱好：热爱的歌手EMINEM喜欢的电影《老无所依》喜爱的运动篮球 22，喜欢上网，安卓粉，业余拍照。只分享一些真正有用，好用的东西 频道初衷:让更多人认识到世界很大，惊奇又美好，并不是只有为中国人专门定制的百度，qq，微信等特色玩意儿. 视频原则:不推荐任何毒瘤，垃圾软体或服务，视频中也不会出现任何来自大陆的类似360，腾讯，百度的流氓软体 心愿:希望中国的年轻一代都要以独立的人格为前提，对任何事物能拥有清晰的逻辑思维能力，不随波逐流，思想自由，兼容并包。也欢迎大家指支持和订阅我的部落格！</p>
 ]]></content>
   </entry>
   <entry>
-    <title>googlesearch</title>
+    <title>Googlesearch语法</title>
     <url>/2020/02/28/googlesearch/</url>
     <content><![CDATA[<p>Google 搜索技巧<br>基本语法<br>AND<br>谷歌的默认搜索是 and 逻辑，我们在输入关键字后进行搜索时，如输入：program google 后，会搜出包含 program 和 google 的文件内容。</p>
 <p>OR<br>如果你想搜索两个中的任意一个，那么就要使用关键词 OR。</p>
@@ -116,6 +118,7 @@
     <content><![CDATA[<p><strong>第一、正常密码安全</strong></p>
 <p>需要设置复杂的ROOT密码或者独立一个管理用户禁用ROOT，或者采用密钥模式登入VPS。</p>
 <p><strong>第二、修改web面板端口</strong></p>
+<a id="more"></a>
 <p>默认安装后是8888端口，我们需要修改一个端口，可以是8888-65535之间的任意数值。</p>
 <p><strong>第三、修改管理员用户名和密码</strong></p>
 <p>默认面板安装成功之后，管理员用户名是admin，我们需要登入后台修改其他用户名，以及复杂面板面板。</p>
@@ -136,7 +139,7 @@
   <entry>
     <title>linux shell控制面板常用操作命令</title>
     <url>/2019/06/01/bjbsdjkbjkds/</url>
-    <content><![CDATA[<p>Centos安装脚本<br>yum install -y wget &amp;&amp; wget -O install.sh <a href="http://download.bt.cn/install/install.sh">http://download.bt.cn/install/install.sh</a> &amp;&amp; sh install.sh<br>Ubuntu/Deepin安装脚本<br>wget -O install.sh <a href="http://download.bt.cn/install/install-ubuntu.sh">http://download.bt.cn/install/install-ubuntu.sh</a> &amp;&amp; sudo bash install.sh<br>Debian安装脚本<br>wget -O install.sh <a href="http://download.bt.cn/install/install-ubuntu.sh">http://download.bt.cn/install/install-ubuntu.sh</a> &amp;&amp; bash install.sh<br>Fedora安装脚本<br>wget -O install.sh <a href="http://download.bt.cn/install/install.sh">http://download.bt.cn/install/install.sh</a> &amp;&amp; bash install.sh</p>
+    <content><![CDATA[<h2 id="Centos安装脚本"><a href="#Centos安装脚本" class="headerlink" title="Centos安装脚本"></a>Centos安装脚本</h2><p>yum install -y wget &amp;&amp; wget -O install.sh <a href="http://download.bt.cn/install/install.sh">http://download.bt.cn/install/install.sh</a> &amp;&amp; sh install.sh<br>Ubuntu/Deepin安装脚本<br>wget -O install.sh <a href="http://download.bt.cn/install/install-ubuntu.sh">http://download.bt.cn/install/install-ubuntu.sh</a> &amp;&amp; sudo bash install.sh<br>Debian安装脚本<br>wget -O install.sh <a href="http://download.bt.cn/install/install-ubuntu.sh">http://download.bt.cn/install/install-ubuntu.sh</a> &amp;&amp; bash install.sh<br>Fedora安装脚本<br>wget -O install.sh <a href="http://download.bt.cn/install/install.sh">http://download.bt.cn/install/install.sh</a> &amp;&amp; bash install.sh</p>
 <p>停止<br>/etc/init.d/bt stop</p>
 <p>启动<br>/etc/init.d/bt start</p>
 <p>重启<br>/etc/init.d/bt restart</p>
@@ -456,10 +459,10 @@
         <category>关于YouTube</category>
       </categories>
       <tags>
-        <tag>paypal</tag>
         <tag>adsence</tag>
         <tag>盈利与收款</tag>
         <tag>YouTube</tag>
+        <tag>paypal</tag>
         <tag>银行账户</tag>
         <tag>payoneer</tag>
       </tags>
@@ -757,9 +760,9 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>google</tag>
         <tag>vpn</tag>
         <tag>vps</tag>
+        <tag>google</tag>
         <tag>谷歌云服务器</tag>
         <tag>googlecloudplatform</tag>
       </tags>
@@ -977,9 +980,9 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>剧情</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
+        <tag>剧情</tag>
         <tag>战争</tag>
         <tag>马龙·白兰度</tag>
       </tags>
@@ -996,8 +999,8 @@
         <category>看过的电影</category>
       </categories>
       <tags>
-        <tag>剧情</tag>
         <tag>英语</tag>
+        <tag>剧情</tag>
         <tag>犯罪</tag>
         <tag>爱德华 诺顿</tag>
       </tags>
@@ -1095,9 +1098,9 @@
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>科幻</tag>
         <tag>动作</tag>
+        <tag>剧情</tag>
         <tag>犯罪</tag>
         <tag>惊悚</tag>
         <tag>悬疑</tag>
@@ -1172,8 +1175,8 @@
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>动作</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
       </tags>
   </entry>
@@ -1387,9 +1390,9 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>70年代</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
+        <tag>70年代</tag>
         <tag>剧情</tag>
         <tag>爱情</tag>
         <tag>荷兰</tag>
@@ -1601,8 +1604,8 @@
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>Favorite films</tag>
         <tag>科幻</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
       </tags>
@@ -1689,8 +1692,8 @@
       <tags>
         <tag>best movie</tag>
         <tag>电影</tag>
-        <tag>Favorite films</tag>
         <tag>科幻</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
         <tag>奇幻</tag>
@@ -1801,11 +1804,11 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>70年代</tag>
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
+        <tag>70年代</tag>
         <tag>剧情</tag>
       </tags>
   </entry>
@@ -1828,9 +1831,9 @@
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>Favorite films</tag>
         <tag>科幻</tag>
         <tag>英语</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
         <tag>奇幻</tag>
@@ -1864,8 +1867,8 @@
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>剧情</tag>
         <tag>动作</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
@@ -1901,8 +1904,8 @@
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>Favorite films</tag>
         <tag>英语</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
         <tag>奇幻</tag>
@@ -1926,8 +1929,8 @@
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>传记</tag>
-        <tag>史蒂文·斯皮尔伯格</tag>
         <tag>战争</tag>
+        <tag>史蒂文·斯皮尔伯格</tag>
       </tags>
   </entry>
   <entry>
@@ -2096,14 +2099,20 @@
 ]]></content>
   </entry>
   <entry>
+    <title>人物风云</title>
+    <url>/bjkbk/index.html</url>
+    <content><![CDATA[<h1 id="我熟悉的好莱坞著名导演简介"><a href="#我熟悉的好莱坞著名导演简介" class="headerlink" title="我熟悉的好莱坞著名导演简介"></a>我熟悉的好莱坞著名导演简介</h1><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg" alt=""></a></p>
+<h2 id="1、史蒂芬-斯皮尔伯格"><a href="#1、史蒂芬-斯皮尔伯格" class="headerlink" title="1、史蒂芬-斯皮尔伯格"></a>1、<a href="https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC">史蒂芬-斯皮尔伯格</a></h2><p>代表作：《侏罗纪公园》、《<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a>》、《大白鲨》、《战马》、<a href="https://joshuabao.blogspot.jp/2017/06/imdb33.html">《拯救大兵瑞恩</a>》、《夺宝奇兵》系列、《人工智能》等。 评价：称史蒂文·斯皮尔伯格(Steven Spielberg)为“电影织梦者”一点也不为过，这是毫无争议的,再难找到一位导演在商业与艺术间游刃有余,把商业与艺术结合的天衣无缝.他的电影不失娱乐,同时兼备极高的艺术性,而更多的则是人文关怀。他是以影片《辛德勒名单》而荣获奥斯卡金像奖的大导演，他的《大白鲨》、《E.T.》、《侏罗纪公园》等著名的商业娱乐片也为全球广大影迷们所熟知，当人们带着这种印象涌向电影院去欣赏那部黑白电影《辛德勒名单》时，却发现了斯皮尔伯格的另一个世界，一个充满智慧和理性的世界，一个真正的电影艺术的世界。</p>
+<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg" alt=""></a></p>
+<h2 id="2-詹姆斯-卡梅隆"><a href="#2-詹姆斯-卡梅隆" class="headerlink" title="2.詹姆斯-卡梅隆"></a>2.<a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%8D%A1%E6%A2%85%E9%9A%86">詹姆斯-卡梅隆</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者</a>》、《泰坦尼克号》、《阿凡达》、《真实的谎言》等 评价： 他在拍摄地是个苛求、专横的“暴君”；在家庭中是个不会体贴并且见异思迁的丈夫；在好莱坞同行看来，卡梅隆是一个偏执狂和烧钱的机器。但不能否认，卡梅隆是个天才。卡梅隆不仅能创造奇迹般的电影票房更是能将商业与艺术并驾齐驱。他的作品往往讨论人与技术之间的关系，令人反思。唯有詹姆斯·卡梅隆才敢在奥斯卡典礼上喊出那句“我是世界之王”因为他是当之无愧的世界之王。</p>
+<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg" alt=""></a></p>
+<h2 id="X-昆汀-塔伦蒂诺"><a href="#X-昆汀-塔伦蒂诺" class="headerlink" title="X.昆汀-塔伦蒂诺"></a>X.<a href="https://zh.wikipedia.org/wiki/%E6%98%86%E6%B1%80%C2%B7%E5%A1%94%E4%BC%A6%E8%92%82%E8%AF%BA">昆汀-塔伦蒂诺</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a>》、《落水狗》、《无耻混蛋》等 评价：昆汀是20世纪90年代美国独立电影革命中重要的年轻导演，以独特的个性和对商业电影和艺术电影均有深刻理解著称。　　毫无疑问，昆汀是个鬼才。而所谓“鬼才”，就是“鬼才知道他在想什么”。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>剧情</title>
     <url>/bdjkbakjd/index.html</url>
     <content><![CDATA[<h2 id="剧情电影榜"><a href="#剧情电影榜" class="headerlink" title="剧情电影榜"></a>剧情电影榜</h2><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">肖申克的救赎</a></h4><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父</a></h4><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a></h4><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb23.html">卡萨布兰卡 </a></h4><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a></h4><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://joshuabao.blogspot.tw/2017/06/imdb32.html">现代启示录</a></h4><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://joshuabao.blogspot.tw/2017/06/imdb30.html">日落大道</a></h4>]]></content>
-  </entry>
-  <entry>
-    <title>Contact me</title>
-    <url>/contact-me/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>文章分类</title>
@@ -2113,6 +2122,18 @@
 <li>Google</li>
 <li>软件教学</li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Contact me</title>
+    <url>/contact-me/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/dguikuhbkaf/index.html</url>
+    <content><![CDATA[<p>网站是我17年创建的，本来是用来写一些自己的日志的，但是没有坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
+<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">https://www.youtube.com/watch?v=PeKATbM0aDE</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -2126,72 +2147,6 @@
 <li><h4 id="5-记忆碎片"><a href="#5-记忆碎片" class="headerlink" title="5.记忆碎片"></a>5.<a href="https://joshuabao.blogspot.tw/2017/06/imdb34_29.html">记忆碎片</a></h4></li>
 <li><h4 id="6-盗梦空间"><a href="#6-盗梦空间" class="headerlink" title="6.盗梦空间"></a>6.<a href="https://joshuabao.blogspot.com/2017/06/imdb13.html">盗梦空间</a></h4></li>
 </ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/dguikuhbkaf/index.html</url>
-    <content><![CDATA[<p>网站是我17年创建的，本来是用来写一些自己的日志的，但是没有坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
-<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">https://www.youtube.com/watch?v=PeKATbM0aDE</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>科幻</title>
-    <url>/dsfss/index.html</url>
-    <content><![CDATA[<h2 id="科幻电影榜"><a href="#科幻电影榜" class="headerlink" title="科幻电影榜"></a>科幻电影榜</h2><h4 id="1-蝙蝠侠前传2：黑暗骑士"><a href="#1-蝙蝠侠前传2：黑暗骑士" class="headerlink" title="1.蝙蝠侠前传2：黑暗骑士"></a><a href="http://joshuabao.blogspot.com/2017/06/imdb9.html">1.蝙蝠侠前传2：黑暗骑士</a></h4><h4 id="2-指环王：王者归来"><a href="#2-指环王：王者归来" class="headerlink" title="2.指环王：王者归来"></a>2.<a href="https://joshuabao.blogspot.com/2017/06/imdb9.html">指环王：王者归来</a></h4><h4 id="3-黑客帝国"><a href="#3-黑客帝国" class="headerlink" title="3.黑客帝国"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb18.html">黑客帝国</a></h4><h4 id="4-星球大战第四集：新希望"><a href="#4-星球大战第四集：新希望" class="headerlink" title="4.星球大战第四集：新希望"></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb15.html">星球大战第四集：新希望</a></h4><h4 id="5-终结者2-审判日"><a href="#5-终结者2-审判日" class="headerlink" title="5.终结者2: 审判日"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者2: 审判日</a></h4><h4 id="6-星球大战-帝国反击战"><a href="#6-星球大战-帝国反击战" class="headerlink" title="6.星球大战 帝国反击战 "></a>6<a href="https://joshuabao.blogspot.com/2017/06/imdb11.html">.星球大战 帝国反击战 </a></h4>]]></content>
-  </entry>
-  <entry>
-    <title>帮助</title>
-    <url>/dsubikf/index.html</url>
-    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
-<p><a href="tel:+15038416478">+1503 841 6478</a></p>
-<p>12817 NE Airport Way STE 67593</p>
-<p>CAFAHC</p>
-<p>Portland, Oregon 97251-9600</p>
-<p>United states of America</p>
-<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-1068523.jpeg" alt=""></p>
-<p>Photo by rawpixel.com on <a href="https://www.pexels.com/photo/group-hand-fist-bump-1068523/">Pexels.com</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>最近在听的🎶</title>
-    <url>/fsfssdfsf/index.html</url>
-    <content><![CDATA[<p><a href="https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ">https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ</a></p>
-<p><a href="https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ">https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ</a></p>
-<p><a href="https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ">https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ</a></p>
-<p><a href="https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw">https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw</a></p>
-<p><a href="https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw">https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw</a></p>
-<p><a href="https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g">https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g</a></p>
-<p><a href="https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw">https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw</a></p>
-<p><a href="https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A">https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A</a></p>
-<p><a href="https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g">https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g</a></p>
-<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
-<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
-<p>and welcome to follow my <a href="https://open.spotify.com/user/joshua_bao?si=pUghWKYRT-eBHhLcI95ryg">spotify home page</a>!</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>人物风云</title>
-    <url>/bjkbk/index.html</url>
-    <content><![CDATA[<h1 id="我熟悉的好莱坞著名导演简介"><a href="#我熟悉的好莱坞著名导演简介" class="headerlink" title="我熟悉的好莱坞著名导演简介"></a>我熟悉的好莱坞著名导演简介</h1><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg" alt=""></a></p>
-<h2 id="1、史蒂芬-斯皮尔伯格"><a href="#1、史蒂芬-斯皮尔伯格" class="headerlink" title="1、史蒂芬-斯皮尔伯格"></a>1、<a href="https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC">史蒂芬-斯皮尔伯格</a></h2><p>代表作：《侏罗纪公园》、《<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a>》、《大白鲨》、《战马》、<a href="https://joshuabao.blogspot.jp/2017/06/imdb33.html">《拯救大兵瑞恩</a>》、《夺宝奇兵》系列、《人工智能》等。 评价：称史蒂文·斯皮尔伯格(Steven Spielberg)为“电影织梦者”一点也不为过，这是毫无争议的,再难找到一位导演在商业与艺术间游刃有余,把商业与艺术结合的天衣无缝.他的电影不失娱乐,同时兼备极高的艺术性,而更多的则是人文关怀。他是以影片《辛德勒名单》而荣获奥斯卡金像奖的大导演，他的《大白鲨》、《E.T.》、《侏罗纪公园》等著名的商业娱乐片也为全球广大影迷们所熟知，当人们带着这种印象涌向电影院去欣赏那部黑白电影《辛德勒名单》时，却发现了斯皮尔伯格的另一个世界，一个充满智慧和理性的世界，一个真正的电影艺术的世界。</p>
-<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg" alt=""></a></p>
-<h2 id="2-詹姆斯-卡梅隆"><a href="#2-詹姆斯-卡梅隆" class="headerlink" title="2.詹姆斯-卡梅隆"></a>2.<a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%8D%A1%E6%A2%85%E9%9A%86">詹姆斯-卡梅隆</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者</a>》、《泰坦尼克号》、《阿凡达》、《真实的谎言》等 评价： 他在拍摄地是个苛求、专横的“暴君”；在家庭中是个不会体贴并且见异思迁的丈夫；在好莱坞同行看来，卡梅隆是一个偏执狂和烧钱的机器。但不能否认，卡梅隆是个天才。卡梅隆不仅能创造奇迹般的电影票房更是能将商业与艺术并驾齐驱。他的作品往往讨论人与技术之间的关系，令人反思。唯有詹姆斯·卡梅隆才敢在奥斯卡典礼上喊出那句“我是世界之王”因为他是当之无愧的世界之王。</p>
-<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg" alt=""></a></p>
-<h2 id="X-昆汀-塔伦蒂诺"><a href="#X-昆汀-塔伦蒂诺" class="headerlink" title="X.昆汀-塔伦蒂诺"></a>X.<a href="https://zh.wikipedia.org/wiki/%E6%98%86%E6%B1%80%C2%B7%E5%A1%94%E4%BC%A6%E8%92%82%E8%AF%BA">昆汀-塔伦蒂诺</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a>》、《落水狗》、《无耻混蛋》等 评价：昆汀是20世纪90年代美国独立电影革命中重要的年轻导演，以独特的个性和对商业电影和艺术电影均有深刻理解著称。　　毫无疑问，昆汀是个鬼才。而所谓“鬼才”，就是“鬼才知道他在想什么”。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Welcome and hope you guys enjoy it</title>
-    <url>/gdsj%20ffhbjhk/index.html</url>
-    <content><![CDATA[<p>致所有的外国朋友：</p>
-<p>** Very Welcome** to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!</p>
-<p>[caption id=”attachment_media-494” align=”alignnone” width=”1880”]<img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-908301.jpeg" alt="thank you text on black and brown board"> Photo by rawpixel.com on Pexels.com[/caption]</p>
-<p>致所有的中国朋友：</p>
-<p>爱好：热爱的歌手EMINEM喜欢的电影《老无所依》喜爱的运动篮球 22，喜欢上网，安卓粉，业余拍照。只分享一些真正有用，好用的东西 频道初衷:让更多人认识到世界很大，惊奇又美好，并不是只有为中国人专门定制的百度，qq，微信等特色玩意儿. 视频原则:不推荐任何毒瘤，垃圾软体或服务，视频中也不会出现任何来自大陆的类似360，腾讯，百度的流氓软体 心愿:希望中国的年轻一代都要以独立的人格为前提，对任何事物能拥有清晰的逻辑思维能力，不随波逐流，思想自由，兼容并包。也欢迎大家指支持和订阅我的部落格！</p>
-<p>[jetpack_subscription_form show_only_email_and_button=”true” custom_background_button_color=”#555555” custom_text_button_color=”#ec4646” submit_button_text=”<img src="https://joshuabaoblog.files.wordpress.com/2019/05/cropped-sharedscreenshot.jpg" alt="">Subscribe” submit_button_classes=”wp-block-button__link has-text-color has-background has-dark-gray-background-button-color” show_subscribers_total=”false” ]</p>
-<p><a href="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js</a>  </p>
-<p>(adsbygoogle = window.adsbygoogle || []).push({<br>google_ad_client: “ca-pub-7008797193023202”,<br>enable_page_level_ads: true<br>});</p>
 ]]></content>
   </entry>
   <entry>
@@ -2215,9 +2170,63 @@
 ]]></content>
   </entry>
   <entry>
+    <title>帮助</title>
+    <url>/dsubikf/index.html</url>
+    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
+<p><a href="tel:+15038416478">+1503 841 6478</a></p>
+<p>12817 NE Airport Way STE 67593</p>
+<p>CAFAHC</p>
+<p>Portland, Oregon 97251-9600</p>
+<p>United states of America</p>
+<p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-1068523.jpeg" alt=""></p>
+<p>Photo by rawpixel.com on <a href="https://www.pexels.com/photo/group-hand-fist-bump-1068523/">Pexels.com</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>科幻</title>
+    <url>/dsfss/index.html</url>
+    <content><![CDATA[<h2 id="科幻电影榜"><a href="#科幻电影榜" class="headerlink" title="科幻电影榜"></a>科幻电影榜</h2><h4 id="1-蝙蝠侠前传2：黑暗骑士"><a href="#1-蝙蝠侠前传2：黑暗骑士" class="headerlink" title="1.蝙蝠侠前传2：黑暗骑士"></a><a href="http://joshuabao.blogspot.com/2017/06/imdb9.html">1.蝙蝠侠前传2：黑暗骑士</a></h4><h4 id="2-指环王：王者归来"><a href="#2-指环王：王者归来" class="headerlink" title="2.指环王：王者归来"></a>2.<a href="https://joshuabao.blogspot.com/2017/06/imdb9.html">指环王：王者归来</a></h4><h4 id="3-黑客帝国"><a href="#3-黑客帝国" class="headerlink" title="3.黑客帝国"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb18.html">黑客帝国</a></h4><h4 id="4-星球大战第四集：新希望"><a href="#4-星球大战第四集：新希望" class="headerlink" title="4.星球大战第四集：新希望"></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb15.html">星球大战第四集：新希望</a></h4><h4 id="5-终结者2-审判日"><a href="#5-终结者2-审判日" class="headerlink" title="5.终结者2: 审判日"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者2: 审判日</a></h4><h4 id="6-星球大战-帝国反击战"><a href="#6-星球大战-帝国反击战" class="headerlink" title="6.星球大战 帝国反击战 "></a>6<a href="https://joshuabao.blogspot.com/2017/06/imdb11.html">.星球大战 帝国反击战 </a></h4>]]></content>
+  </entry>
+  <entry>
+    <title>最近在听的🎶</title>
+    <url>/fsfssdfsf/index.html</url>
+    <content><![CDATA[<p><a href="https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ">https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ</a></p>
+<p><a href="https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ">https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ</a></p>
+<p><a href="https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ">https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ</a></p>
+<p><a href="https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw">https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw</a></p>
+<p><a href="https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw">https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw</a></p>
+<p><a href="https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g">https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g</a></p>
+<p><a href="https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw">https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw</a></p>
+<p><a href="https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A">https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A</a></p>
+<p><a href="https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g">https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g</a></p>
+<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
+<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
+<p>and welcome to follow my <a href="https://open.spotify.com/user/joshua_bao?si=pUghWKYRT-eBHhLcI95ryg">spotify home page</a>!</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Welcome and hope you guys enjoy it</title>
+    <url>/gdsj%20ffhbjhk/index.html</url>
+    <content><![CDATA[<p>致所有的外国朋友：</p>
+<p>** Very Welcome** to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!</p>
+<p>[caption id=”attachment_media-494” align=”alignnone” width=”1880”]<img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-908301.jpeg" alt="thank you text on black and brown board"> Photo by rawpixel.com on Pexels.com[/caption]</p>
+<p>致所有的中国朋友：</p>
+<p>爱好：热爱的歌手EMINEM喜欢的电影《老无所依》喜爱的运动篮球 22，喜欢上网，安卓粉，业余拍照。只分享一些真正有用，好用的东西 频道初衷:让更多人认识到世界很大，惊奇又美好，并不是只有为中国人专门定制的百度，qq，微信等特色玩意儿. 视频原则:不推荐任何毒瘤，垃圾软体或服务，视频中也不会出现任何来自大陆的类似360，腾讯，百度的流氓软体 心愿:希望中国的年轻一代都要以独立的人格为前提，对任何事物能拥有清晰的逻辑思维能力，不随波逐流，思想自由，兼容并包。也欢迎大家指支持和订阅我的部落格！</p>
+<p>[jetpack_subscription_form show_only_email_and_button=”true” custom_background_button_color=”#555555” custom_text_button_color=”#ec4646” submit_button_text=”<img src="https://joshuabaoblog.files.wordpress.com/2019/05/cropped-sharedscreenshot.jpg" alt="">Subscribe” submit_button_classes=”wp-block-button__link has-text-color has-background has-dark-gray-background-button-color” show_subscribers_total=”false” ]</p>
+<p><a href="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js</a>  </p>
+<p>(adsbygoogle = window.adsbygoogle || []).push({<br>google_ad_client: “ca-pub-7008797193023202”,<br>enable_page_level_ads: true<br>});</p>
+]]></content>
+  </entry>
+  <entry>
     <title>网站建议及反馈</title>
     <url>/hghgjgj/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>联系信息</title>
+    <url>/kndaondoa/index.html</url>
+    <content><![CDATA[<p>这是“联系信息”页面，其中包括一些基本联系信息和联系表单。 [contact-form][contact-field label=”姓名” type=”name” required=”1”/][contact-field label=”电子邮件” type=”email” required=”1”/][contact-field label=”网站” type=”url”/][contact-field label=”评论” type=”textarea” required=”1”/][/contact-form]</p>
+]]></content>
   </entry>
   <entry>
     <title>hi,welcome to my blogger</title>
@@ -2273,12 +2282,6 @@
 <li><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://joshuabao.blogspot.tw/2017/06/imdb30.html">日落大道</a></h4></li>
 </ul>
 </blockquote>
-]]></content>
-  </entry>
-  <entry>
-    <title>联系信息</title>
-    <url>/kndaondoa/index.html</url>
-    <content><![CDATA[<p>这是“联系信息”页面，其中包括一些基本联系信息和联系表单。 [contact-form][contact-field label=”姓名” type=”name” required=”1”/][contact-field label=”电子邮件” type=”email” required=”1”/][contact-field label=”网站” type=”url”/][contact-field label=”评论” type=”textarea” required=”1”/][/contact-form]</p>
 ]]></content>
   </entry>
   <entry>
