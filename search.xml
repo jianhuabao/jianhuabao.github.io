@@ -10,7 +10,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Googlesearch语法</title>
+    <title>Googlesearch</title>
     <url>/2020/02/28/googlesearch/</url>
     <content><![CDATA[<p>Google 搜索技巧<br>基本语法<br>AND<br>谷歌的默认搜索是 and 逻辑，我们在输入关键字后进行搜索时，如输入：program google 后，会搜出包含 program 和 google 的文件内容。</p>
 <p>OR<br>如果你想搜索两个中的任意一个，那么就要使用关键词 OR。</p>
