@@ -988,9 +988,9 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>剧情</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
+        <tag>剧情</tag>
         <tag>战争</tag>
         <tag>马龙·白兰度</tag>
       </tags>
@@ -1007,8 +1007,8 @@
         <category>看过的电影</category>
       </categories>
       <tags>
-        <tag>剧情</tag>
         <tag>英语</tag>
+        <tag>剧情</tag>
         <tag>犯罪</tag>
         <tag>爱德华 诺顿</tag>
       </tags>
@@ -1106,11 +1106,11 @@
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>科幻</tag>
         <tag>动作</tag>
-        <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
+        <tag>犯罪</tag>
         <tag>悬疑</tag>
         <tag>克里斯蒂安·贝尔</tag>
         <tag>克里斯托弗•诺兰</tag>
@@ -1183,8 +1183,8 @@
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>动作</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
       </tags>
   </entry>
@@ -1362,8 +1362,8 @@
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>剧情</tag>
-        <tag>犯罪</tag>
         <tag>惊悚</tag>
+        <tag>犯罪</tag>
         <tag>神秘</tag>
         <tag>德国</tag>
       </tags>
@@ -1398,9 +1398,9 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>70年代</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
+        <tag>70年代</tag>
         <tag>剧情</tag>
         <tag>爱情</tag>
         <tag>荷兰</tag>
@@ -1505,8 +1505,8 @@
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>犯罪</tag>
         <tag>惊悚</tag>
+        <tag>犯罪</tag>
         <tag>安东尼·霍普金斯</tag>
       </tags>
   </entry>
@@ -1546,8 +1546,8 @@
         <tag>电影</tag>
         <tag>Favorite films</tag>
         <tag>剧情</tag>
-        <tag>犯罪</tag>
         <tag>惊悚</tag>
+        <tag>犯罪</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
         <tag>悬疑</tag>
@@ -1612,8 +1612,8 @@
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>Favorite films</tag>
         <tag>科幻</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
       </tags>
@@ -1700,8 +1700,8 @@
       <tags>
         <tag>best movie</tag>
         <tag>电影</tag>
-        <tag>Favorite films</tag>
         <tag>科幻</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
         <tag>奇幻</tag>
@@ -1812,11 +1812,11 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>70年代</tag>
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
+        <tag>70年代</tag>
         <tag>剧情</tag>
       </tags>
   </entry>
@@ -1839,9 +1839,9 @@
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>Favorite films</tag>
         <tag>科幻</tag>
         <tag>英语</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
         <tag>奇幻</tag>
@@ -1875,8 +1875,8 @@
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>剧情</tag>
         <tag>动作</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
@@ -1912,8 +1912,8 @@
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>Favorite films</tag>
         <tag>英语</tag>
+        <tag>Favorite films</tag>
         <tag>冒险</tag>
         <tag>动作</tag>
         <tag>奇幻</tag>
@@ -1937,8 +1937,8 @@
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>传记</tag>
-        <tag>战争</tag>
         <tag>史蒂文·斯皮尔伯格</tag>
+        <tag>战争</tag>
       </tags>
   </entry>
   <entry>
@@ -1956,8 +1956,8 @@
         <tag>best movie</tag>
         <tag>Favorite films</tag>
         <tag>剧情</tag>
-        <tag>犯罪</tag>
         <tag>惊悚</tag>
+        <tag>犯罪</tag>
       </tags>
   </entry>
   <entry>
@@ -2107,25 +2107,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>人物风云</title>
-    <url>/bjkbk/index.html</url>
-    <content><![CDATA[<h1 id="我熟悉的好莱坞著名导演简介"><a href="#我熟悉的好莱坞著名导演简介" class="headerlink" title="我熟悉的好莱坞著名导演简介"></a>我熟悉的好莱坞著名导演简介</h1><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg" alt=""></a></p>
-<h2 id="1、史蒂芬-斯皮尔伯格"><a href="#1、史蒂芬-斯皮尔伯格" class="headerlink" title="1、史蒂芬-斯皮尔伯格"></a>1、<a href="https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC">史蒂芬-斯皮尔伯格</a></h2><p>代表作：《侏罗纪公园》、《<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a>》、《大白鲨》、《战马》、<a href="https://joshuabao.blogspot.jp/2017/06/imdb33.html">《拯救大兵瑞恩</a>》、《夺宝奇兵》系列、《人工智能》等。 评价：称史蒂文·斯皮尔伯格(Steven Spielberg)为“电影织梦者”一点也不为过，这是毫无争议的,再难找到一位导演在商业与艺术间游刃有余,把商业与艺术结合的天衣无缝.他的电影不失娱乐,同时兼备极高的艺术性,而更多的则是人文关怀。他是以影片《辛德勒名单》而荣获奥斯卡金像奖的大导演，他的《大白鲨》、《E.T.》、《侏罗纪公园》等著名的商业娱乐片也为全球广大影迷们所熟知，当人们带着这种印象涌向电影院去欣赏那部黑白电影《辛德勒名单》时，却发现了斯皮尔伯格的另一个世界，一个充满智慧和理性的世界，一个真正的电影艺术的世界。</p>
-<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg" alt=""></a></p>
-<h2 id="2-詹姆斯-卡梅隆"><a href="#2-詹姆斯-卡梅隆" class="headerlink" title="2.詹姆斯-卡梅隆"></a>2.<a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%8D%A1%E6%A2%85%E9%9A%86">詹姆斯-卡梅隆</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者</a>》、《泰坦尼克号》、《阿凡达》、《真实的谎言》等 评价： 他在拍摄地是个苛求、专横的“暴君”；在家庭中是个不会体贴并且见异思迁的丈夫；在好莱坞同行看来，卡梅隆是一个偏执狂和烧钱的机器。但不能否认，卡梅隆是个天才。卡梅隆不仅能创造奇迹般的电影票房更是能将商业与艺术并驾齐驱。他的作品往往讨论人与技术之间的关系，令人反思。唯有詹姆斯·卡梅隆才敢在奥斯卡典礼上喊出那句“我是世界之王”因为他是当之无愧的世界之王。</p>
-<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg" alt=""></a></p>
-<h2 id="X-昆汀-塔伦蒂诺"><a href="#X-昆汀-塔伦蒂诺" class="headerlink" title="X.昆汀-塔伦蒂诺"></a>X.<a href="https://zh.wikipedia.org/wiki/%E6%98%86%E6%B1%80%C2%B7%E5%A1%94%E4%BC%A6%E8%92%82%E8%AF%BA">昆汀-塔伦蒂诺</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a>》、《落水狗》、《无耻混蛋》等 评价：昆汀是20世纪90年代美国独立电影革命中重要的年轻导演，以独特的个性和对商业电影和艺术电影均有深刻理解著称。　　毫无疑问，昆汀是个鬼才。而所谓“鬼才”，就是“鬼才知道他在想什么”。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>剧情</title>
     <url>/bdjkbakjd/index.html</url>
     <content><![CDATA[<h2 id="剧情电影榜"><a href="#剧情电影榜" class="headerlink" title="剧情电影榜"></a>剧情电影榜</h2><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">肖申克的救赎</a></h4><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父</a></h4><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a></h4><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb23.html">卡萨布兰卡 </a></h4><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a></h4><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://joshuabao.blogspot.tw/2017/06/imdb32.html">现代启示录</a></h4><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://joshuabao.blogspot.tw/2017/06/imdb30.html">日落大道</a></h4>]]></content>
-  </entry>
-  <entry>
-    <title>Contact me</title>
-    <url>/contact-me/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>文章分类</title>
@@ -2138,10 +2122,19 @@
 ]]></content>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/dguikuhbkaf/index.html</url>
-    <content><![CDATA[<p>网站是我17年创建的，本来是用来写一些自己的日志的，但是没有坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
-<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">https://www.youtube.com/watch?v=PeKATbM0aDE</a></p>
+    <title>Contact me</title>
+    <url>/contact-me/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>人物风云</title>
+    <url>/bjkbk/index.html</url>
+    <content><![CDATA[<h1 id="我熟悉的好莱坞著名导演简介"><a href="#我熟悉的好莱坞著名导演简介" class="headerlink" title="我熟悉的好莱坞著名导演简介"></a>我熟悉的好莱坞著名导演简介</h1><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg" alt=""></a></p>
+<h2 id="1、史蒂芬-斯皮尔伯格"><a href="#1、史蒂芬-斯皮尔伯格" class="headerlink" title="1、史蒂芬-斯皮尔伯格"></a>1、<a href="https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC">史蒂芬-斯皮尔伯格</a></h2><p>代表作：《侏罗纪公园》、《<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a>》、《大白鲨》、《战马》、<a href="https://joshuabao.blogspot.jp/2017/06/imdb33.html">《拯救大兵瑞恩</a>》、《夺宝奇兵》系列、《人工智能》等。 评价：称史蒂文·斯皮尔伯格(Steven Spielberg)为“电影织梦者”一点也不为过，这是毫无争议的,再难找到一位导演在商业与艺术间游刃有余,把商业与艺术结合的天衣无缝.他的电影不失娱乐,同时兼备极高的艺术性,而更多的则是人文关怀。他是以影片《辛德勒名单》而荣获奥斯卡金像奖的大导演，他的《大白鲨》、《E.T.》、《侏罗纪公园》等著名的商业娱乐片也为全球广大影迷们所熟知，当人们带着这种印象涌向电影院去欣赏那部黑白电影《辛德勒名单》时，却发现了斯皮尔伯格的另一个世界，一个充满智慧和理性的世界，一个真正的电影艺术的世界。</p>
+<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg" alt=""></a></p>
+<h2 id="2-詹姆斯-卡梅隆"><a href="#2-詹姆斯-卡梅隆" class="headerlink" title="2.詹姆斯-卡梅隆"></a>2.<a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%8D%A1%E6%A2%85%E9%9A%86">詹姆斯-卡梅隆</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者</a>》、《泰坦尼克号》、《阿凡达》、《真实的谎言》等 评价： 他在拍摄地是个苛求、专横的“暴君”；在家庭中是个不会体贴并且见异思迁的丈夫；在好莱坞同行看来，卡梅隆是一个偏执狂和烧钱的机器。但不能否认，卡梅隆是个天才。卡梅隆不仅能创造奇迹般的电影票房更是能将商业与艺术并驾齐驱。他的作品往往讨论人与技术之间的关系，令人反思。唯有詹姆斯·卡梅隆才敢在奥斯卡典礼上喊出那句“我是世界之王”因为他是当之无愧的世界之王。</p>
+<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg" alt=""></a></p>
+<h2 id="X-昆汀-塔伦蒂诺"><a href="#X-昆汀-塔伦蒂诺" class="headerlink" title="X.昆汀-塔伦蒂诺"></a>X.<a href="https://zh.wikipedia.org/wiki/%E6%98%86%E6%B1%80%C2%B7%E5%A1%94%E4%BC%A6%E8%92%82%E8%AF%BA">昆汀-塔伦蒂诺</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a>》、《落水狗》、《无耻混蛋》等 评价：昆汀是20世纪90年代美国独立电影革命中重要的年轻导演，以独特的个性和对商业电影和艺术电影均有深刻理解著称。　　毫无疑问，昆汀是个鬼才。而所谓“鬼才”，就是“鬼才知道他在想什么”。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2158,26 +2151,16 @@
 ]]></content>
   </entry>
   <entry>
+    <title>关于</title>
+    <url>/dguikuhbkaf/index.html</url>
+    <content><![CDATA[<p>网站是我17年创建的，本来是用来写一些自己的日志的，但是没有坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
+<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">https://www.youtube.com/watch?v=PeKATbM0aDE</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>科幻</title>
     <url>/dsfss/index.html</url>
     <content><![CDATA[<h2 id="科幻电影榜"><a href="#科幻电影榜" class="headerlink" title="科幻电影榜"></a>科幻电影榜</h2><h4 id="1-蝙蝠侠前传2：黑暗骑士"><a href="#1-蝙蝠侠前传2：黑暗骑士" class="headerlink" title="1.蝙蝠侠前传2：黑暗骑士"></a><a href="http://joshuabao.blogspot.com/2017/06/imdb9.html">1.蝙蝠侠前传2：黑暗骑士</a></h4><h4 id="2-指环王：王者归来"><a href="#2-指环王：王者归来" class="headerlink" title="2.指环王：王者归来"></a>2.<a href="https://joshuabao.blogspot.com/2017/06/imdb9.html">指环王：王者归来</a></h4><h4 id="3-黑客帝国"><a href="#3-黑客帝国" class="headerlink" title="3.黑客帝国"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb18.html">黑客帝国</a></h4><h4 id="4-星球大战第四集：新希望"><a href="#4-星球大战第四集：新希望" class="headerlink" title="4.星球大战第四集：新希望"></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb15.html">星球大战第四集：新希望</a></h4><h4 id="5-终结者2-审判日"><a href="#5-终结者2-审判日" class="headerlink" title="5.终结者2: 审判日"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者2: 审判日</a></h4><h4 id="6-星球大战-帝国反击战"><a href="#6-星球大战-帝国反击战" class="headerlink" title="6.星球大战 帝国反击战 "></a>6<a href="https://joshuabao.blogspot.com/2017/06/imdb11.html">.星球大战 帝国反击战 </a></h4>]]></content>
-  </entry>
-  <entry>
-    <title>最近在听的🎶</title>
-    <url>/fsfssdfsf/index.html</url>
-    <content><![CDATA[<p><a href="https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ">https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ</a></p>
-<p><a href="https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ">https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ</a></p>
-<p><a href="https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ">https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ</a></p>
-<p><a href="https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw">https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw</a></p>
-<p><a href="https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw">https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw</a></p>
-<p><a href="https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g">https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g</a></p>
-<p><a href="https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw">https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw</a></p>
-<p><a href="https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A">https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A</a></p>
-<p><a href="https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g">https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g</a></p>
-<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
-<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
-<p>and welcome to follow my <a href="https://open.spotify.com/user/joshua_bao?si=pUghWKYRT-eBHhLcI95ryg">spotify home page</a>!</p>
-]]></content>
   </entry>
   <entry>
     <title>帮助</title>
@@ -2213,6 +2196,11 @@
 ]]></content>
   </entry>
   <entry>
+    <title>网站建议及反馈</title>
+    <url>/hghgjgj/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Welcome and hope you guys enjoy it</title>
     <url>/gdsj%20ffhbjhk/index.html</url>
     <content><![CDATA[<p>致所有的外国朋友：</p>
@@ -2226,13 +2214,30 @@
 ]]></content>
   </entry>
   <entry>
-    <title>网站建议及反馈</title>
-    <url>/hghgjgj/index.html</url>
+    <title>hi,welcome to my blogger</title>
+    <url>/hiwelcome-to-my-blogger/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>hi,welcome to my blogger</title>
-    <url>/hiwelcome-to-my-blogger/index.html</url>
+    <title>最近在听的🎶</title>
+    <url>/fsfssdfsf/index.html</url>
+    <content><![CDATA[<p><a href="https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ">https://open.spotify.com/track/4xkOaSrkexMciUUogZKVTS?si=ie063s1FQWi_9sHJlnFVqQ</a></p>
+<p><a href="https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ">https://open.spotify.com/track/60SdxE8apGAxMiRrpbmLY0?si=j7nStqyBQy2qI32mfHq2vQ</a></p>
+<p><a href="https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ">https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE?si=UkzgGK-zTquD5S3zIut4RQ</a></p>
+<p><a href="https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw">https://open.spotify.com/track/28FGV3ORH14MYORd7s5dlU?si=UcuEgh9vRgmBRZoqh203rw</a></p>
+<p><a href="https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw">https://open.spotify.com/track/58QhkbaAkLFnn7JwAnAato?si=bF6SjGeASHK-Jxl1LB5fNw</a></p>
+<p><a href="https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g">https://open.spotify.com/track/7DcvwMAiqKJQD1rrdfxSDx?si=Y0wPuMy_R4q7lMPfpR709g</a></p>
+<p><a href="https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw">https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4?si=Lb-xN37qTduPgrR16DALjw</a></p>
+<p><a href="https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A">https://open.spotify.com/track/6u7jPi22kF8CTQ3rb9DHE7?si=Icysc-H_Rl-UE0pJJoI47A</a></p>
+<p><a href="https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g">https://open.spotify.com/track/7qEHsqek33rTcFNT9PFqLf?si=X8CTuG4JQtG-qoDGuXJ62g</a></p>
+<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
+<p><a href="https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w">https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0?si=aithWf7JTJCOJRbUNlnZ4w</a></p>
+<p>and welcome to follow my <a href="https://open.spotify.com/user/joshua_bao?si=pUghWKYRT-eBHhLcI95ryg">spotify home page</a>!</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签统计</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2291,11 +2296,6 @@
 </ul>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签统计</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Privacy policy</title>
