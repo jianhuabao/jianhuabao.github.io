@@ -10,6 +10,42 @@
 ]]></content>
   </entry>
   <entry>
+    <title>addadsensezongjie</title>
+    <url>/2020/02/addadsensezongjie/</url>
+    <content><![CDATA[<hr>
+<p>title: addadsensezongjie<br>date: 2020-02-29 23:58:52<br>tags: </p>
+<ul>
+<li>adsense</li>
+<li>blog</li>
+<li>GitHub<br>categories:</li>
+<li>软件使用推荐与分享</li>
+<li>google<br>个人博客网站接入Google AdSense谷歌广告</li>
+</ul>
+<h2 id="在网站上，选择广告单元-gt-新建广告位-gt-选择对应的广告类型-gt-生成对应的广告代码。"><a href="#在网站上，选择广告单元-gt-新建广告位-gt-选择对应的广告类型-gt-生成对应的广告代码。" class="headerlink" title="在网站上，选择广告单元-&gt;新建广告位-&gt;选择对应的广告类型-&gt;生成对应的广告代码。"></a>在网站上，选择广告单元-&gt;新建广告位-&gt;选择对应的广告类型-&gt;生成对应的广告代码。</h2><p>个人博客网站直接选择广告单元模式的文字广告和文章内插入广告</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="8024780087"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h2 id="在themes-next-layout-custom下新建google-adsense-swig文件，-将代码复制过去。"><a href="#在themes-next-layout-custom下新建google-adsense-swig文件，-将代码复制过去。" class="headerlink" title="在themes/next/layout/_custom下新建google_adsense.swig文件， 将代码复制过去。"></a>在themes/next/layout/_custom下新建google_adsense.swig文件，<a id="more"></a> 将代码复制过去。</h2><h2 id="google-adsense-swig文件引用位置决定广告展示位置，位置自己决定。"><a href="#google-adsense-swig文件引用位置决定广告展示位置，位置自己决定。" class="headerlink" title="google_adsense.swig文件引用位置决定广告展示位置，位置自己决定。"></a>google_adsense.swig文件引用位置决定广告展示位置，位置自己决定。</h2><h4 id="插入评论区：将代码插入-themes-next-layout-partials-comments-swig-中的末尾即可。"><a href="#插入评论区：将代码插入-themes-next-layout-partials-comments-swig-中的末尾即可。" class="headerlink" title="插入评论区：将代码插入\themes\next\layout_partials\comments.swig 中的末尾即可。"></a>插入评论区：将代码插入\themes\next\layout_partials\comments.swig 中的末尾即可。</h4><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2691877571661707"
+     data-ad-slot="1301633292"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="最后将自己修改的代码部署到代码到自己的vps或者github-等托管网站上，速度很快，基本10分钟内就可以显示在自己的网站上了"><a href="#最后将自己修改的代码部署到代码到自己的vps或者github-等托管网站上，速度很快，基本10分钟内就可以显示在自己的网站上了" class="headerlink" title="最后将自己修改的代码部署到代码到自己的vps或者github 等托管网站上，速度很快，基本10分钟内就可以显示在自己的网站上了"></a>最后将自己修改的代码部署到代码到自己的vps或者github 等托管网站上，速度很快，基本10分钟内就可以显示在自己的网站上了</h4>]]></content>
+  </entry>
+  <entry>
     <title>VyprVPN综合测评对比</title>
     <url>/2020/02/vyprvpn/</url>
     <content><![CDATA[<blockquote class="blockquote-center"><p><a href="http://www.goldenfrog.com/vyprvpn/special/vpn-seasonal-special?offer_id=78&aff_id=4321">VyprVPN</a> </p>
@@ -44,8 +80,8 @@
 <h2 id="2020新春二折特惠"><a href="#2020新春二折特惠" class="headerlink" title="2020新春二折特惠:"></a>2020新春二折特惠:</h2><p><a href="https://www.vyprvpn.com/zh/refer/china?offer_id=235&aff_id=4321">官网直达</a></p>
 ]]></content>
       <tags>
-        <tag>vyprvpn</tag>
         <tag>VPN</tag>
+        <tag>vyprvpn</tag>
         <tag>VPN推荐</tag>
       </tags>
   </entry>
@@ -141,13 +177,10 @@
 ]]></content>
       <categories>
         <category>软件使用推荐与分享</category>
-        <category>google</category>
-        <category>其他</category>
       </categories>
       <tags>
         <tag>vpn</tag>
         <tag>genymotion</tag>
-        <tag>安卓模拟器</tag>
       </tags>
   </entry>
   <entry>
@@ -361,8 +394,8 @@
       </categories>
       <tags>
         <tag>犯罪</tag>
-        <tag>我看过的电影</tag>
         <tag>恐怖</tag>
+        <tag>我看过的电影</tag>
         <tag>最近看过的电影</tag>
       </tags>
   </entry>
@@ -542,8 +575,8 @@
       </categories>
       <tags>
         <tag>vps</tag>
-        <tag>vpn</tag>
         <tag>amazon</tag>
+        <tag>vpn</tag>
       </tags>
   </entry>
   <entry>
@@ -718,8 +751,8 @@
         <tag>google</tag>
         <tag>vps</tag>
         <tag>vpn</tag>
-        <tag>googlecloudplatform</tag>
         <tag>谷歌云</tag>
+        <tag>googlecloudplatform</tag>
       </tags>
   </entry>
   <entry>
@@ -1053,8 +1086,8 @@
         <tag>科幻</tag>
         <tag>动作</tag>
         <tag>剧情</tag>
-        <tag>惊悚</tag>
         <tag>犯罪</tag>
+        <tag>惊悚</tag>
         <tag>悬疑</tag>
         <tag>克里斯蒂安·贝尔</tag>
         <tag>克里斯托弗•诺兰</tag>
@@ -1306,8 +1339,8 @@
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>剧情</tag>
-        <tag>惊悚</tag>
         <tag>犯罪</tag>
+        <tag>惊悚</tag>
         <tag>神秘</tag>
         <tag>德国</tag>
       </tags>
@@ -1449,8 +1482,8 @@
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>惊悚</tag>
         <tag>犯罪</tag>
+        <tag>惊悚</tag>
         <tag>安东尼·霍普金斯</tag>
       </tags>
   </entry>
@@ -1490,8 +1523,8 @@
         <tag>电影</tag>
         <tag>Favorite films</tag>
         <tag>剧情</tag>
-        <tag>惊悚</tag>
         <tag>犯罪</tag>
+        <tag>惊悚</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
         <tag>悬疑</tag>
@@ -1881,8 +1914,8 @@
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>传记</tag>
-        <tag>史蒂文·斯皮尔伯格</tag>
         <tag>战争</tag>
+        <tag>史蒂文·斯皮尔伯格</tag>
       </tags>
   </entry>
   <entry>
@@ -1900,8 +1933,8 @@
         <tag>best movie</tag>
         <tag>Favorite films</tag>
         <tag>剧情</tag>
-        <tag>惊悚</tag>
         <tag>犯罪</tag>
+        <tag>惊悚</tag>
       </tags>
   </entry>
   <entry>
@@ -2051,9 +2084,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>剧情</title>
-    <url>/bdjkbakjd/index.html</url>
-    <content><![CDATA[<h2 id="剧情电影榜"><a href="#剧情电影榜" class="headerlink" title="剧情电影榜"></a>剧情电影榜</h2><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">肖申克的救赎</a></h4><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父</a></h4><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a></h4><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb23.html">卡萨布兰卡 </a></h4><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a></h4><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://joshuabao.blogspot.tw/2017/06/imdb32.html">现代启示录</a></h4><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://joshuabao.blogspot.tw/2017/06/imdb30.html">日落大道</a></h4>]]></content>
+    <title>人物风云</title>
+    <url>/bjkbk/index.html</url>
+    <content><![CDATA[<h1 id="我熟悉的好莱坞著名导演简介"><a href="#我熟悉的好莱坞著名导演简介" class="headerlink" title="我熟悉的好莱坞著名导演简介"></a>我熟悉的好莱坞著名导演简介</h1><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg" alt=""></a></p>
+<h2 id="1、史蒂芬-斯皮尔伯格"><a href="#1、史蒂芬-斯皮尔伯格" class="headerlink" title="1、史蒂芬-斯皮尔伯格"></a>1、<a href="https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC">史蒂芬-斯皮尔伯格</a></h2><p>代表作：《侏罗纪公园》、《<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a>》、《大白鲨》、《战马》、<a href="https://joshuabao.blogspot.jp/2017/06/imdb33.html">《拯救大兵瑞恩</a>》、《夺宝奇兵》系列、《人工智能》等。 评价：称史蒂文·斯皮尔伯格(Steven Spielberg)为“电影织梦者”一点也不为过，这是毫无争议的,再难找到一位导演在商业与艺术间游刃有余,把商业与艺术结合的天衣无缝.他的电影不失娱乐,同时兼备极高的艺术性,而更多的则是人文关怀。他是以影片《辛德勒名单》而荣获奥斯卡金像奖的大导演，他的《大白鲨》、《E.T.》、《侏罗纪公园》等著名的商业娱乐片也为全球广大影迷们所熟知，当人们带着这种印象涌向电影院去欣赏那部黑白电影《辛德勒名单》时，却发现了斯皮尔伯格的另一个世界，一个充满智慧和理性的世界，一个真正的电影艺术的世界。</p>
+<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg" alt=""></a></p>
+<h2 id="2-詹姆斯-卡梅隆"><a href="#2-詹姆斯-卡梅隆" class="headerlink" title="2.詹姆斯-卡梅隆"></a>2.<a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%8D%A1%E6%A2%85%E9%9A%86">詹姆斯-卡梅隆</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者</a>》、《泰坦尼克号》、《阿凡达》、《真实的谎言》等 评价： 他在拍摄地是个苛求、专横的“暴君”；在家庭中是个不会体贴并且见异思迁的丈夫；在好莱坞同行看来，卡梅隆是一个偏执狂和烧钱的机器。但不能否认，卡梅隆是个天才。卡梅隆不仅能创造奇迹般的电影票房更是能将商业与艺术并驾齐驱。他的作品往往讨论人与技术之间的关系，令人反思。唯有詹姆斯·卡梅隆才敢在奥斯卡典礼上喊出那句“我是世界之王”因为他是当之无愧的世界之王。</p>
+<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg" alt=""></a></p>
+<h2 id="X-昆汀-塔伦蒂诺"><a href="#X-昆汀-塔伦蒂诺" class="headerlink" title="X.昆汀-塔伦蒂诺"></a>X.<a href="https://zh.wikipedia.org/wiki/%E6%98%86%E6%B1%80%C2%B7%E5%A1%94%E4%BC%A6%E8%92%82%E8%AF%BA">昆汀-塔伦蒂诺</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a>》、《落水狗》、《无耻混蛋》等 评价：昆汀是20世纪90年代美国独立电影革命中重要的年轻导演，以独特的个性和对商业电影和艺术电影均有深刻理解著称。　　毫无疑问，昆汀是个鬼才。而所谓“鬼才”，就是“鬼才知道他在想什么”。</p>
+]]></content>
   </entry>
   <entry>
     <title>文章分类</title>
@@ -2066,20 +2105,21 @@
 ]]></content>
   </entry>
   <entry>
+    <title>剧情</title>
+    <url>/bdjkbakjd/index.html</url>
+    <content><![CDATA[<h2 id="剧情电影榜"><a href="#剧情电影榜" class="headerlink" title="剧情电影榜"></a>剧情电影榜</h2><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">肖申克的救赎</a></h4><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父</a></h4><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a></h4><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb23.html">卡萨布兰卡 </a></h4><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a></h4><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://joshuabao.blogspot.tw/2017/06/imdb32.html">现代启示录</a></h4><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://joshuabao.blogspot.tw/2017/06/imdb30.html">日落大道</a></h4>]]></content>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/dguikuhbkaf/index.html</url>
+    <content><![CDATA[<p>网站是我17年创建的，本来是用来写一些自己的日志的，但是没有坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
+<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">https://www.youtube.com/watch?v=PeKATbM0aDE</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Contact me</title>
     <url>/contact-me/index.html</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>人物风云</title>
-    <url>/bjkbk/index.html</url>
-    <content><![CDATA[<h1 id="我熟悉的好莱坞著名导演简介"><a href="#我熟悉的好莱坞著名导演简介" class="headerlink" title="我熟悉的好莱坞著名导演简介"></a>我熟悉的好莱坞著名导演简介</h1><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/f6ad4-7005c4b0xd08df4b207e92526690.jpg" alt=""></a></p>
-<h2 id="1、史蒂芬-斯皮尔伯格"><a href="#1、史蒂芬-斯皮尔伯格" class="headerlink" title="1、史蒂芬-斯皮尔伯格"></a>1、<a href="https://zh.wikipedia.org/wiki/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC">史蒂芬-斯皮尔伯格</a></h2><p>代表作：《侏罗纪公园》、《<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a>》、《大白鲨》、《战马》、<a href="https://joshuabao.blogspot.jp/2017/06/imdb33.html">《拯救大兵瑞恩</a>》、《夺宝奇兵》系列、《人工智能》等。 评价：称史蒂文·斯皮尔伯格(Steven Spielberg)为“电影织梦者”一点也不为过，这是毫无争议的,再难找到一位导演在商业与艺术间游刃有余,把商业与艺术结合的天衣无缝.他的电影不失娱乐,同时兼备极高的艺术性,而更多的则是人文关怀。他是以影片《辛德勒名单》而荣获奥斯卡金像奖的大导演，他的《大白鲨》、《E.T.》、《侏罗纪公园》等著名的商业娱乐片也为全球广大影迷们所熟知，当人们带着这种印象涌向电影院去欣赏那部黑白电影《辛德勒名单》时，却发现了斯皮尔伯格的另一个世界，一个充满智慧和理性的世界，一个真正的电影艺术的世界。</p>
-<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cd7f0-7005c4b0x7b416574a6432526690.jpg" alt=""></a></p>
-<h2 id="2-詹姆斯-卡梅隆"><a href="#2-詹姆斯-卡梅隆" class="headerlink" title="2.詹姆斯-卡梅隆"></a>2.<a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%8D%A1%E6%A2%85%E9%9A%86">詹姆斯-卡梅隆</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者</a>》、《泰坦尼克号》、《阿凡达》、《真实的谎言》等 评价： 他在拍摄地是个苛求、专横的“暴君”；在家庭中是个不会体贴并且见异思迁的丈夫；在好莱坞同行看来，卡梅隆是一个偏执狂和烧钱的机器。但不能否认，卡梅隆是个天才。卡梅隆不仅能创造奇迹般的电影票房更是能将商业与艺术并驾齐驱。他的作品往往讨论人与技术之间的关系，令人反思。唯有詹姆斯·卡梅隆才敢在奥斯卡典礼上喊出那句“我是世界之王”因为他是当之无愧的世界之王。</p>
-<p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/cf875-7005c4b0xd08e071e66ea2526690.jpg" alt=""></a></p>
-<h2 id="X-昆汀-塔伦蒂诺"><a href="#X-昆汀-塔伦蒂诺" class="headerlink" title="X.昆汀-塔伦蒂诺"></a>X.<a href="https://zh.wikipedia.org/wiki/%E6%98%86%E6%B1%80%C2%B7%E5%A1%94%E4%BC%A6%E8%92%82%E8%AF%BA">昆汀-塔伦蒂诺</a></h2><p>代表作：《<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a>》、《落水狗》、《无耻混蛋》等 评价：昆汀是20世纪90年代美国独立电影革命中重要的年轻导演，以独特的个性和对商业电影和艺术电影均有深刻理解著称。　　毫无疑问，昆汀是个鬼才。而所谓“鬼才”，就是“鬼才知道他在想什么”。</p>
-]]></content>
   </entry>
   <entry>
     <title>惊悚</title>
@@ -2095,18 +2135,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/dguikuhbkaf/index.html</url>
-    <content><![CDATA[<p>网站是我17年创建的，本来是用来写一些自己的日志的，但是没有坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
-<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">https://www.youtube.com/watch?v=PeKATbM0aDE</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>科幻</title>
-    <url>/dsfss/index.html</url>
-    <content><![CDATA[<h2 id="科幻电影榜"><a href="#科幻电影榜" class="headerlink" title="科幻电影榜"></a>科幻电影榜</h2><h4 id="1-蝙蝠侠前传2：黑暗骑士"><a href="#1-蝙蝠侠前传2：黑暗骑士" class="headerlink" title="1.蝙蝠侠前传2：黑暗骑士"></a><a href="http://joshuabao.blogspot.com/2017/06/imdb9.html">1.蝙蝠侠前传2：黑暗骑士</a></h4><h4 id="2-指环王：王者归来"><a href="#2-指环王：王者归来" class="headerlink" title="2.指环王：王者归来"></a>2.<a href="https://joshuabao.blogspot.com/2017/06/imdb9.html">指环王：王者归来</a></h4><h4 id="3-黑客帝国"><a href="#3-黑客帝国" class="headerlink" title="3.黑客帝国"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb18.html">黑客帝国</a></h4><h4 id="4-星球大战第四集：新希望"><a href="#4-星球大战第四集：新希望" class="headerlink" title="4.星球大战第四集：新希望"></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb15.html">星球大战第四集：新希望</a></h4><h4 id="5-终结者2-审判日"><a href="#5-终结者2-审判日" class="headerlink" title="5.终结者2: 审判日"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者2: 审判日</a></h4><h4 id="6-星球大战-帝国反击战"><a href="#6-星球大战-帝国反击战" class="headerlink" title="6.星球大战 帝国反击战 "></a>6<a href="https://joshuabao.blogspot.com/2017/06/imdb11.html">.星球大战 帝国反击战 </a></h4>]]></content>
-  </entry>
-  <entry>
     <title>帮助</title>
     <url>/dsubikf/index.html</url>
     <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
@@ -2118,6 +2146,11 @@
 <p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-1068523.jpeg" alt=""></p>
 <p>Photo by rawpixel.com on <a href="https://www.pexels.com/photo/group-hand-fist-bump-1068523/">Pexels.com</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>科幻</title>
+    <url>/dsfss/index.html</url>
+    <content><![CDATA[<h2 id="科幻电影榜"><a href="#科幻电影榜" class="headerlink" title="科幻电影榜"></a>科幻电影榜</h2><h4 id="1-蝙蝠侠前传2：黑暗骑士"><a href="#1-蝙蝠侠前传2：黑暗骑士" class="headerlink" title="1.蝙蝠侠前传2：黑暗骑士"></a><a href="http://joshuabao.blogspot.com/2017/06/imdb9.html">1.蝙蝠侠前传2：黑暗骑士</a></h4><h4 id="2-指环王：王者归来"><a href="#2-指环王：王者归来" class="headerlink" title="2.指环王：王者归来"></a>2.<a href="https://joshuabao.blogspot.com/2017/06/imdb9.html">指环王：王者归来</a></h4><h4 id="3-黑客帝国"><a href="#3-黑客帝国" class="headerlink" title="3.黑客帝国"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb18.html">黑客帝国</a></h4><h4 id="4-星球大战第四集：新希望"><a href="#4-星球大战第四集：新希望" class="headerlink" title="4.星球大战第四集：新希望"></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb15.html">星球大战第四集：新希望</a></h4><h4 id="5-终结者2-审判日"><a href="#5-终结者2-审判日" class="headerlink" title="5.终结者2: 审判日"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb34.html">终结者2: 审判日</a></h4><h4 id="6-星球大战-帝国反击战"><a href="#6-星球大战-帝国反击战" class="headerlink" title="6.星球大战 帝国反击战 "></a>6<a href="https://joshuabao.blogspot.com/2017/06/imdb11.html">.星球大战 帝国反击战 </a></h4>]]></content>
   </entry>
   <entry>
     <title>犯罪</title>
@@ -2140,11 +2173,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>网站建议及反馈</title>
-    <url>/hghgjgj/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Welcome and hope you guys enjoy it</title>
     <url>/gdsj%20ffhbjhk/index.html</url>
     <content><![CDATA[<p>致所有的外国朋友：</p>
@@ -2156,11 +2184,6 @@
 <p><a href="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js</a>  </p>
 <p>(adsbygoogle = window.adsbygoogle || []).push({<br>google_ad_client: “ca-pub-7008797193023202”,<br>enable_page_level_ads: true<br>});</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>hi,welcome to my blogger</title>
-    <url>/hiwelcome-to-my-blogger/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>最近在听的🎶</title>
@@ -2180,8 +2203,13 @@
 ]]></content>
   </entry>
   <entry>
-    <title>标签统计</title>
-    <url>/tags/index.html</url>
+    <title>hi,welcome to my blogger</title>
+    <url>/hiwelcome-to-my-blogger/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>网站建议及反馈</title>
+    <url>/hghgjgj/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -2240,6 +2268,11 @@
 </ul>
 </blockquote>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签统计</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Privacy policy</title>
