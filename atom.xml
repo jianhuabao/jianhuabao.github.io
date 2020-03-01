@@ -31,7 +31,8 @@
         
           &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;Welcome guys and hope you enjoy here&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;致所有的外国朋友：&quot;&gt;&lt;a href=&quot;#致所有的外国朋友：&quot;
+
+&lt;h1 id=&quot;致所有的外国朋友：&quot;&gt;&lt;a href=&quot;#致所有的外国朋友：&quot;
         
       
     
@@ -50,9 +51,12 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;个人博客网站接入Google-AdSense谷歌广告技巧总结&quot;&gt;&lt;a href=&quot;#个人博客网站接入Google-AdSense谷歌广告技巧总结&quot; class=&quot;headerlink&quot; title=&quot;个人博客网站接入Google AdSense谷歌广告技巧总结&quot;&gt;&lt;/a&gt;个人博客网站接入Google AdSense谷歌广告技巧总结&lt;/h2&gt;&lt;h3 id=&quot;在网站上，选择广告单元-gt-新建广告位-gt-选择对应的广告类型-gt-生成对应的广告代码。&quot;&gt;&lt;a href=&quot;#在网站上，选择广告单元-gt-新建广告位-gt-选择对应的广告类型-gt-生成对应的广告代码。&quot; class=&quot;headerlink&quot; title=&quot;在网站上，选择广告单元-&amp;gt;新建广告位-&amp;gt;选择对应的广告类型-&amp;gt;生成对应的广告代码。&quot;&gt;&lt;/a&gt;在网站上，选择广告单元-&amp;gt;新建广告位-&amp;gt;选择对应的广告类型-&amp;gt;生成对应的广告代码。&lt;/h3&gt;&lt;p&gt;接下来&lt;/p&gt;
-&lt;h3 id=&quot;个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&quot;&gt;&lt;a href=&quot;#个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&quot; class=&quot;headerlink&quot; title=&quot;个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&quot;&gt;&lt;/a&gt;个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&lt;/h3&gt;&lt;p&gt;接下来&lt;/p&gt;
-&lt;h3 id=&quot;在themes-next-layout-custom下新建google-adsense-swig文件，-将代码复制过去。&quot;&gt;&lt;a href=&quot;#在themes-next-layout-custom下新建google-adsense-swig文件，-将代码复制过去。&quot; class=&quot;headerlink&quot; title=&quot;在themes/next/layout/_custom下新建google_adsense.swig文件， 将代码复制过去。&quot;&gt;&lt;/a&gt;在themes/next/layout/_custom下新建google_adsense.swig文件， 将代码复制过去。&lt;/h3&gt;&lt;h3 id=&quot;google-adsense-swig文件引用位置决定广告展示位置，位置自己决定&quot;&gt;&lt;a href=&quot;#google-adsense-swig文件引用位置决定广告展示位置，位置自己决定&quot; class=&quot;headerlink&quot; title=&quot;google_adsense.swig文件引用位置决定广告展示位置，位置自己决定!&quot;&gt;&lt;/a&gt;google_adsense.swig文件引用位置决定广告展示位置，位置自己决定!&lt;/h3&gt;&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+      &lt;p&gt;#个人博客网站接入Google AdSense谷歌广告技巧总结&lt;/p&gt;
+&lt;h2 id=&quot;在网站上，选择广告单元-gt-新建广告位-gt-选择对应的广告类型-gt-生成对应的广告代码。&quot;&gt;&lt;a href=&quot;#在网站上，选择广告单元-gt-新建广告位-gt-选择对应的广告类型-gt-生成对应的广告代码。&quot; class=&quot;headerlink&quot; title=&quot;在网站上，选择广告单元-&amp;gt;新建广告位-&amp;gt;选择对应的广告类型-&amp;gt;生成对应的广告代码。&quot;&gt;&lt;/a&gt;在网站上，选择广告单元-&amp;gt;新建广告位-&amp;gt;选择对应的广告类型-&amp;gt;生成对应的广告代码。&lt;/h2&gt;&lt;p&gt;接下来&lt;/p&gt;
+&lt;h2 id=&quot;个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&quot;&gt;&lt;a href=&quot;#个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&quot; class=&quot;headerlink&quot; title=&quot;个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&quot;&gt;&lt;/a&gt;个人博客网站直接选择广告单元模式的文字广告和文章内插入广告&lt;/h2&gt;&lt;p&gt;接下来&lt;/p&gt;
+&lt;h2 id=&quot;在themes-next-layout-custom下新建google-adsense-swig文件，-将代码复制过去。&quot;&gt;&lt;a href=&quot;#在themes-next-layout-custom下新建google-adsense-swig文件，-将代码复制过去。&quot; class=&quot;headerlink&quot; title=&quot;在themes/next/layout/_custom下新建google_adsense.swig文件， 将代码复制过去。&quot;&gt;&lt;/a&gt;在themes/next/layout/_custom下新建google_adsense.swig文件， 将代码复制过去。&lt;/h2&gt;&lt;h2 id=&quot;google-adsense-swig文件引用位置决定广告展示位置，位置自己决定&quot;&gt;&lt;a href=&quot;#google-adsense-swig文件引用位置决定广告展示位置，位置自己决定&quot; class=&quot;headerlink&quot; title=&quot;google_adsense.swig文件引用位置决定广告展示位置，位置自己决定!&quot;&gt;&lt;/a&gt;google_adsense.swig文件引用位置决定广告展示位置，位置自己决定!&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;最后大功告成&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/1.jpg&quot; alt=&quot;googleadsense&quot;&gt;&lt;/p&gt;
+&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot;
      style=&quot;display:block; text-align:center;&quot;
      data-ad-layout=&quot;in-article&quot;
