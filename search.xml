@@ -79,7 +79,7 @@
   </entry>
   <entry>
     <title>Googlesearch</title>
-    <url>/2020/02/2020googlesearch/</url>
+    <url>/2020/02/googlesearch/</url>
     <content><![CDATA[<p>Google 搜索技巧<br>基本语法<br>AND<br>谷歌的默认搜索是 and 逻辑，我们在输入关键字后进行搜索时，如输入：program google 后，会搜出包含 program 和 google 的文件内容。</p>
 <p>OR<br>如果你想搜索两个中的任意一个，那么就要使用关键词 OR。</p>
 <a id="more"></a>
@@ -106,8 +106,8 @@
       </tags>
   </entry>
   <entry>
-    <title>downloadgithubfile</title>
-    <url>/2020/02/2020downloadgithubfile/</url>
+    <title>如何从GitHub下载指定的文件</title>
+    <url>/2020/02/downloadgithubfile/</url>
     <content><![CDATA[<p>例如，在仓库：Git示例仓库中，我们只想要”/jpeg”这个文件夹下的文件<br><img src="https://img-blog.csdn.net/20180114165114932?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjEwNDIxOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
 <p>下面是关键操作步骤</p>
 <a id="more"></a>
@@ -655,15 +655,15 @@
         <category>google</category>
       </categories>
       <tags>
-        <tag>vps</tag>
         <tag>YouTube</tag>
+        <tag>vps</tag>
         <tag>vpn</tag>
         <tag>gcp</tag>
       </tags>
   </entry>
   <entry>
     <title>Why Google Cloud Platform?</title>
-    <url>/2018/01/2018why-google-cloud-platform/</url>
+    <url>/2018/01/why-google-cloud-platform/</url>
     <content><![CDATA[<h2 id="利用Googlecloudplatform搭建自己的vps"><a href="#利用Googlecloudplatform搭建自己的vps" class="headerlink" title="利用Googlecloudplatform搭建自己的vps"></a>利用Googlecloudplatform搭建自己的vps</h2><p>1：前提条件，拥有一张国际支付信用卡，Visa，MasterCard or JCB</p>
 <p>2：之后需要去用自己的谷歌账号去免费注册Googlecloud，之后会赠送你有限期为一年的300美元使用金，这笔钱对于你个人来说，一年时间真是绰绰有余，算下来，每月估计你有90g左右的vps流量可供使用。</p>
 <p>3:必备Windows 应用程序shadowsocksR 下载地址：</p>
@@ -764,7 +764,7 @@
   </entry>
   <entry>
     <title>That&#39;s why I never listen any Chinese pop music</title>
-    <url>/2017/11/2017thats-why-i-never-listen-any-chinese-pop-music/</url>
+    <url>/2017/11/thats-why-i-never-listen-any-chinese-pop-music/</url>
     <content><![CDATA[<h3 id="gfw的好处有哪些？"><a href="#gfw的好处有哪些？" class="headerlink" title="gfw的好处有哪些？"></a>gfw的好处有哪些？</h3><p>网上文章很多，我看得少，比如这篇关于<a href="http://www.china-week.com/html/6246.htm">历史</a>的；或者和网络有关的这篇文章，链接及名字<a href="http://www.midphoto.com/chinese/whatsnew/2015/freeinternet.htm">internet not Internet</a> 。我试过了，这个你应该可以打开👌👌👌😉</p>
 <p>回到2016年某天下午，我正在体验刚升级的Windows10 系统，觉得他的OneDrive与系统配合使用起来很高效和方便，而且每个微软账号附带5GB空间，我可以用它来储存家里人父母的照片和视频，储存到云端毕竟安全不容易丢失，也可以随时提取，但我想进入他的<a href="https://onedrive.live.com/">live.onedrive.com</a>去整理编辑文件及文件夹的时候，试了几次😞😞😞……, 然后我就看到了<a href="http://www.midphoto.com/chinese/whatsnew/2015/freeinternet.htm">它</a>。</p>
 <p>说到软体，常听到中国的新四大发明，都感觉很自豪，很牛逼，其中有支付宝，网购，共享单车，高铁，大家都知道这四项没有一项是我们原创的，但却由于社会原因，人口及其他原因在中国扩展开来，流行起来。1500年以来到现在几百年间对人类进步最有用的载入史册的838项颠覆性发明没有一项来自中国。1498明朝末期的牙刷是明代唯一一项重大发明，校长蔡元培曾提出过“思想之自由”，自由能激发源源不断的创造力。经过计算机学院也经常看到某个办公室墙上的条幅“创新是一个国家进步的灵魂”，那么当今时代还能找的出有灵魂的大学吗？来源：<a href="https://www.youtube.com/watch?v=P8FRqN2UZoM">北京大学教授张维迎2017毕业演讲</a> , <a href="https://www.youtube.com/watch?v=P8FRqN2UZoM"></a> 所以我只说支付宝，淘宝，共享单车和我们计算机有关的，共享单车发源于1965年的荷兰的阿姆斯特丹，世界上第一座公共自行車系統為法國<a href="https://zh.wikipedia.org/wiki/%E9%87%8C%E6%98%82" title="里昂">里昂</a>建置之公共自行車系統（<a href="https://zh.wikipedia.org/wiki/%E5%85%AC%E5%85%B1%E8%87%AA%E8%A1%8C%E8%BB%8A">维基百科中文</a>）。淘宝和支付宝，他们在中国的发扬光大，应该感谢美国的世界电商之父<a href="https://zh.wikipedia.org/wiki/EBay">EBay</a>，和在线支付公司<a href="https://zh.wikipedia.org/wiki/PayPal">PayPal</a>。阿里巴巴还没出世的前几年，EBay想进入大陆市场就被踢出去了。后来阿里巴巴完全把人家的商业模式，经营模式拿过来在大陆垄断并“光大”，然后吹牛逼一直吹到现在，所以会经常听到很多大学老师或者高中老师喜欢给同学们讲马云的例子。那个时候，大多数公民还不知道百度是什么东西，对上网的概念还一知半解。</p>
@@ -1079,8 +1079,8 @@
         <tag>科幻</tag>
         <tag>动作</tag>
         <tag>犯罪</tag>
-        <tag>惊悚</tag>
         <tag>悬疑</tag>
+        <tag>惊悚</tag>
         <tag>克里斯蒂安·贝尔</tag>
         <tag>克里斯托弗•诺兰</tag>
         <tag>摩根•弗里曼</tag>
@@ -1289,8 +1289,8 @@
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>惊悚</tag>
         <tag>悬疑</tag>
+        <tag>惊悚</tag>
         <tag>阿尔弗雷德•希区柯克</tag>
       </tags>
   </entry>
@@ -1516,10 +1516,10 @@
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>犯罪</tag>
-        <tag>惊悚</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
         <tag>悬疑</tag>
+        <tag>惊悚</tag>
       </tags>
   </entry>
   <entry>
@@ -1753,8 +1753,8 @@
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>动作</tag>
-        <tag>惊悚</tag>
         <tag>悬疑</tag>
+        <tag>惊悚</tag>
         <tag>2000年</tag>
         <tag>克里斯托弗•诺兰</tag>
         <tag>莱昂纳多•迪卡普里奥</tag>
@@ -1846,10 +1846,10 @@
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>动作</tag>
-        <tag>惊悚</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
         <tag>悬疑</tag>
+        <tag>惊悚</tag>
       </tags>
   </entry>
   <entry>
@@ -2069,16 +2069,16 @@
       </tags>
   </entry>
   <entry>
-    <title>剧情</title>
-    <url>/bdjkbakjd/index.html</url>
-    <content><![CDATA[<h2 id="剧情电影榜"><a href="#剧情电影榜" class="headerlink" title="剧情电影榜"></a>剧情电影榜</h2><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">肖申克的救赎</a></h4><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父</a></h4><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a></h4><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb23.html">卡萨布兰卡 </a></h4><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a></h4><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://joshuabao.blogspot.tw/2017/06/imdb32.html">现代启示录</a></h4><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://joshuabao.blogspot.tw/2017/06/imdb30.html">日落大道</a></h4>]]></content>
-  </entry>
-  <entry>
     <title>关于我和网站</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>网站是我20年刚创建的，本来是用来写一些自己的日志的，提醒自己要坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
 <p>我平时喜欢用 <a href="http://www.soundcloud.com">www.soundcloud.com</a> 在上面找世界各地的cover者上传的音乐听歌,这是我一直使用的<a href="https://www.vyprvpn.com/zh/refer/china?offer_id=235&aff_id=4321">VPN</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>剧情</title>
+    <url>/bdjkbakjd/index.html</url>
+    <content><![CDATA[<h2 id="剧情电影榜"><a href="#剧情电影榜" class="headerlink" title="剧情电影榜"></a>剧情电影榜</h2><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">肖申克的救赎</a></h4><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父</a></h4><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb3.html">低俗小说</a></h4><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb23.html">卡萨布兰卡 </a></h4><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://joshuabao.blogspot.com/2017/06/imdb8.html">辛德勒名单</a></h4><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://joshuabao.blogspot.tw/2017/06/imdb32.html">现代启示录</a></h4><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://joshuabao.blogspot.tw/2017/06/imdb30.html">日落大道</a></h4>]]></content>
   </entry>
   <entry>
     <title>人物风云</title>
@@ -2114,22 +2114,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>犯罪</title>
-    <url>/fdsfs/index.html</url>
-    <content><![CDATA[<h2 id="犯罪电影榜"><a href="#犯罪电影榜" class="headerlink" title="犯罪电影榜"></a>犯罪电影榜</h2><ul>
-<li><h4 id="1-低俗小说"><a href="#1-低俗小说" class="headerlink" title="1.低俗小说"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">低俗小说</a></h4></li>
-<li><h4 id="2-搏击俱乐部"><a href="#2-搏击俱乐部" class="headerlink" title="2.搏击俱乐部"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/imdb10.html">搏击俱乐部</a></h4></li>
-<li><h4 id="3-肖申克的救赎"><a href="#3-肖申克的救赎" class="headerlink" title="3.肖申克的救赎"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb1.html">肖申克的救赎</a></h4></li>
-<li><h4 id="4-非常嫌疑犯"><a href="#4-非常嫌疑犯" class="headerlink" title="4.非常嫌疑犯"></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb24.html">非常嫌疑犯</a></h4></li>
-<li><h4 id="5-沉默的羔羊"><a href="#5-沉默的羔羊" class="headerlink" title="5.沉默的羔羊"></a>5<a href="https://joshuabao.blogspot.com/2017/06/imdb21.html">.沉默的羔羊</a></h4></li>
-<li><h4 id="6-七宗罪"><a href="#6-七宗罪" class="headerlink" title="6.七宗罪"></a>6.<a href="https://joshuabao.blogspot.com/2017/06/imdb20.html">七宗罪</a></h4></li>
-<li><h4 id="7-上帝之城"><a href="#7-上帝之城" class="headerlink" title="7.上帝之城"></a>7.<a href="https://joshuabao.blogspot.com/2017/06/imdb19.html">上帝之城</a></h4></li>
-<li><h4 id="8-盗亦有道"><a href="#8-盗亦有道" class="headerlink" title="8.盗亦有道"></a>8.<a href="https://joshuabao.blogspot.com/2017/06/imdb14.html">盗亦有道</a></h4></li>
-<li><h4 id="9-十二怒汉"><a href="#9-十二怒汉" class="headerlink" title="9.十二怒汉"></a>9.<a href="https://joshuabao.blogspot.com/2017/06/imdb7.html">十二怒汉</a></h4></li>
-<li><h4 id="10-黄金三嫖客"><a href="#10-黄金三嫖客" class="headerlink" title="10..黄金三嫖客"></a>10.<a href="https://joshuabao.blogspot.com/2017/06/imdb4.html">.黄金三嫖客</a></h4></li>
-<li><h4 id="11-记忆碎片"><a href="#11-记忆碎片" class="headerlink" title="11.记忆碎片"></a>11.<a href="https://joshuabao.blogspot.tw/2017/06/imdb34_29.html">记忆碎片</a></h4></li>
-<li><h4 id="12-美国X档案"><a href="#12-美国X档案" class="headerlink" title="12..美国X档案"></a>12..<a href="https://joshuabao.blogspot.tw/2017/06/imdb31.html">美国X档案</a></h4></li>
-<li><h4 id="13-这个杀手不太冷"><a href="#13-这个杀手不太冷" class="headerlink" title="13.这个杀手不太冷"></a>13.<a href="https://joshuabao.blogspot.tw/2017/06/imdb29.html">这个杀手不太冷</a></h4></li>
+    <title>惊悚</title>
+    <url>/dsfs/index.html</url>
+    <content><![CDATA[<h2 id="惊悚电影榜"><a href="#惊悚电影榜" class="headerlink" title="惊悚电影榜"></a>惊悚电影榜</h2><ul>
+<li><h4 id="1-教父"><a href="#1-教父" class="headerlink" title="1.教父"></a>1<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">.教父</a></h4></li>
+<li><h4 id="2-教父2"><a href="#2-教父2" class="headerlink" title="2.教父2"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父2</a></h4></li>
+<li><h4 id="3-蝙蝠侠前传2"><a href="#3-蝙蝠侠前传2" class="headerlink" title="3.蝙蝠侠前传2"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb5.html">蝙蝠侠前传2</a></h4></li>
+<li><h4 id="4-后窗"><a href="#4-后窗" class="headerlink" title="4. 后窗"></a>4. <a href="https://joshuabao.blogspot.com/2017/06/imdb26.html">后窗</a></h4></li>
+<li><h4 id="5-记忆碎片"><a href="#5-记忆碎片" class="headerlink" title="5.记忆碎片"></a>5.<a href="https://joshuabao.blogspot.tw/2017/06/imdb34_29.html">记忆碎片</a></h4></li>
+<li><h4 id="6-盗梦空间"><a href="#6-盗梦空间" class="headerlink" title="6.盗梦空间"></a>6.<a href="https://joshuabao.blogspot.com/2017/06/imdb13.html">盗梦空间</a></h4></li>
 </ul>
 ]]></content>
   </entry>
@@ -2144,19 +2137,6 @@
 <p>United states of America</p>
 <p><img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-1068523.jpeg" alt=""></p>
 <p>Photo by rawpixel.com on <a href="https://www.pexels.com/photo/group-hand-fist-bump-1068523/">Pexels.com</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>惊悚</title>
-    <url>/dsfs/index.html</url>
-    <content><![CDATA[<h2 id="惊悚电影榜"><a href="#惊悚电影榜" class="headerlink" title="惊悚电影榜"></a>惊悚电影榜</h2><ul>
-<li><h4 id="1-教父"><a href="#1-教父" class="headerlink" title="1.教父"></a>1<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">.教父</a></h4></li>
-<li><h4 id="2-教父2"><a href="#2-教父2" class="headerlink" title="2.教父2"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">教父2</a></h4></li>
-<li><h4 id="3-蝙蝠侠前传2"><a href="#3-蝙蝠侠前传2" class="headerlink" title="3.蝙蝠侠前传2"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb5.html">蝙蝠侠前传2</a></h4></li>
-<li><h4 id="4-后窗"><a href="#4-后窗" class="headerlink" title="4. 后窗"></a>4. <a href="https://joshuabao.blogspot.com/2017/06/imdb26.html">后窗</a></h4></li>
-<li><h4 id="5-记忆碎片"><a href="#5-记忆碎片" class="headerlink" title="5.记忆碎片"></a>5.<a href="https://joshuabao.blogspot.tw/2017/06/imdb34_29.html">记忆碎片</a></h4></li>
-<li><h4 id="6-盗梦空间"><a href="#6-盗梦空间" class="headerlink" title="6.盗梦空间"></a>6.<a href="https://joshuabao.blogspot.com/2017/06/imdb13.html">盗梦空间</a></h4></li>
-</ul>
 ]]></content>
   </entry>
   <entry>
@@ -2200,15 +2180,30 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>犯罪</title>
+    <url>/fdsfs/index.html</url>
+    <content><![CDATA[<h2 id="犯罪电影榜"><a href="#犯罪电影榜" class="headerlink" title="犯罪电影榜"></a>犯罪电影榜</h2><ul>
+<li><h4 id="1-低俗小说"><a href="#1-低俗小说" class="headerlink" title="1.低俗小说"></a>1.<a href="http://joshuabao.blogspot.com/2017/06/dygodjx1.html">低俗小说</a></h4></li>
+<li><h4 id="2-搏击俱乐部"><a href="#2-搏击俱乐部" class="headerlink" title="2.搏击俱乐部"></a>2.<a href="http://joshuabao.blogspot.com/2017/06/imdb10.html">搏击俱乐部</a></h4></li>
+<li><h4 id="3-肖申克的救赎"><a href="#3-肖申克的救赎" class="headerlink" title="3.肖申克的救赎"></a>3.<a href="https://joshuabao.blogspot.com/2017/06/imdb1.html">肖申克的救赎</a></h4></li>
+<li><h4 id="4-非常嫌疑犯"><a href="#4-非常嫌疑犯" class="headerlink" title="4.非常嫌疑犯"></a>4.<a href="https://joshuabao.blogspot.com/2017/06/imdb24.html">非常嫌疑犯</a></h4></li>
+<li><h4 id="5-沉默的羔羊"><a href="#5-沉默的羔羊" class="headerlink" title="5.沉默的羔羊"></a>5<a href="https://joshuabao.blogspot.com/2017/06/imdb21.html">.沉默的羔羊</a></h4></li>
+<li><h4 id="6-七宗罪"><a href="#6-七宗罪" class="headerlink" title="6.七宗罪"></a>6.<a href="https://joshuabao.blogspot.com/2017/06/imdb20.html">七宗罪</a></h4></li>
+<li><h4 id="7-上帝之城"><a href="#7-上帝之城" class="headerlink" title="7.上帝之城"></a>7.<a href="https://joshuabao.blogspot.com/2017/06/imdb19.html">上帝之城</a></h4></li>
+<li><h4 id="8-盗亦有道"><a href="#8-盗亦有道" class="headerlink" title="8.盗亦有道"></a>8.<a href="https://joshuabao.blogspot.com/2017/06/imdb14.html">盗亦有道</a></h4></li>
+<li><h4 id="9-十二怒汉"><a href="#9-十二怒汉" class="headerlink" title="9.十二怒汉"></a>9.<a href="https://joshuabao.blogspot.com/2017/06/imdb7.html">十二怒汉</a></h4></li>
+<li><h4 id="10-黄金三嫖客"><a href="#10-黄金三嫖客" class="headerlink" title="10..黄金三嫖客"></a>10.<a href="https://joshuabao.blogspot.com/2017/06/imdb4.html">.黄金三嫖客</a></h4></li>
+<li><h4 id="11-记忆碎片"><a href="#11-记忆碎片" class="headerlink" title="11.记忆碎片"></a>11.<a href="https://joshuabao.blogspot.tw/2017/06/imdb34_29.html">记忆碎片</a></h4></li>
+<li><h4 id="12-美国X档案"><a href="#12-美国X档案" class="headerlink" title="12..美国X档案"></a>12..<a href="https://joshuabao.blogspot.tw/2017/06/imdb31.html">美国X档案</a></h4></li>
+<li><h4 id="13-这个杀手不太冷"><a href="#13-这个杀手不太冷" class="headerlink" title="13.这个杀手不太冷"></a>13.<a href="https://joshuabao.blogspot.tw/2017/06/imdb29.html">这个杀手不太冷</a></h4></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>联系信息</title>
     <url>/kndaondoa/index.html</url>
     <content><![CDATA[<p>这是“联系信息”页面，其中包括一些基本联系信息和联系表单。 [contact-form][contact-field label=”姓名” type=”name” required=”1”/][contact-field label=”电子邮件” type=”email” required=”1”/][contact-field label=”网站” type=”url”/][contact-field label=”评论” type=”textarea” required=”1”/][/contact-form]</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>hi,welcome to my blogger</title>
-    <url>/hiwelcome-to-my-blogger/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>电影分类</title>
@@ -2260,6 +2255,11 @@
 </ul>
 </blockquote>
 ]]></content>
+  </entry>
+  <entry>
+    <title>我的YouTube订阅资料库</title>
+    <url>/youtube/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>标签统计</title>

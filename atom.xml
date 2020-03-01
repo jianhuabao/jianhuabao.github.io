@@ -123,8 +123,8 @@
   
   <entry>
     <title>Googlesearch</title>
-    <link href="http://yoursite.com/2020/02/2020googlesearch/"/>
-    <id>http://yoursite.com/2020/02/2020googlesearch/</id>
+    <link href="http://yoursite.com/2020/02/googlesearch/"/>
+    <id>http://yoursite.com/2020/02/googlesearch/</id>
     <published>2020-02-28T10:16:50.000Z</published>
     <updated>2020-02-28T10:16:50.000Z</updated>
     
@@ -144,9 +144,9 @@
   </entry>
   
   <entry>
-    <title>downloadgithubfile</title>
-    <link href="http://yoursite.com/2020/02/2020downloadgithubfile/"/>
-    <id>http://yoursite.com/2020/02/2020downloadgithubfile/</id>
+    <title>如何从GitHub下载指定的文件</title>
+    <link href="http://yoursite.com/2020/02/downloadgithubfile/"/>
+    <id>http://yoursite.com/2020/02/downloadgithubfile/</id>
     <published>2020-02-27T12:39:46.000Z</published>
     <updated>2020-02-27T12:39:46.000Z</updated>
     
@@ -529,9 +529,9 @@
       <category term="google" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%8E%A8%E8%8D%90%E4%B8%8E%E5%88%86%E4%BA%AB/google/"/>
     
     
-      <category term="vps" scheme="http://yoursite.com/tags/vps/"/>
-    
       <category term="YouTube" scheme="http://yoursite.com/tags/YouTube/"/>
+    
+      <category term="vps" scheme="http://yoursite.com/tags/vps/"/>
     
       <category term="vpn" scheme="http://yoursite.com/tags/vpn/"/>
     
@@ -541,8 +541,8 @@
   
   <entry>
     <title>Why Google Cloud Platform?</title>
-    <link href="http://yoursite.com/2018/01/2018why-google-cloud-platform/"/>
-    <id>http://yoursite.com/2018/01/2018why-google-cloud-platform/</id>
+    <link href="http://yoursite.com/2018/01/why-google-cloud-platform/"/>
+    <id>http://yoursite.com/2018/01/why-google-cloud-platform/</id>
     <published>2018-01-02T14:59:00.000Z</published>
     <updated>2018-01-02T14:59:00.000Z</updated>
     
