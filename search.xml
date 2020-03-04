@@ -14,6 +14,18 @@
 ]]></content>
   </entry>
   <entry>
+    <title>html插入语句基本用法</title>
+    <url>/2020/03/htmlusing/</url>
+    <content><![CDATA[<p>插入本地图片<br>本地图片统一放在source/images文件夹中<br>例如: source/images/test.jpg</p>
+<pre><code>![](/images/test.jpg)
+&lt;img src=&quot;/images/test.jpg&quot;&gt;</code></pre><p>插入网络图片</p>
+<pre><code>![](网络图片地址)
+&lt;img src=&quot;网络图片地址&quot;&gt;</code></pre><p>插入网址链接</p>
+<pre><code>[](https://google.com)
+&lt;a href=&quot;https://jianhuabao.info&quot;&gt;jianhua&lt;/a&gt;</code></pre><p>插入代码块<br>连续插入代码,我们需要连续输入三个符号 ```,后面可以跟上语言种类如java,然后代码块输入完毕,换行,在输入三个波浪键表示代码块结束</p>
+]]></content>
+  </entry>
+  <entry>
     <title>老姆刚刚发了Godzilla (Lyric Video)</title>
     <url>/2020/03/Godzilla/</url>
     <content><![CDATA[<h1 id="Eminem-Godzilla-Lyric-Video-ft-Juice-WRLD"><a href="#Eminem-Godzilla-Lyric-Video-ft-Juice-WRLD" class="headerlink" title="Eminem - Godzilla (Lyric Video) ft. Juice WRLD"></a>Eminem - Godzilla (Lyric Video) ft. Juice WRLD</h1><ul>
