@@ -21,26 +21,24 @@
   </script>
 
 
-  <meta name="description" content="25.夺宝奇兵 ◎译　　名　夺宝奇兵：法柜奇兵◎片　　名　Raiders Of The Lost Ark◎年　　代　1981◎国　　家　美国◎类　　别　动作&#x2F;冒险◎语　　言　英语◎字　　幕　中英双字◎IMDB评分  8.7&#x2F;10 (139,520 votes)◎IMDB链接  http:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt0082971◎文件格式　HDTV-RMVB◎视频尺寸　1024">
+  <meta name="description" content="两个问题：1.Gitlab搭建好之后，不能通过http:&#x2F;&#x2F;localhost或者http:&#x2F;&#x2F;127.0.0.1访问Gitlab的web管理端页面。 2.自定义Gitlab域名，如gitlab.abc.com 针对第一个问题，查看80端口是否被占用，我遇到的问题，就是80端口被apache给暂用了。针对此问题，直接停用apache服务，或者修改apache的默认端口。 然后重启gitlab就可以">
 <meta property="og:type" content="article">
-<meta property="og:title" content="imdb.25">
-<meta property="og:url" content="http://yoursite.com/2017/06/2017imdb-25/">
+<meta property="og:title" content="解决在Windows下搭建Gitlab服务器不能访问Gitlab的web管理页面的问题">
+<meta property="og:url" content="http://yoursite.com/2020/03/gitlabweb/">
 <meta property="og:site_name" content="BE-HUMBLE">
-<meta property="og:description" content="25.夺宝奇兵 ◎译　　名　夺宝奇兵：法柜奇兵◎片　　名　Raiders Of The Lost Ark◎年　　代　1981◎国　　家　美国◎类　　别　动作&#x2F;冒险◎语　　言　英语◎字　　幕　中英双字◎IMDB评分  8.7&#x2F;10 (139,520 votes)◎IMDB链接  http:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt0082971◎文件格式　HDTV-RMVB◎视频尺寸　1024">
+<meta property="og:description" content="两个问题：1.Gitlab搭建好之后，不能通过http:&#x2F;&#x2F;localhost或者http:&#x2F;&#x2F;127.0.0.1访问Gitlab的web管理端页面。 2.自定义Gitlab域名，如gitlab.abc.com 针对第一个问题，查看80端口是否被占用，我遇到的问题，就是80端口被apache给暂用了。针对此问题，直接停用apache服务，或者修改apache的默认端口。 然后重启gitlab就可以">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://joshuabaoblog.files.wordpress.com/2017/06/b6c20-hj0onigmqi_1148432293.jpg">
-<meta property="article:published_time" content="2017-06-25T05:53:00.000Z">
-<meta property="article:modified_time" content="2017-06-25T05:53:00.000Z">
+<meta property="article:published_time" content="2020-03-12T13:52:42.000Z">
+<meta property="article:modified_time" content="2020-03-12T13:52:42.000Z">
 <meta property="article:author" content="JIANHUA">
-<meta property="article:tag" content="电影">
-<meta property="article:tag" content="电影下载">
-<meta property="article:tag" content="冒险">
-<meta property="article:tag" content="动作">
-<meta property="article:tag" content="史蒂文·斯皮尔伯格">
+<meta property="article:tag" content="jianhua">
+<meta property="article:tag" content="jianhuabao">
+<meta property="article:tag" content="joshuabao">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="idea">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://joshuabaoblog.files.wordpress.com/2017/06/b6c20-hj0onigmqi_1148432293.jpg">
 
-<link rel="canonical" href="http://yoursite.com/2017/06/2017imdb-25/">
+<link rel="canonical" href="http://yoursite.com/2020/03/gitlabweb/">
 
 
 <script id="page-configurations">
@@ -52,7 +50,7 @@
   };
 </script>
 
-  <title>imdb.25 | BE-HUMBLE
+  <title>解决在Windows下搭建Gitlab服务器不能访问Gitlab的web管理页面的问题 | BE-HUMBLE
   </title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159669438-1"></script>
@@ -237,17 +235,17 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<h1 class="post-title" itemprop="name headline">imdb.25
+<h1 class="post-title" itemprop="name headline">解决在Windows下搭建Gitlab服务器不能访问Gitlab的web管理页面的问题
 </h1>
 
 <div class="post-meta">
   
   <ul class="breadcrumb">
           
-            <li><a href="/2017/">2017</a></li>
-            <li><a href="/2017/06/">06</a></li>
-            <li><a href="/2017/06/2017imdb-25/">2017IMDB-25</a></li>
-            <li><a href="/2017/06/2017imdb-25//"></a></li>
+            <li><a href="/2020/">2020</a></li>
+            <li><a href="/2020/03/">03</a></li>
+            <li><a href="/2020/03/gitlabweb/">GITLABWEB</a></li>
+            <li><a href="/2020/03/gitlabweb//"></a></li>
   </ul>
 
 </div>
@@ -258,14 +256,16 @@
       
       
       <div class="post-body">
-          <h2 id="25-夺宝奇兵"><a href="#25-夺宝奇兵" class="headerlink" title="25.夺宝奇兵"></a>25.夺宝奇兵</h2><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/b6c20-hj0onigmqi_1148432293.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/b6c20-hj0onigmqi_1148432293.jpg" alt=""></a></p>
-<p>◎译　　名　夺宝奇兵：法柜奇兵<br>◎片　　名　Raiders Of The Lost Ark<br>◎年　　代　1981<br>◎国　　家　美国<br>◎类　　别　动作/冒险<br>◎语　　言　英语<br>◎字　　幕　中英双字<br>◎IMDB评分  8.7/10 (139,520 votes)<br>◎IMDB链接  <a href="http://www.imdb.com/title/tt0082971">http://www.imdb.com/title/tt0082971</a><br>◎文件格式　HDTV-RMVB<br>◎视频尺寸　1024 x 560<br>◎文件大小　2CD<br>◎片　　长　115 Min<br>◎导　　演　史蒂文·斯皮尔伯格 Steven Spielberg<br>◎主　　演　哈里森·福特 Harrison Ford …. Indy<br>　　　　　　凯伦·阿兰 Karen Allen …. Marion Ravenwood<br>　　　　　　阿尔弗雷德·莫利纳 Alfred Molina …. Satipo<br>　　　　　　德诺姆·埃利奥特 Denholm Elliott …. Dr. Marcus Brody<br>　　　　　　安东尼·希金斯 Anthony Higgins …. Gobler<br>　　　　　　Patrick Durkin …. Australian Climber<br>　　　　　　Don Fellows …. Col. Musgrove<br>　　　　　　Christopher Frederick …. Otto<br>　　　　　　保罗·弗里曼 Paul Freeman …. Dr. Rene Belloq<br>　　　　　　Romo Gorrara …. German Soldier (uncredited)<br>　　　　　　Ted Grossman …. Peruvian Porter  </p>
-<p>◎简　　介　  </p>
-<pre><code>印地安纳·琼斯是一所大学的考古学教授，一天，美国军方找到他，他们破译了一份关于“法柜”的德国电报，“法柜”是用来装上帝赐给犹太人“十戒”原文石板的。美国军方派琼斯去开罗先下手为强，他用唯一的测量工具——一个装有红水晶的铜帽和玛润一起找到了“法柜”。一天晚上，琼斯在当地埃及朋友的帮助下，把“法柜”挖掘出来，不幸的是他们被法国考古学家贝勒克发现，德国人抢走了“法柜”，在一座小岛上，“法柜”终于被打开了，这些德国人看到了他们自己不应该看的东西，于是上帝震怒了！“死亡之神”从“法柜”出来，把所有在场的德国人及贝勒克都击杀了！幸好，琼斯和玛润在一起，紧闭双眼。后来，琼斯把“法柜”交给了美国军方，“法柜”得到了妥善的保存.  </code></pre><p><strong>【下载地址】</strong><br>CD1  </p>
-<p><a href="//QUFmdHA6Ly9keWdvZDE6ZHlnb2QxQGQwNjIuZHlnb2QuY246MjA4Ny/lpLrlrp3lpYflhbUx77ya5rOV5p+c5aWH5YW1LlvkuK3oi7Hlj4zlrZcuMTAyNOWIhui+qOeOh10vW+eUteW9seWkqeWggnd3dy5keWdvZC5jbuWPkeW4g10u5aS65a6d5aWH5YW1MS1jZDEucm12Ylpa" title="迅雷专用高速下载">ftp://dygod1:dygod1@d062.dygod.cn:2087/夺宝奇兵1：法柜奇兵.[中英双字.1024分辨率]/[电影天堂www.dygod.cn发布].夺宝奇兵1-cd1.rmvb</a>  </p>
-<p>CD2  </p>
-<p><a href="ftp://dygod2:dygod2@d062.dygod.cn:2087/夺宝奇兵1：法柜奇兵.\[中英双字.1024分辨率\]/\[电影天堂www.dygod.cn发布\].夺宝奇兵1-cd2.rmvb">ftp://dygod2:dygod2@d062.dygod.cn:2087/夺宝奇兵1：法柜奇兵.\[中英双字.1024分辨率\]/\[电影天堂www.dygod.cn发布\].夺宝奇兵1-cd2.rmvb</a></p>
-
+          <h1 id="两个问题："><a href="#两个问题：" class="headerlink" title="两个问题："></a>两个问题：</h1><p>1.Gitlab搭建好之后，不能通过<a href="http://localhost或者http://127.0.0.1访问Gitlab的web管理端页面。">http://localhost或者http://127.0.0.1访问Gitlab的web管理端页面。</a></p>
+<p>2.自定义Gitlab域名，如gitlab.abc.com</p>
+<p>针对第一个问题，查看80端口是否被占用，我遇到的问题，就是80端口被apache给暂用了。针对此问题，直接停用apache服务，或者修改apache的默认端口。</p>
+<p>然后重启gitlab就可以访问。</p>
+<p>第二个问题，需要修改两个文件，分别是：/etc/gitlab/gitlab.rb文件和/var/opt/gitlab/gitlab-rails/etc/gitlab.yml</p>
+<p>首先，设置hosts文件映射：127.0.0.1 gitlab.abc.com</p>
+<h2 id="然后，修改-etc-gitlab-gitlab-rb，此文件需要修改成external-‘http-gitlab-abc-com-39"><a href="#然后，修改-etc-gitlab-gitlab-rb，此文件需要修改成external-‘http-gitlab-abc-com-39" class="headerlink" title="然后，修改 /etc/gitlab/gitlab.rb，此文件需要修改成external ‘http://gitlab.abc.com&#39;"></a>然后，修改 /etc/gitlab/gitlab.rb，此文件需要修改成external ‘<a href="http://gitlab.abc.com&#39;">http://gitlab.abc.com&#39;</a></h2><p>————————————————</p>
+<p>/var/opt/gitlab/gitlab-rails/etc/gitlab.yml，此文件，找到## Web server settings</p>
+<p>将host的值改成：gitlab.abc.com</p>
+<h2 id="最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。"><a href="#最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。" class="headerlink" title="最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。"></a>最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。</h2>
       </div>
       
       
@@ -274,10 +274,10 @@
     
   <ul class="breadcrumb">
           
-            <li><a href="/2017/">2017</a></li>
-            <li><a href="/2017/06/">06</a></li>
-            <li><a href="/2017/06/2017imdb-25/">2017IMDB-25</a></li>
-            <li><a href="/2017/06/2017imdb-25//"></a></li>
+            <li><a href="/2020/">2020</a></li>
+            <li><a href="/2020/03/">03</a></li>
+            <li><a href="/2020/03/gitlabweb/">GITLABWEB</a></li>
+            <li><a href="/2020/03/gitlabweb//"></a></li>
   </ul>
 
     
@@ -345,7 +345,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#25-夺宝奇兵"><span class="nav-number">1.</span> <span class="nav-text">25.夺宝奇兵</span></a></li></ol></div> 
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#两个问题："><span class="nav-number">1.</span> <span class="nav-text">两个问题：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#然后，修改-etc-gitlab-gitlab-rb，此文件需要修改成external-‘http-gitlab-abc-com-39"><span class="nav-number">1.1.</span> <span class="nav-text">然后，修改 &#x2F;etc&#x2F;gitlab&#x2F;gitlab.rb，此文件需要修改成external ‘http:&#x2F;&#x2F;gitlab.abc.com&#39;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。"><span class="nav-number">1.2.</span> <span class="nav-text">最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。</span></a></li></ol></li></ol></div> 
       </div>
       <!--/noindex-->
 

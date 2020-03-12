@@ -43,6 +43,29 @@
   </entry>
   
   <entry>
+    <title>解决在Windows下搭建Gitlab服务器不能访问Gitlab的web管理页面的问题</title>
+    <link href="http://yoursite.com/2020/03/gitlabweb/"/>
+    <id>http://yoursite.com/2020/03/gitlabweb/</id>
+    <published>2020-03-12T13:52:42.000Z</published>
+    <updated>2020-03-12T13:52:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;两个问题：&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>gitlab命名仓库要点</title>
     <link href="http://yoursite.com/2020/03/gitlabpage/"/>
     <id>http://yoursite.com/2020/03/gitlabpage/</id>
@@ -114,27 +137,6 @@
     
     
       <category term="日志" scheme="http://yoursite.com/tags/%E6%97%A5%E5%BF%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Youtube之最</title>
-    <link href="http://yoursite.com/2020/03/bestofyoutube/"/>
-    <id>http://yoursite.com/2020/03/bestofyoutube/</id>
-    <published>2020-03-01T15:17:47.000Z</published>
-    <updated>2020-03-01T15:17:47.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;跑酷最牛逼的-https-www-youtube-com-user-StorrorBlog-featured-STORROR&quot;&gt;&lt;a href=&quot;#跑酷最牛逼的-https-www-youtube-com-user-StorrorBlog-featured-STORROR&quot; class=&quot;headerlink&quot; title=&quot;跑酷最牛逼的    https://www.youtube.com/user/StorrorBlog/featured                STORROR&quot;&gt;&lt;/a&gt;跑酷最牛逼的    &lt;a href=&quot;https://www.youtube.com/user/StorrorBlog/featured&quot;&gt;https://www.youtube.com/user/StorrorBlog/featured&lt;/a&gt;                STORROR&lt;/h1&gt; &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GcKkiRl9_qE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;最火的游戏主播-https-www-youtube-com-channel-UCAW-NpUFkMyCNrvRSSGIvDQ&quot;&gt;&lt;a href=&quot;#最火的游戏主播-https-www-youtube-com-channel-UCAW-NpUFkMyCNrvRSSGIvDQ&quot; class=&quot;headerlink&quot; title=&quot;最火的游戏主播      https://www.youtube.com/channel/UCAW-NpUFkMyCNrvRSSGIvDQ&quot;&gt;&lt;/a&gt;最火的游戏主播      &lt;a href=&quot;https://www.youtube.com/channel/UCAW-NpUFkMyCNrvRSSGIvDQ&quot;&gt;https://www.youtube.com/channel/UCAW-NpUFkMyCNrvRSSGIvDQ&lt;/a&gt;&lt;/h2&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="Youtube" scheme="http://yoursite.com/tags/Youtube/"/>
     
   </entry>
   
