@@ -14,6 +14,12 @@
 ]]></content>
   </entry>
   <entry>
+    <title>gitlab命名仓库要点</title>
+    <url>/2020/03/gitlabpage/</url>
+    <content><![CDATA[<p>  Gitlab支持project page和user page两种page，只需要创建对应的仓库即可。如果你要创建一个project page，假设project name为blog，那么你的project URL为：<a href="https://gitlab.com/username/blog/">https://gitlab.com/username/blog/</a> 。一旦这个project启用了GitLab pages，并构建了站点，站点访问url为：<a href="https://uesrname.gitlab.io/blog/">https://uesrname.gitlab.io/blog/</a> 。如果你要创建一个user page，假设此时project name为john.gitlab.io(john为你的Gitlab账号名)，则你的project URL为：<a href="https://gitlab.com/john/john.gitlab.io">https://gitlab.com/john/john.gitlab.io</a> 。一旦这个project启用了GitLab pages，并构建了站点，站点访问url为：<a href="https://john.gitlab.io">https://john.gitlab.io</a> 。<br><img src="https://miro.medium.com/max/4010/1*j9hbjszo0zXS32yhvSkdAQ.jpeg" alt="gitlab"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>html插入语句基本用法</title>
     <url>/2020/03/htmlusing/</url>
     <content><![CDATA[<p>插入本地图片<br>本地图片统一放在source/images文件夹中<br>例如: source/images/test.jpg</p>
