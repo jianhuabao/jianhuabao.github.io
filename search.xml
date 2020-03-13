@@ -14,6 +14,25 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Gitlab pages仓库推送部署命令</title>
+    <url>/2020/03/gitlabcommand/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;init blog&quot;</span><br><span class="line">git remote add origin git@gitlab.com:username&#x2F;username.gitlab.io.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>将本地项目添加至远程仓库</p>
+<p>$ cd my-blog  #打开项目目录<br>$ git init  #设置项目目录为git仓库<br>$ git remote add origin <a href="mailto:git@gitlab.com">git@gitlab.com</a>:user/blog.git  #连接远程仓库<br>$ git add .  #添加文件<br>$ git commit -m ‘msg’  #添加注释并合并至本地git仓库<br>$ git push  #提交至远程仓库</p>
+<h1 id="Generating-a-new-SSH-key-pair"><a href="#Generating-a-new-SSH-key-pair" class="headerlink" title="Generating a new SSH key pair"></a>Generating a new SSH key pair</h1><p>Before creating an SSH key pair, make sure to understand the<br>different types of keys.<br>To create a new SSH key pair:</p>
+<p>Open a terminal on Linux or macOS, or Git Bash / WSL on Windows.</p>
+<p>Generate a new ED25519 SSH key pair:<br>ssh-keygen -t ed25519 -C “<a href="mailto:email@example.com">email@example.com</a>“<br>Or, if you want to use RSA:<br>ssh-keygen -t rsa -b 4096 -C “<a href="mailto:email@example.com">email@example.com</a>“</p>
+<blockquote>
+<p>If, in any case, you want to add or change the password of your SSH key pair,<br>you can use the -p flag:<br>ssh-keygen -p -f <keyname></p>
+</blockquote>
+<h1 id="Adding-an-SSH-key-to-your-GitLab-account"><a href="#Adding-an-SSH-key-to-your-GitLab-account" class="headerlink" title="Adding an SSH key to your GitLab account"></a>Adding an SSH key to your GitLab account</h1><p>Copy your public SSH key to the clipboard by using one of the commands below<br>depending on your Operating System:<br>macOS:<br>pbcopy &lt; ~/.ssh/id_ed25519.pub<br>WSL / GNU/Linux (requires the xclip package):<br>xclip -sel clip &lt; ~/.ssh/id_ed25519.pub<br>Git Bash on Windows:<br>cat ~/.ssh/id_ed25519.pub | clip</p>
+<h1 id="Testing-that-everything-is-set-up-correctly"><a href="#Testing-that-everything-is-set-up-correctly" class="headerlink" title="Testing that everything is set up correctly"></a>Testing that everything is set up correctly</h1><p>To test whether your SSH key was added correctly, run the following command in<br>your terminal (replacing gitlab.com with your GitLab’s instance domain):<br>ssh -T <a href="mailto:git@gitlab.com">git@gitlab.com</a><br>The first time you connect to GitLab via SSH, you will be asked to verify the<br>authenticity of the GitLab host you are connecting to.<br>For example, when connecting to GitLab.com, answer yes to add GitLab.com to<br>the list of trusted hosts:<br>The authenticity of host ‘gitlab.com (35.231.145.151)’ can’t be established.<br>ECDSA key fingerprint is SHA256:HbW3g8zUjNSksFbqTiUWPWg2Bq1x8xdGUrliXFzSnUw.<br>Are you sure you want to continue connecting (yes/no)? yes<br>Warning: Permanently added ‘gitlab.com’ (ECDSA) to the list of known hosts.</p>
+]]></content>
+      <tags>
+        <tag>gitlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解决在Windows下搭建Gitlab服务器不能访问Gitlab的web管理页面的问题</title>
     <url>/2020/03/gitlabweb/</url>
     <content><![CDATA[<h1 id="两个问题："><a href="#两个问题：" class="headerlink" title="两个问题："></a>两个问题：</h1><p>1.Gitlab搭建好之后，不能通过<a href="http://localhost或者http://127.0.0.1访问Gitlab的web管理端页面。">http://localhost或者http://127.0.0.1访问Gitlab的web管理端页面。</a></p>
@@ -42,7 +61,7 @@
 <pre><code>![](网络图片地址)
 &lt;img src=&quot;网络图片地址&quot;&gt;</code></pre><p>插入网址链接</p>
 <pre><code>[](https://google.com)
-&lt;a href=&quot;https://jianhuabao.info&quot;&gt;jianhua&lt;/a&gt;</code></pre><p>插入代码块<br>连续插入代码,我们需要连续输入三个符号 ```,后面可以跟上语言种类如java,然后代码块输入完毕,换行,在输入三个波浪键表示代码块结束</p>
+&lt;a href=&quot;https://jianhuabao.info&quot;&gt;jianhua&lt;/a&gt;</code></pre><p>插入代码块<br>连续插入代码,我们需要连续输入三个 <code>,后面可以跟上语言种类如java,换，后代码块输入完毕,换行,在输入三个波浪键</code>表示代码块结束</p>
 ]]></content>
   </entry>
   <entry>
