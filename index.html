@@ -346,6 +346,7 @@
 <p>For both.</p>
 <p>For root domains<br>Root domains (example.com) require:</p>
 <p>A DNS A record pointing your domain to the Pages server.<br>A TXT record to verify your domain’s ownership.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">一个记录：</span><br><span class="line">姓名 ：@</span><br><span class="line"></span><br><span class="line">价值 ：35.185.44.232</span><br><span class="line"></span><br><span class="line">CNAME：</span><br><span class="line">名称 ：example.com</span><br><span class="line"></span><br><span class="line">值 ：username.gitlab.io</span><br><span class="line"></span><br><span class="line">TXT记录：</span><br><span class="line">姓名 ：@</span><br><span class="line"></span><br><span class="line">价值 ：gitlab-pages-verification-code &#x3D; 00112233445566778899aabbccddeeff</span><br><span class="line"></span><br><span class="line">通过Gitlab验证，还有：</span><br><span class="line"></span><br><span class="line">dig -t txt +short example.com</span><br></pre></td></tr></table></figure>
 <p>From<br>DNS Record<br>To</p>
 <p>example.com<br>A<br>35.185.44.232</p>
 <p>_gitlab-pages-verification-code.example.com<br>TXT<br>gitlab-pages-verification-code=00112233445566778899aabbccddeeff</p>
@@ -371,7 +372,7 @@
 <p>_gitlab-pages-verification-code.<a href="http://www.example.com">www.example.com</a><br>TXT<br>gitlab-pages-verification-code=00112233445566778899aabbccddeeff</p>
 <h2 id="删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。"><a href="#删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。" class="headerlink" title="删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。"></a>删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。</h2><p>如果使用DNS A记录，则可以将TXT记录直接放在域下。如果使用DNS CNAME记录，则两种记录类型将不会共存，因此您需要将TXT记录放在其自己的特殊子域中。[ 来源 ]</p>
 <p>所以你的最终配置是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A Record        @   52.167.214.135</span><br><span class="line">TXT Record      @   gitlab-pages-verification-code&#x3D;XXXXXX</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A Record        @   35.185.44.232</span><br><span class="line">TXT Record      @   gitlab-pages-verification-code&#x3D;XXXXXX</span><br></pre></td></tr></table></figure>
 
 
 
