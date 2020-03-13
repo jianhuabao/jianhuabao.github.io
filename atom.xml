@@ -43,6 +43,31 @@
   </entry>
   
   <entry>
+    <title>Custom domains and SSL/TLS Certificatesgitlab自定义域名验证系列问题解决</title>
+    <link href="http://yoursite.com/2020/03/gitlabdomains/"/>
+    <id>http://yoursite.com/2020/03/gitlabdomains/</id>
+    <published>2020-03-13T14:48:05.000Z</published>
+    <updated>2020-03-13T14:48:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Gitlab pages仓库推送部署命令</title>
     <link href="http://yoursite.com/2020/03/gitlabcommand/"/>
     <id>http://yoursite.com/2020/03/gitlabcommand/</id>
@@ -114,29 +139,6 @@
     
     
       <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html插入语句基本用法</title>
-    <link href="http://yoursite.com/2020/03/htmlusing/"/>
-    <id>http://yoursite.com/2020/03/htmlusing/</id>
-    <published>2020-03-04T06:25:11.000Z</published>
-    <updated>2020-03-04T06:25:11.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;插入本地图片&lt;br&gt;本地图片统一放在source/im
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
