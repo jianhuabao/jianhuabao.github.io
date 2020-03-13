@@ -45,12 +45,18 @@
 <p>/var/opt/gitlab/gitlab-rails/etc/gitlab.yml，此文件，找到## Web server settings</p>
 <p>将host的值改成：gitlab.abc.com</p>
 <h2 id="最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。"><a href="#最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。" class="headerlink" title="最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。"></a>最后gitlab的web管理页面就可以正常访问，并通过自定义域名访问了。</h2>]]></content>
+      <tags>
+        <tag>gitlab</tag>
+      </tags>
   </entry>
   <entry>
     <title>gitlab命名仓库要点</title>
     <url>/2020/03/gitlabpage/</url>
     <content><![CDATA[<p>  Gitlab支持project page和user page两种page，只需要创建对应的仓库即可。如果你要创建一个project page，假设project name为blog，那么你的project URL为：<a href="https://gitlab.com/username/blog/">https://gitlab.com/username/blog/</a> 。一旦这个project启用了GitLab pages，并构建了站点，站点访问url为：<a href="https://uesrname.gitlab.io/blog/">https://uesrname.gitlab.io/blog/</a> 。如果你要创建一个user page，假设此时project name为john.gitlab.io(john为你的Gitlab账号名)，则你的project URL为：<a href="https://gitlab.com/john/john.gitlab.io">https://gitlab.com/john/john.gitlab.io</a> 。一旦这个project启用了GitLab pages，并构建了站点，站点访问url为：<a href="https://john.gitlab.io">https://john.gitlab.io</a> 。<br><img src="https://miro.medium.com/max/4010/1*j9hbjszo0zXS32yhvSkdAQ.jpeg" alt="gitlab"></p>
 ]]></content>
+      <tags>
+        <tag>gitlab</tag>
+      </tags>
   </entry>
   <entry>
     <title>html插入语句基本用法</title>

@@ -88,6 +88,8 @@
     
     
     
+      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
+    
   </entry>
   
   <entry>
@@ -110,6 +112,8 @@
     </summary>
     
     
+    
+      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
     
   </entry>
   
