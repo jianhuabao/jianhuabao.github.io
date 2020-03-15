@@ -17,14 +17,14 @@
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"post","padding":12,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"jianhuabao.info","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"post","padding":12,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
 
   <meta name="description" content="WireGuard installerEasily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP. RequirementsSupported distributions:  Ubuntu Debian Fedora Centos Arch LinuxI recommend these">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程">
-<meta property="og:url" content="http://yoursite.com/2020/03/wireguard1/">
+<meta property="og:url" content="https://jianhuabao.info/2020/03/wireguard1/">
 <meta property="og:site_name" content="BE-HUMBLE">
 <meta property="og:description" content="WireGuard installerEasily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP. RequirementsSupported distributions:  Ubuntu Debian Fedora Centos Arch LinuxI recommend these">
 <meta property="og:locale" content="en_US">
@@ -37,7 +37,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://abopen.com/app/uploads/2018/04/debian-logo.jpg">
 
-<link rel="canonical" href="http://yoursite.com/2020/03/wireguard1/">
+<link rel="canonical" href="https://jianhuabao.info/2020/03/wireguard1/">
 
 
 <script id="page-configurations">
@@ -266,12 +266,14 @@
 
 </li>
 </ul>
-<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><p>Worldwide locations, IPv6 support, starting at $3.50/month</p>
-<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><p><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Worldwide locations, IPv6 support, starting at $5/month<br>Usage<br>First, get the script and make it executable :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
-<p>Then run it :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
-<p>It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</p>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
+</ul>
+<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Usage<br>First, get the script and make it executable :<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
+Then run it :<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
+It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</li>
+</ul>
 <p>Contributions are welcome!</p>
 
       </div>

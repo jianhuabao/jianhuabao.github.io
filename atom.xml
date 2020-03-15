@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>BE-HUMBLE</title>
-  <icon>http://yoursite.com/icon.png</icon>
+  <icon>https://jianhuabao.info/icon.png</icon>
   <subtitle>Highlight Tips Always</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://jianhuabao.info/"/>
   <updated>2021-12-31T17:00:59.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://jianhuabao.info/</id>
   
   <author>
     <name>JIANHUA</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Welcome guys and hope you enjoy here</title>
-    <link href="http://yoursite.com/2022/01/hello-world/"/>
-    <id>http://yoursite.com/2022/01/hello-world/</id>
+    <link href="https://jianhuabao.info/2022/01/hello-world/"/>
+    <id>https://jianhuabao.info/2022/01/hello-world/</id>
     <published>2021-12-31T17:00:59.000Z</published>
     <updated>2021-12-31T17:00:59.000Z</updated>
     
@@ -44,14 +44,17 @@
   
   <entry>
     <title>适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程</title>
-    <link href="http://yoursite.com/2020/03/wireguard2/"/>
-    <id>http://yoursite.com/2020/03/wireguard2/</id>
+    <link href="https://jianhuabao.info/2020/03/wireguard2/"/>
+    <id>https://jianhuabao.info/2020/03/wireguard2/</id>
     <published>2020-03-15T04:10:58.000Z</published>
     <updated>2020-03-15T04:10:58.000Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;多个客户端同时登录wire-guard-VPN代码搭建教程&quot;&gt;&lt;a href=&quot;#多个客户端同时登录wire-guard-VPN代码搭建教程&quot; class=&quot;headerlink&quot; title=&quot;多个客户端同时登录wire guard VPN代码搭建教程&quot;&gt;&lt;/a&gt;多个客户端同时登录wire guard VPN代码搭建教程&lt;/h1&gt;&lt;h2 id=&quot;服务器要求：&quot;&gt;&lt;a href=&quot;#服务器要求：&quot; class=&quot;headerlink&quot; title=&quot;服务器要求：&quot;&gt;&lt;/a&gt;服务器要求：&lt;/h2&gt;&lt;h2 id=&quot;Debian-10-Server&quot;&gt;&lt;a href=&quot;#Debian-10-Server&quot; class=&quot;headerlink&quot; title=&quot;Debian 10 Server&quot;&gt;&lt;/a&gt;Debian 10 Server&lt;/h2&gt;&lt;p&gt;I recommend these cheap cloud providers for your VPN server:&lt;/p&gt;
+      &lt;h1 id=&quot;多个客户端同时登录wire-guard-VPN代码搭建教程&quot;&gt;&lt;a href=&quot;#多个客户端同时登录wire-guard-VPN代码搭建教程&quot; class=&quot;headerlink&quot; title=&quot;多个客户端同时登录wire guard VPN代码搭建教程&quot;&gt;&lt;/a&gt;多个客户端同时登录wire guard VPN代码搭建教程&lt;/h1&gt;&lt;h2 id=&quot;服务器要求：&quot;&gt;&lt;a href=&quot;#服务器要求：&quot; class=&quot;headerlink&quot; title=&quot;服务器要求：&quot;&gt;&lt;/a&gt;服务器要求：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Debian 10 Server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I recommend these cheap cloud providers for your VPN server:&lt;/p&gt;
 &lt;h2 id=&quot;Vultr&quot;&gt;&lt;a href=&quot;#Vultr&quot; class=&quot;headerlink&quot; title=&quot;Vultr:&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.vultr.com/?ref=8493501&quot;&gt;Vultr&lt;/a&gt;:&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Worldwide locations, IPv6 support, starting at $3.50/month&lt;/li&gt;
 &lt;/ul&gt;
@@ -66,14 +69,14 @@
     
     
     
-      <category term="wire guard" scheme="http://yoursite.com/tags/wire-guard/"/>
+      <category term="wire guard" scheme="https://jianhuabao.info/tags/wire-guard/"/>
     
   </entry>
   
   <entry>
     <title>搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</title>
-    <link href="http://yoursite.com/2020/03/wireguard1/"/>
-    <id>http://yoursite.com/2020/03/wireguard1/</id>
+    <link href="https://jianhuabao.info/2020/03/wireguard1/"/>
+    <id>https://jianhuabao.info/2020/03/wireguard1/</id>
     <published>2020-03-15T04:10:42.000Z</published>
     <updated>2020-03-15T04:10:42.000Z</updated>
     
@@ -92,14 +95,14 @@
     
     
     
-      <category term="wire guard" scheme="http://yoursite.com/tags/wire-guard/"/>
+      <category term="wire guard" scheme="https://jianhuabao.info/tags/wire-guard/"/>
     
   </entry>
   
   <entry>
     <title>Custom domains and SSL/TLS Certificatesgitlab自定义域名验证系列问题解决</title>
-    <link href="http://yoursite.com/2020/03/gitlabdomains/"/>
-    <id>http://yoursite.com/2020/03/gitlabdomains/</id>
+    <link href="https://jianhuabao.info/2020/03/gitlabdomains/"/>
+    <id>https://jianhuabao.info/2020/03/gitlabdomains/</id>
     <published>2020-03-13T14:48:05.000Z</published>
     <updated>2020-03-13T14:48:05.000Z</updated>
     
@@ -117,14 +120,14 @@
     
     
     
-      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
+      <category term="gitlab" scheme="https://jianhuabao.info/tags/gitlab/"/>
     
   </entry>
   
   <entry>
     <title>Gitlab pages仓库推送部署命令</title>
-    <link href="http://yoursite.com/2020/03/gitlabcommand/"/>
-    <id>http://yoursite.com/2020/03/gitlabcommand/</id>
+    <link href="https://jianhuabao.info/2020/03/gitlabcommand/"/>
+    <id>https://jianhuabao.info/2020/03/gitlabcommand/</id>
     <published>2020-03-13T03:34:34.000Z</published>
     <updated>2020-03-13T03:34:34.000Z</updated>
     
@@ -142,7 +145,7 @@
     
     
     
-      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
+      <category term="gitlab" scheme="https://jianhuabao.info/tags/gitlab/"/>
     
   </entry>
   

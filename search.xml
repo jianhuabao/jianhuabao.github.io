@@ -16,7 +16,10 @@
   <entry>
     <title>适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程</title>
     <url>/2020/03/wireguard2/</url>
-    <content><![CDATA[<h1 id="多个客户端同时登录wire-guard-VPN代码搭建教程"><a href="#多个客户端同时登录wire-guard-VPN代码搭建教程" class="headerlink" title="多个客户端同时登录wire guard VPN代码搭建教程"></a>多个客户端同时登录wire guard VPN代码搭建教程</h1><h2 id="服务器要求："><a href="#服务器要求：" class="headerlink" title="服务器要求："></a>服务器要求：</h2><h2 id="Debian-10-Server"><a href="#Debian-10-Server" class="headerlink" title="Debian 10 Server"></a>Debian 10 Server</h2><p>I recommend these cheap cloud providers for your VPN server:</p>
+    <content><![CDATA[<h1 id="多个客户端同时登录wire-guard-VPN代码搭建教程"><a href="#多个客户端同时登录wire-guard-VPN代码搭建教程" class="headerlink" title="多个客户端同时登录wire guard VPN代码搭建教程"></a>多个客户端同时登录wire guard VPN代码搭建教程</h1><h2 id="服务器要求："><a href="#服务器要求：" class="headerlink" title="服务器要求："></a>服务器要求：</h2><ul>
+<li>Debian 10 Server</li>
+</ul>
+<p>I recommend these cheap cloud providers for your VPN server:</p>
 <h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
 <li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
 </ul>
@@ -39,23 +42,23 @@
 <p>sysctl -p<br>Install the WireGuard package and the Linux headers:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;deb http:&#x2F;&#x2F;deb.debian.org&#x2F;debian&#x2F; unstable main&quot; &gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;unstable.list</span><br><span class="line">printf &#39;Package: *\nPin: release a&#x3D;unstable\nPin-Priority: 90\n&#39; &gt; &#x2F;etc&#x2F;apt&#x2F;preferences.d&#x2F;limit-unstable</span><br><span class="line">apt update</span><br><span class="line">apt install wireguard linux-headers-$(uname -r)</span><br></pre></td></tr></table></figure>
 <p>Generate private and public keys for the server:</p>
-<p>cd /etc/wireguard<br>umask 077<br>wg genkey | tee wg0-privatekey | wg pubkey &gt; wg0-publickey</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;wireguard</span><br><span class="line">umask 077</span><br><span class="line">wg genkey | tee wg0-privatekey | wg pubkey &gt; wg0-publickey</span><br></pre></td></tr></table></figure>
+
 <p>Generate private and public keys for client1, client2, client3, and client4:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wg genkey | tee client1-privatekey | wg pubkey &gt; client1-publickey</span><br><span class="line">wg genkey | tee client2-privatekey | wg pubkey &gt; client2-publickey</span><br><span class="line">wg genkey | tee client3-privatekey | wg pubkey &gt; client3-publickey</span><br><span class="line">wg genkey | tee client4-privatekey | wg pubkey &gt; client4-publickey</span><br></pre></td></tr></table></figure>
 <p>Also generate preshared keys (PSKs) for an additional layer of encryption:</p>
-<p>wg genpsk &gt; client1-psk<br>wg genpsk &gt; client2-psk<br>wg genpsk &gt; client3-psk<br>wg genpsk &gt; client4-psk<br>Create the configuration file for the wg0 server:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wg genpsk &gt; client1-psk</span><br><span class="line">wg genpsk &gt; client2-psk</span><br><span class="line">wg genpsk &gt; client3-psk</span><br><span class="line">wg genpsk &gt; client4-psk</span><br></pre></td></tr></table></figure>
+<p>Create the configuration file for the wg0 server:</p>
 <p>vi wg0.conf<br>The configuration file for the wg0 server will contain the private key of the server, together with the public key of all four clients and the PSK for each client:</p>
-<p>[Interface]<br>Address = 10.100.0.1/24<br>SaveConfig = true<br>PrivateKey = wg0-privatekey-goes-here<br>ListenPort = 51820</p>
-<p>[Peer]<br>PublicKey = client1-publickey-goes-here<br>PresharedKey = client1-psk-goes-here<br>AllowedIPs = 10.100.0.2/32<br>PersistentKeepalive = 25</p>
-<p>[Peer]<br>PublicKey = client2-publickey-goes-here<br>PresharedKey = client2-psk-goes-here<br>AllowedIPs = 10.100.0.3/32<br>PersistentKeepalive = 25</p>
-<p>[Peer]<br>PublicKey = client3-publickey-goes-here<br>PresharedKey = client3-psk-goes-here<br>AllowedIPs = 10.100.0.4/32<br>PersistentKeepalive = 25</p>
-<p>[Peer]<br>PublicKey = client4-publickey-goes-here<br>PresharedKey = client4-psk-goes-here<br>AllowedIPs = 10.100.0.5/32<br>PersistentKeepalive = 25<br>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address &#x3D; 10.100.0.1&#x2F;24</span><br><span class="line">SaveConfig &#x3D; true</span><br><span class="line">PrivateKey &#x3D; wg0-privatekey-goes-here</span><br><span class="line">ListenPort &#x3D; 51820</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client1-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client1-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.2&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client2-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client2-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.3&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client3-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client3-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.4&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client4-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client4-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.5&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br></pre></td></tr></table></figure>
+<p>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
 <p>Enable and start the WireGuard service with the wg0.conf configuration file:</p>
 <p>systemctl enable wg-quick@wg0<br>systemctl start wg-quick@wg0<br>Check the results:</p>
-<p>wg show<br>ip addr show<br>ss -tulpn | grep 51820<br>Prepare Client Configuration Files<br>Still on the server, prepare the files for your Ubuntu, Windows, Android, and iOS Clients. Create a configuration file for the first client:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wg show</span><br><span class="line">ip addr show</span><br><span class="line">ss -tulpn | grep 51820</span><br></pre></td></tr></table></figure>
+<p>Prepare Client Configuration Files<br>Still on the server, prepare the files for your Ubuntu, Windows, Android, and iOS Clients. Create a configuration file for the first client:</p>
 <p>vi client1.conf<br>Insert contents modeled on the following. The public IP address of the server (55.66.77.88 in our example) appears as the Endpoint of the peer from the client’s point of view:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address &#x3D; 10.100.0.2&#x2F;24</span><br><span class="line">DNS &#x3D; 1.1.1.1,1.0.0.1</span><br><span class="line">PrivateKey &#x3D; client1-private-key-goes-here</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; server-wg0-public-key-goes-here</span><br><span class="line">PresharedKey &#x3D; client1-PSK-goes-here</span><br><span class="line">AllowedIPs &#x3D; 0.0.0.0&#x2F;0</span><br><span class="line">Endpoint &#x3D; 55.66.77.88:51820&#96;</span><br></pre></td></tr></table></figure>
-<p>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
+<p>Press the keys <strong>:wq</strong> on your desktop keyboard to write the file to disk and quit the editor.</p>
 <p>Repeat the process for client2.conf, client3.conf, and client4.conf.</p>
 <p>Make the configuration files readable for download:</p>
 <p>chmod go+r client*.conf<br>Your server work is complete for now. Exit your SSH session with the server:</p>
@@ -92,12 +95,14 @@
 
 </li>
 </ul>
-<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><p>Worldwide locations, IPv6 support, starting at $3.50/month</p>
-<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><p><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Worldwide locations, IPv6 support, starting at $5/month<br>Usage<br>First, get the script and make it executable :</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
-<p>Then run it :</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
-<p>It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</p>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
+</ul>
+<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Usage<br>First, get the script and make it executable :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
+Then run it :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
+It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</li>
+</ul>
 <p>Contributions are welcome!</p>
 ]]></content>
       <tags>
