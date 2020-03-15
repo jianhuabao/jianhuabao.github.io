@@ -14,6 +14,97 @@
 ]]></content>
   </entry>
   <entry>
+    <title>适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程</title>
+    <url>/2020/03/wireguard2/</url>
+    <content><![CDATA[<h1 id="多个客户端同时登录wire-guard-VPN代码搭建教程"><a href="#多个客户端同时登录wire-guard-VPN代码搭建教程" class="headerlink" title="多个客户端同时登录wire guard VPN代码搭建教程"></a>多个客户端同时登录wire guard VPN代码搭建教程</h1><h2 id="服务器要求："><a href="#服务器要求：" class="headerlink" title="服务器要求："></a>服务器要求：</h2><h2 id="Debian-10-Server"><a href="#Debian-10-Server" class="headerlink" title="Debian 10 Server"></a>Debian 10 Server</h2><p>I recommend these cheap cloud providers for your VPN server:</p>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
+</ul>
+<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a></li>
+</ul>
+<p>SSH into your server. All steps on the server are carried out as root.</p>
+<p>Update the existing packages on your server:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt upgrade</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>Install the firewall:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt install nftables</span><br><span class="line">systemctl enable nftables</span><br><span class="line">systemctl start nftables</span><br></pre></td></tr></table></figure>
+
+<p>Configure the firewall. We will accept SSH input on port 22 only from our PC IP address, which is given in the example below as 11.22.33.44. You should change 11.22.33.44 to match your own IP address. We will also accept WireGuard input on port 51820/udp, and we will masquerade the IP address of outgoing traffic.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nft add rule inet filter input ct state related,established counter accept</span><br><span class="line">nft add rule inet filter input iif lo counter accept</span><br><span class="line">nft add rule inet filter input tcp dport 22 ip saddr 11.22.33.44&#x2F;32 counter accept</span><br><span class="line">nft add rule inet filter input udp dport 51820 counter accept</span><br><span class="line">nft add rule inet filter input counter drop</span><br><span class="line">nft add table nat</span><br><span class="line">nft add chain nat prerouting &#123; type nat hook prerouting priority 0 \; &#125;</span><br><span class="line">nft add chain nat postrouting &#123; type nat hook postrouting priority 100 \; &#125;</span><br><span class="line">nft add rule nat postrouting masquerade</span><br></pre></td></tr></table></figure>
+<p>Save these firewall rules:</p>
+<p>nft list ruleset &gt; /etc/nftables.conf<br>Allow forwarding in the Linux kernel by editing the system control configuration file:</p>
+<p>vi /etc/sysctl.conf<br>Uncomment the following line:</p>
+<p>net.ipv4.ip_forward=1<br>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor. Apply the new settings by issuing the command:</p>
+<p>sysctl -p<br>Install the WireGuard package and the Linux headers:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;deb http:&#x2F;&#x2F;deb.debian.org&#x2F;debian&#x2F; unstable main&quot; &gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;unstable.list</span><br><span class="line">printf &#39;Package: *\nPin: release a&#x3D;unstable\nPin-Priority: 90\n&#39; &gt; &#x2F;etc&#x2F;apt&#x2F;preferences.d&#x2F;limit-unstable</span><br><span class="line">apt update</span><br><span class="line">apt install wireguard linux-headers-$(uname -r)</span><br></pre></td></tr></table></figure>
+<p>Generate private and public keys for the server:</p>
+<p>cd /etc/wireguard<br>umask 077<br>wg genkey | tee wg0-privatekey | wg pubkey &gt; wg0-publickey</p>
+<p>Generate private and public keys for client1, client2, client3, and client4:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wg genkey | tee client1-privatekey | wg pubkey &gt; client1-publickey</span><br><span class="line">wg genkey | tee client2-privatekey | wg pubkey &gt; client2-publickey</span><br><span class="line">wg genkey | tee client3-privatekey | wg pubkey &gt; client3-publickey</span><br><span class="line">wg genkey | tee client4-privatekey | wg pubkey &gt; client4-publickey</span><br></pre></td></tr></table></figure>
+<p>Also generate preshared keys (PSKs) for an additional layer of encryption:</p>
+<p>wg genpsk &gt; client1-psk<br>wg genpsk &gt; client2-psk<br>wg genpsk &gt; client3-psk<br>wg genpsk &gt; client4-psk<br>Create the configuration file for the wg0 server:</p>
+<p>vi wg0.conf<br>The configuration file for the wg0 server will contain the private key of the server, together with the public key of all four clients and the PSK for each client:</p>
+<p>[Interface]<br>Address = 10.100.0.1/24<br>SaveConfig = true<br>PrivateKey = wg0-privatekey-goes-here<br>ListenPort = 51820</p>
+<p>[Peer]<br>PublicKey = client1-publickey-goes-here<br>PresharedKey = client1-psk-goes-here<br>AllowedIPs = 10.100.0.2/32<br>PersistentKeepalive = 25</p>
+<p>[Peer]<br>PublicKey = client2-publickey-goes-here<br>PresharedKey = client2-psk-goes-here<br>AllowedIPs = 10.100.0.3/32<br>PersistentKeepalive = 25</p>
+<p>[Peer]<br>PublicKey = client3-publickey-goes-here<br>PresharedKey = client3-psk-goes-here<br>AllowedIPs = 10.100.0.4/32<br>PersistentKeepalive = 25</p>
+<p>[Peer]<br>PublicKey = client4-publickey-goes-here<br>PresharedKey = client4-psk-goes-here<br>AllowedIPs = 10.100.0.5/32<br>PersistentKeepalive = 25<br>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
+<p>Enable and start the WireGuard service with the wg0.conf configuration file:</p>
+<p>systemctl enable wg-quick@wg0<br>systemctl start wg-quick@wg0<br>Check the results:</p>
+<p>wg show<br>ip addr show<br>ss -tulpn | grep 51820<br>Prepare Client Configuration Files<br>Still on the server, prepare the files for your Ubuntu, Windows, Android, and iOS Clients. Create a configuration file for the first client:</p>
+<p>vi client1.conf<br>Insert contents modeled on the following. The public IP address of the server (55.66.77.88 in our example) appears as the Endpoint of the peer from the client’s point of view:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address &#x3D; 10.100.0.2&#x2F;24</span><br><span class="line">DNS &#x3D; 1.1.1.1,1.0.0.1</span><br><span class="line">PrivateKey &#x3D; client1-private-key-goes-here</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; server-wg0-public-key-goes-here</span><br><span class="line">PresharedKey &#x3D; client1-PSK-goes-here</span><br><span class="line">AllowedIPs &#x3D; 0.0.0.0&#x2F;0</span><br><span class="line">Endpoint &#x3D; 55.66.77.88:51820&#96;</span><br></pre></td></tr></table></figure>
+<p>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
+<p>Repeat the process for client2.conf, client3.conf, and client4.conf.</p>
+<p>Make the configuration files readable for download:</p>
+<p>chmod go+r client*.conf<br>Your server work is complete for now. Exit your SSH session with the server:</p>
+<p>exit<br>Download Client Configuration Files to Local PC</p>
+<hr>
+<p>On your client, download the necessary files from the server.</p>
+<p>If your PC runs Linux, you can securely download files from the server with the scp command. In the examples below, replace 55.66.77.88 with your actual server IP address:</p>
+<p>mkdir ~/Downloads/WireGuard</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client1.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client2.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client3.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client4.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br></pre></td></tr></table></figure>
+<p>If your PC runs Windows, you can securely download files from the server with the pscp utility that comes with PuTTY. In the examples below, replace 55.66.77.88 with your actual server IP address:</p>
+<p>mkdir %USERPROFILE%\Downloads\WireGuard<br>cd C:\Program Files\PuTTY</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client1.conf %USERPROFILE%\Downloads\WireGuard</span><br><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client2.conf %USERPROFILE%\Downloads\WireGuard</span><br><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client3.conf %USERPROFILE%\Downloads\WireGuard</span><br><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client4.conf %USERPROFILE%\Downloads\WireGuard</span><br></pre></td></tr></table></figure>
+<h2 id="Windows-Client在本地wire-guard程序中添加VPN配置文件"><a href="#Windows-Client在本地wire-guard程序中添加VPN配置文件" class="headerlink" title="Windows Client在本地wire guard程序中添加VPN配置文件"></a>Windows Client在本地wire guard程序中添加VPN配置文件</h2><p>Open a browser. Visit <a href="https://www.wireguard.com">https://www.wireguard.com</a>. When you get to that page, click the link marked Installation. Download the 64-bit WireGuard for Windows installer. When it has downloaded, launch the installer. If the User Account Control screen appears, click Yes.</p>
+<p>When the installation is done, WireGuard for Windows launches for the first time.</p>
+<p>Click Import tunnel(s) from file. Select your client2.conf file.</p>
+<p>After the import of client2 is complete, click Activate. A notification appears to say WireGuard activated.</p>
+<p>Open a browser. Visit <a href="https://ipchicken.com">https://ipchicken.com</a> to check that your IP address is now the IP Address of your server.</p>
+]]></content>
+      <tags>
+        <tag>wire guard</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</title>
+    <url>/2020/03/wireguard1/</url>
+    <content><![CDATA[<h1 id="WireGuard-installer"><a href="#WireGuard-installer" class="headerlink" title="WireGuard installer"></a>WireGuard installer</h1><p>Easily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP.</p>
+<p>Requirements<br>Supported distributions:</p>
+<ul>
+<li>Ubuntu</li>
+<li>Debian</li>
+<li>Fedora</li>
+<li>Centos</li>
+<li>Arch Linux<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://abopen.com/app/uploads/2018/04/debian-logo.jpg" /></a><br>I recommend these cheap cloud providers for your VPN server:<a id="more"></a>
+
+</li>
+</ul>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><p>Worldwide locations, IPv6 support, starting at $3.50/month</p>
+<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><p><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Worldwide locations, IPv6 support, starting at $5/month<br>Usage<br>First, get the script and make it executable :</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
+<p>Then run it :</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
+<p>It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</p>
+<p>Contributions are welcome!</p>
+]]></content>
+      <tags>
+        <tag>wire guard</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Custom domains and SSL/TLS Certificatesgitlab自定义域名验证系列问题解决</title>
     <url>/2020/03/gitlabdomains/</url>
     <content><![CDATA[<h1 id="Custom-domains-and-SSL-TLS-Certificates"><a href="#Custom-domains-and-SSL-TLS-Certificates" class="headerlink" title="Custom domains and SSL/TLS Certificates"></a>Custom domains and SSL/TLS Certificates</h1><p>Setting up GitLab Pages with custom domains, and adding SSL/TLS certificates to them, are optional features of GitLab Pages.<br>To use one or more custom domain names with your Pages site, you can:</p>

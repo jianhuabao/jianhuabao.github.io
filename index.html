@@ -285,6 +285,152 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/wireguard2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="JIANHUA">
+      <meta itemprop="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BE-HUMBLE">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/wireguard2/" class="post-title-link" itemprop="url">适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-15 12:10:58" itemprop="dateCreated datePublished" datetime="2020-03-15T12:10:58+08:00">2020-03-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="多个客户端同时登录wire-guard-VPN代码搭建教程"><a href="#多个客户端同时登录wire-guard-VPN代码搭建教程" class="headerlink" title="多个客户端同时登录wire guard VPN代码搭建教程"></a>多个客户端同时登录wire guard VPN代码搭建教程</h1><h2 id="服务器要求："><a href="#服务器要求：" class="headerlink" title="服务器要求："></a>服务器要求：</h2><h2 id="Debian-10-Server"><a href="#Debian-10-Server" class="headerlink" title="Debian 10 Server"></a>Debian 10 Server</h2><p>I recommend these cheap cloud providers for your VPN server:</p>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
+</ul>
+<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a></li>
+</ul>
+<p>SSH into your server. All steps on the server are carried out as root.</p>
+<p>Update the existing packages on your server:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt upgrade</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/wireguard2/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/wireguard1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="JIANHUA">
+      <meta itemprop="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BE-HUMBLE">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/wireguard1/" class="post-title-link" itemprop="url">搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-15 12:10:42" itemprop="dateCreated datePublished" datetime="2020-03-15T12:10:42+08:00">2020-03-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="WireGuard-installer"><a href="#WireGuard-installer" class="headerlink" title="WireGuard installer"></a>WireGuard installer</h1><p>Easily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP.</p>
+<p>Requirements<br>Supported distributions:</p>
+<ul>
+<li>Ubuntu</li>
+<li>Debian</li>
+<li>Fedora</li>
+<li>Centos</li>
+<li>Arch Linux<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://abopen.com/app/uploads/2018/04/debian-logo.jpg" /></a><br>I recommend these cheap cloud providers for your VPN server:
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/wireguard1/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/gitlabdomains/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -543,128 +689,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/gitlabpage/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="JIANHUA">
-      <meta itemprop="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BE-HUMBLE">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/gitlabpage/" class="post-title-link" itemprop="url">gitlab命名仓库要点</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-03-12 19:02:00" itemprop="dateCreated datePublished" datetime="2020-03-12T19:02:00+08:00">2020-03-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>  Gitlab支持project page和user page两种page，只需要创建对应的仓库即可。如果你要创建一个project page，假设project name为blog，那么你的project URL为：<a href="https://gitlab.com/username/blog/">https://gitlab.com/username/blog/</a> 。一旦这个project启用了GitLab pages，并构建了站点，站点访问url为：<a href="https://uesrname.gitlab.io/blog/">https://uesrname.gitlab.io/blog/</a> 。如果你要创建一个user page，假设此时project name为john.gitlab.io(john为你的Gitlab账号名)，则你的project URL为：<a href="https://gitlab.com/john/john.gitlab.io">https://gitlab.com/john/john.gitlab.io</a> 。一旦这个project启用了GitLab pages，并构建了站点，站点访问url为：<a href="https://john.gitlab.io">https://john.gitlab.io</a> 。<br><img src="https://miro.medium.com/max/4010/1*j9hbjszo0zXS32yhvSkdAQ.jpeg" alt="gitlab"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/htmlusing/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="JIANHUA">
-      <meta itemprop="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BE-HUMBLE">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/htmlusing/" class="post-title-link" itemprop="url">html插入语句基本用法</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-03-04 14:25:11" itemprop="dateCreated datePublished" datetime="2020-03-04T14:25:11+08:00">2020-03-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>插入本地图片<br>本地图片统一放在source/images文件夹中<br>例如: source/images/test.jpg</p>
-<pre><code>![](/images/test.jpg)
-&lt;img src=&quot;/images/test.jpg&quot;&gt;</code></pre><p>插入网络图片</p>
-<pre><code>![](网络图片地址)
-&lt;img src=&quot;网络图片地址&quot;&gt;</code></pre><p>插入网址链接</p>
-<pre><code>[](https://google.com)
-&lt;a href=&quot;https://jianhuabao.info&quot;&gt;jianhua&lt;/a&gt;</code></pre><p>插入代码块<br>连续插入代码,我们需要连续输入三个 <code>,后面可以跟上语言种类如java,换，后代码块输入完毕,换行,在输入三个波浪键</code>表示代码块结束</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -748,7 +772,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">67</span>
+          <span class="site-state-item-count">69</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -759,7 +783,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-count">103</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>

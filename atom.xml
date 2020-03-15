@@ -43,6 +43,60 @@
   </entry>
   
   <entry>
+    <title>适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程</title>
+    <link href="http://yoursite.com/2020/03/wireguard2/"/>
+    <id>http://yoursite.com/2020/03/wireguard2/</id>
+    <published>2020-03-15T04:10:58.000Z</published>
+    <updated>2020-03-15T04:10:58.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;多个客户端同时登录wire-guard-VPN代码搭建教程&quot;&gt;&lt;a href=&quot;#多个客户端同时登录wire-guard-VPN代码搭建教程&quot; class=&quot;headerlink&quot; title=&quot;多个客户端同时登录wire guard VPN代码搭建教程&quot;&gt;&lt;/a&gt;多个客户端同时登录wire guard VPN代码搭建教程&lt;/h1&gt;&lt;h2 id=&quot;服务器要求：&quot;&gt;&lt;a href=&quot;#服务器要求：&quot; class=&quot;headerlink&quot; title=&quot;服务器要求：&quot;&gt;&lt;/a&gt;服务器要求：&lt;/h2&gt;&lt;h2 id=&quot;Debian-10-Server&quot;&gt;&lt;a href=&quot;#Debian-10-Server&quot; class=&quot;headerlink&quot; title=&quot;Debian 10 Server&quot;&gt;&lt;/a&gt;Debian 10 Server&lt;/h2&gt;&lt;p&gt;I recommend these cheap cloud providers for your VPN server:&lt;/p&gt;
+&lt;h2 id=&quot;Vultr&quot;&gt;&lt;a href=&quot;#Vultr&quot; class=&quot;headerlink&quot; title=&quot;Vultr:&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.vultr.com/?ref=8493501&quot;&gt;Vultr&lt;/a&gt;:&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Worldwide locations, IPv6 support, starting at $3.50/month&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Digital-Ocean&quot;&gt;&lt;a href=&quot;#Digital-Ocean&quot; class=&quot;headerlink&quot; title=&quot;Digital Ocean:&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://m.do.co/c/8cf4fa6580e4&quot;&gt;Digital Ocean&lt;/a&gt;:&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Worldwide locations, IPv6 support, starting at $5/month&lt;br&gt;&lt;a href=&quot;https://m.do.co/c/8cf4fa6580e4&quot;&gt;&lt;img src=&quot;https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SSH into your server. All steps on the server are carried out as root.&lt;/p&gt;
+&lt;p&gt;Update the existing packages on your server:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apt upgrade&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="wire guard" scheme="http://yoursite.com/tags/wire-guard/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</title>
+    <link href="http://yoursite.com/2020/03/wireguard1/"/>
+    <id>http://yoursite.com/2020/03/wireguard1/</id>
+    <published>2020-03-15T04:10:42.000Z</published>
+    <updated>2020-03-15T04:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;WireGuard-installer&quot;&gt;&lt;a href=&quot;#WireGuard-installer&quot; class=&quot;headerlink&quot; title=&quot;WireGuard installer&quot;&gt;&lt;/a&gt;WireGuard installer&lt;/h1&gt;&lt;p&gt;Easily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP.&lt;/p&gt;
+&lt;p&gt;Requirements&lt;br&gt;Supported distributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu&lt;/li&gt;
+&lt;li&gt;Debian&lt;/li&gt;
+&lt;li&gt;Fedora&lt;/li&gt;
+&lt;li&gt;Centos&lt;/li&gt;
+&lt;li&gt;Arch Linux&lt;br&gt;&lt;a href=&quot;https://m.do.co/c/8cf4fa6580e4&quot;&gt;&lt;img src=&quot;https://abopen.com/app/uploads/2018/04/debian-logo.jpg&quot; /&gt;&lt;/a&gt;&lt;br&gt;I recommend these cheap cloud providers for your VPN server:
+    
+    </summary>
+    
+    
+    
+      <category term="wire guard" scheme="http://yoursite.com/tags/wire-guard/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Custom domains and SSL/TLS Certificatesgitlab自定义域名验证系列问题解决</title>
     <link href="http://yoursite.com/2020/03/gitlabdomains/"/>
     <id>http://yoursite.com/2020/03/gitlabdomains/</id>
@@ -81,56 +135,6 @@
         
         
           &lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决在Windows下搭建Gitlab服务器不能访问Gitlab的web管理页面的问题</title>
-    <link href="http://yoursite.com/2020/03/gitlabweb/"/>
-    <id>http://yoursite.com/2020/03/gitlabweb/</id>
-    <published>2020-03-12T13:52:42.000Z</published>
-    <updated>2020-03-12T13:52:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;两个问题：&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="gitlab" scheme="http://yoursite.com/tags/gitlab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gitlab命名仓库要点</title>
-    <link href="http://yoursite.com/2020/03/gitlabpage/"/>
-    <id>http://yoursite.com/2020/03/gitlabpage/</id>
-    <published>2020-03-12T11:02:00.000Z</published>
-    <updated>2020-03-12T11:02:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;  Gitlab支持project
         
       
     

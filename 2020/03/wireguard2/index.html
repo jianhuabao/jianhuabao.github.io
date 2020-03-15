@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/firefox.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="V8hVh0XKT6DSIzOvDPajXMNEqyTM_7jpvIhqqw0QJo4">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"post","padding":12,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+
+  <meta name="description" content="多个客户端同时登录wire guard VPN代码搭建教程服务器要求：Debian 10 ServerI recommend these cheap cloud providers for your VPN server: Vultr: Worldwide locations, IPv6 support, starting at $3.50&#x2F;month  Digital Ocean: Worldw">
+<meta property="og:type" content="article">
+<meta property="og:title" content="适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程">
+<meta property="og:url" content="http://yoursite.com/2020/03/wireguard2/">
+<meta property="og:site_name" content="BE-HUMBLE">
+<meta property="og:description" content="多个客户端同时登录wire guard VPN代码搭建教程服务器要求：Debian 10 ServerI recommend these cheap cloud providers for your VPN server: Vultr: Worldwide locations, IPv6 support, starting at $3.50&#x2F;month  Digital Ocean: Worldw">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg">
+<meta property="article:published_time" content="2020-03-15T04:10:58.000Z">
+<meta property="article:modified_time" content="2020-03-15T04:10:58.000Z">
+<meta property="article:author" content="JIANHUA">
+<meta property="article:tag" content="wire guard">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg">
+
+<link rel="canonical" href="http://yoursite.com/2020/03/wireguard2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程 | BE-HUMBLE
+  </title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159669438-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-159669438-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  
+ <link rel="alternate" href="/atom.xml" title="BE-HUMBLE" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BE-HUMBLE</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Highlight Tips Always</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-house-damage"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-youtube">
+
+    <a href="/youtube/" rel="section"><i class="fa fa-fw fa-youtube"></i>Youtube</a>
+
+  </li>
+        <li class="menu-item menu-item-movie">
+
+    <a href="/nofinskjnf/" rel="section"><i class="fa fa-fw fa-film"></i>Movie</a>
+
+  </li>
+        <li class="menu-item menu-item-hiphop">
+
+    <a href="/hiphop/" rel="section"><i class="fa fa-fw fa-spotify"></i>Hiphop</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-headphones"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-contact">
+
+    <a href="/contact-me/" rel="section"><i class="fa fa-fw fa-address-card"></i>Contact</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Sitemap</a>
+
+  </li>
+        <li class="menu-item menu-item-privacy-policy">
+
+    <a href="/privacy-policy/" rel="section"><i class="fa fa-fw fa-user-secret"></i>privacy-policy</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dingbu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="2863226391"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1 class="post-title" itemprop="name headline">适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程
+</h1>
+
+<div class="post-meta">
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/2020/">2020</a></li>
+            <li><a href="/2020/03/">03</a></li>
+            <li><a href="/2020/03/wireguard2/">WIREGUARD2</a></li>
+            <li><a href="/2020/03/wireguard2//"></a></li>
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h1 id="多个客户端同时登录wire-guard-VPN代码搭建教程"><a href="#多个客户端同时登录wire-guard-VPN代码搭建教程" class="headerlink" title="多个客户端同时登录wire guard VPN代码搭建教程"></a>多个客户端同时登录wire guard VPN代码搭建教程</h1><h2 id="服务器要求："><a href="#服务器要求：" class="headerlink" title="服务器要求："></a>服务器要求：</h2><h2 id="Debian-10-Server"><a href="#Debian-10-Server" class="headerlink" title="Debian 10 Server"></a>Debian 10 Server</h2><p>I recommend these cheap cloud providers for your VPN server:</p>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
+</ul>
+<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a></li>
+</ul>
+<p>SSH into your server. All steps on the server are carried out as root.</p>
+<p>Update the existing packages on your server:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt upgrade</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>Install the firewall:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt install nftables</span><br><span class="line">systemctl enable nftables</span><br><span class="line">systemctl start nftables</span><br></pre></td></tr></table></figure>
+
+<p>Configure the firewall. We will accept SSH input on port 22 only from our PC IP address, which is given in the example below as 11.22.33.44. You should change 11.22.33.44 to match your own IP address. We will also accept WireGuard input on port 51820/udp, and we will masquerade the IP address of outgoing traffic.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">nft add rule inet filter input ct state related,established counter accept</span><br><span class="line">nft add rule inet filter input iif lo counter accept</span><br><span class="line">nft add rule inet filter input tcp dport 22 ip saddr 11.22.33.44&#x2F;32 counter accept</span><br><span class="line">nft add rule inet filter input udp dport 51820 counter accept</span><br><span class="line">nft add rule inet filter input counter drop</span><br><span class="line">nft add table nat</span><br><span class="line">nft add chain nat prerouting &#123; type nat hook prerouting priority 0 \; &#125;</span><br><span class="line">nft add chain nat postrouting &#123; type nat hook postrouting priority 100 \; &#125;</span><br><span class="line">nft add rule nat postrouting masquerade</span><br></pre></td></tr></table></figure>
+<p>Save these firewall rules:</p>
+<p>nft list ruleset &gt; /etc/nftables.conf<br>Allow forwarding in the Linux kernel by editing the system control configuration file:</p>
+<p>vi /etc/sysctl.conf<br>Uncomment the following line:</p>
+<p>net.ipv4.ip_forward=1<br>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor. Apply the new settings by issuing the command:</p>
+<p>sysctl -p<br>Install the WireGuard package and the Linux headers:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;deb http:&#x2F;&#x2F;deb.debian.org&#x2F;debian&#x2F; unstable main&quot; &gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;unstable.list</span><br><span class="line">printf &#39;Package: *\nPin: release a&#x3D;unstable\nPin-Priority: 90\n&#39; &gt; &#x2F;etc&#x2F;apt&#x2F;preferences.d&#x2F;limit-unstable</span><br><span class="line">apt update</span><br><span class="line">apt install wireguard linux-headers-$(uname -r)</span><br></pre></td></tr></table></figure>
+<p>Generate private and public keys for the server:</p>
+<p>cd /etc/wireguard<br>umask 077<br>wg genkey | tee wg0-privatekey | wg pubkey &gt; wg0-publickey</p>
+<p>Generate private and public keys for client1, client2, client3, and client4:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wg genkey | tee client1-privatekey | wg pubkey &gt; client1-publickey</span><br><span class="line">wg genkey | tee client2-privatekey | wg pubkey &gt; client2-publickey</span><br><span class="line">wg genkey | tee client3-privatekey | wg pubkey &gt; client3-publickey</span><br><span class="line">wg genkey | tee client4-privatekey | wg pubkey &gt; client4-publickey</span><br></pre></td></tr></table></figure>
+<p>Also generate preshared keys (PSKs) for an additional layer of encryption:</p>
+<p>wg genpsk &gt; client1-psk<br>wg genpsk &gt; client2-psk<br>wg genpsk &gt; client3-psk<br>wg genpsk &gt; client4-psk<br>Create the configuration file for the wg0 server:</p>
+<p>vi wg0.conf<br>The configuration file for the wg0 server will contain the private key of the server, together with the public key of all four clients and the PSK for each client:</p>
+<p>[Interface]<br>Address = 10.100.0.1/24<br>SaveConfig = true<br>PrivateKey = wg0-privatekey-goes-here<br>ListenPort = 51820</p>
+<p>[Peer]<br>PublicKey = client1-publickey-goes-here<br>PresharedKey = client1-psk-goes-here<br>AllowedIPs = 10.100.0.2/32<br>PersistentKeepalive = 25</p>
+<p>[Peer]<br>PublicKey = client2-publickey-goes-here<br>PresharedKey = client2-psk-goes-here<br>AllowedIPs = 10.100.0.3/32<br>PersistentKeepalive = 25</p>
+<p>[Peer]<br>PublicKey = client3-publickey-goes-here<br>PresharedKey = client3-psk-goes-here<br>AllowedIPs = 10.100.0.4/32<br>PersistentKeepalive = 25</p>
+<p>[Peer]<br>PublicKey = client4-publickey-goes-here<br>PresharedKey = client4-psk-goes-here<br>AllowedIPs = 10.100.0.5/32<br>PersistentKeepalive = 25<br>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
+<p>Enable and start the WireGuard service with the wg0.conf configuration file:</p>
+<p>systemctl enable wg-quick@wg0<br>systemctl start wg-quick@wg0<br>Check the results:</p>
+<p>wg show<br>ip addr show<br>ss -tulpn | grep 51820<br>Prepare Client Configuration Files<br>Still on the server, prepare the files for your Ubuntu, Windows, Android, and iOS Clients. Create a configuration file for the first client:</p>
+<p>vi client1.conf<br>Insert contents modeled on the following. The public IP address of the server (55.66.77.88 in our example) appears as the Endpoint of the peer from the client’s point of view:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address &#x3D; 10.100.0.2&#x2F;24</span><br><span class="line">DNS &#x3D; 1.1.1.1,1.0.0.1</span><br><span class="line">PrivateKey &#x3D; client1-private-key-goes-here</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; server-wg0-public-key-goes-here</span><br><span class="line">PresharedKey &#x3D; client1-PSK-goes-here</span><br><span class="line">AllowedIPs &#x3D; 0.0.0.0&#x2F;0</span><br><span class="line">Endpoint &#x3D; 55.66.77.88:51820&#96;</span><br></pre></td></tr></table></figure>
+<p>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
+<p>Repeat the process for client2.conf, client3.conf, and client4.conf.</p>
+<p>Make the configuration files readable for download:</p>
+<p>chmod go+r client*.conf<br>Your server work is complete for now. Exit your SSH session with the server:</p>
+<p>exit<br>Download Client Configuration Files to Local PC</p>
+<hr>
+<p>On your client, download the necessary files from the server.</p>
+<p>If your PC runs Linux, you can securely download files from the server with the scp command. In the examples below, replace 55.66.77.88 with your actual server IP address:</p>
+<p>mkdir ~/Downloads/WireGuard</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client1.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client2.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client3.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br><span class="line">scp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client4.conf ~&#x2F;Downloads&#x2F;WireGuard</span><br></pre></td></tr></table></figure>
+<p>If your PC runs Windows, you can securely download files from the server with the pscp utility that comes with PuTTY. In the examples below, replace 55.66.77.88 with your actual server IP address:</p>
+<p>mkdir %USERPROFILE%\Downloads\WireGuard<br>cd C:\Program Files\PuTTY</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client1.conf %USERPROFILE%\Downloads\WireGuard</span><br><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client2.conf %USERPROFILE%\Downloads\WireGuard</span><br><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client3.conf %USERPROFILE%\Downloads\WireGuard</span><br><span class="line">pscp yourserveruserid@55.66.77.88:&#x2F;etc&#x2F;wireguard&#x2F;client4.conf %USERPROFILE%\Downloads\WireGuard</span><br></pre></td></tr></table></figure>
+<h2 id="Windows-Client在本地wire-guard程序中添加VPN配置文件"><a href="#Windows-Client在本地wire-guard程序中添加VPN配置文件" class="headerlink" title="Windows Client在本地wire guard程序中添加VPN配置文件"></a>Windows Client在本地wire guard程序中添加VPN配置文件</h2><p>Open a browser. Visit <a href="https://www.wireguard.com">https://www.wireguard.com</a>. When you get to that page, click the link marked Installation. Download the 64-bit WireGuard for Windows installer. When it has downloaded, launch the installer. If the User Account Control screen appears, click Yes.</p>
+<p>When the installation is done, WireGuard for Windows launches for the first time.</p>
+<p>Click Import tunnel(s) from file. Select your client2.conf file.</p>
+<p>After the import of client2 is complete, click Activate. A notification appears to say WireGuard activated.</p>
+<p>Open a browser. Visit <a href="https://ipchicken.com">https://ipchicken.com</a> to check that your IP address is now the IP Address of your server.</p>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/2020/">2020</a></li>
+            <li><a href="/2020/03/">03</a></li>
+            <li><a href="/2020/03/wireguard2/">WIREGUARD2</a></li>
+            <li><a href="/2020/03/wireguard2//"></a></li>
+  </ul>
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dingbu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="2863226391"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#多个客户端同时登录wire-guard-VPN代码搭建教程"><span class="nav-number">1.</span> <span class="nav-text">多个客户端同时登录wire guard VPN代码搭建教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器要求："><span class="nav-number">1.1.</span> <span class="nav-text">服务器要求：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Debian-10-Server"><span class="nav-number">1.2.</span> <span class="nav-text">Debian 10 Server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vultr"><span class="nav-number">1.3.</span> <span class="nav-text">Vultr:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Digital-Ocean"><span class="nav-number">1.4.</span> <span class="nav-text">Digital Ocean:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows-Client在本地wire-guard程序中添加VPN配置文件"><span class="nav-number">1.5.</span> <span class="nav-text">Windows Client在本地wire guard程序中添加VPN配置文件</span></a></li></ol></li></ol></div> 
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JIANHUA"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">JIANHUA</p>
+  <div class="site-description" itemprop="description">very welcome to my blog and hope you guys love and enjoy it!Thanks</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:bjh27565@gmail.com" title="E-Mail → mailto:bjh27565@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/realjianhua" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;realjianhua" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/baojianhua" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;baojianhua" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://youtube.com/c/JIANHUABAO" title="YouTube → https:&#x2F;&#x2F;youtube.com&#x2F;c&#x2F;JIANHUABAO" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/baojoshua" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;baojoshua" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:bjh27565?call|chat" title="Skype → skype:bjh27565?call|chat" rel="noopener" target="_blank"><i class="fa fa-fw fa-skype"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- celan -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="3948259110"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JIANHUA</span>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dibu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="2125925454"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='107,105,214' opacity='0.6' zIndex='-1' count='24' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = false;
+    POWERMODE.shake = true;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = false;
+    POWERMODE.shake = true;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e676c05aba776ce"></script>
+   </body>
+</html>
