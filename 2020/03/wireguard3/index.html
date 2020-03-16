@@ -21,22 +21,20 @@
   </script>
 
 
-  <meta name="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
+  <meta name="description" content="WireGuard是由Jason A. Donenfeld开发的开放源代码VPN程序及协议[2]，基于Linux内核实现，利用Curve25519进行密钥交换，ChaCha20用于加密，Poly1305用于数据认证，BLAKE2用于散列函数运算[2]，支持 IPv4和IPv6的第3层，并且可以封装v4-in-v6，反之亦然。[3]WireGuard旨在获得比IPsec和OpenVPN更好的性能[">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wireguard3">
+<meta property="og:title" content="WireGuard-what is the WireGuard?">
 <meta property="og:url" content="https://jianhuabao.info/2020/03/wireguard3/">
 <meta property="og:site_name" content="BE-HUMBLE">
-<meta property="og:description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
+<meta property="og:description" content="WireGuard是由Jason A. Donenfeld开发的开放源代码VPN程序及协议[2]，基于Linux内核实现，利用Curve25519进行密钥交换，ChaCha20用于加密，Poly1305用于数据认证，BLAKE2用于散列函数运算[2]，支持 IPv4和IPv6的第3层，并且可以封装v4-in-v6，反之亦然。[3]WireGuard旨在获得比IPsec和OpenVPN更好的性能[">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.wireguard.com/img/wireguard.svg">
 <meta property="article:published_time" content="2020-03-16T10:49:48.000Z">
 <meta property="article:modified_time" content="2020-03-16T10:49:48.000Z">
 <meta property="article:author" content="JIANHUA">
-<meta property="article:tag" content="jianhua">
-<meta property="article:tag" content="jianhuabao">
-<meta property="article:tag" content="joshuabao">
-<meta property="article:tag" content="java">
-<meta property="article:tag" content="idea">
+<meta property="article:tag" content="wireguard">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.wireguard.com/img/wireguard.svg">
 
 <link rel="canonical" href="https://jianhuabao.info/2020/03/wireguard3/">
 
@@ -50,7 +48,7 @@
   };
 </script>
 
-  <title>wireguard3 | BE-HUMBLE
+  <title>WireGuard-what is the WireGuard? | BE-HUMBLE
   </title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159669438-1"></script>
@@ -235,7 +233,7 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<h1 class="post-title" itemprop="name headline">wireguard3
+<h1 class="post-title" itemprop="name headline">WireGuard-what is the WireGuard?
 </h1>
 
 <div class="post-meta">
@@ -256,7 +254,32 @@
       
       
       <div class="post-body">
-          
+          <p> WireGuard是由Jason A. Donenfeld开发的开放源代码VPN程序及协议[2]，基于Linux内核实现，利用Curve25519进行密钥交换，ChaCha20用于加密，Poly1305用于数据认证，BLAKE2用于散列函数运算[2]，支持 IPv4和IPv6的第3层，并且可以封装v4-in-v6，反之亦然。[3]WireGuard旨在获得比IPsec和OpenVPN更好的性能[4]。</p>
+<blockquote>
+<p>WireGuard</p>
+</blockquote>
+<h1 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h1><p>WireGuard aims to provide a VPN that is both simple and highly effective. A review by ArsTechnica observed that popular VPN technologies such as OpenVPN and IPsec are often complex to set up, disconnect easily (in the absence of further configuration), take substantial time to negotiate reconnections, may use outdated ciphers, and have relatively massive code (400,000 to 600,000 lines of code for the two examples given) which makes it harder to find bugs.[5]</p>
+<p>WireGuard’s design seeks to reduce these issues, making the tunnel more secure and easier to manage by default. By using versioning of cryptography packages, it focuses on ciphers believed to be among the most secure current encryption methods, and also has a codebase of around 4000 lines, about 1% of either OpenVPN or IPsec, making security audits easier. Ars Technica reported that in testing, stable tunnels were easy to create with WireGuard, compared to alternatives, and commented that it would be “hard to go back” to long reconnection delays, compared to WireGuard’s “no nonsense” instant reconnections.[5]</p>
+<h1 id="Protocol"><a href="#Protocol" class="headerlink" title="Protocol"></a>Protocol</h1><p>WireGuard utilizes Curve25519 for key exchange, ChaCha20 for encryption, and Poly1305 for data authentication, SipHash for hashtable keys, and BLAKE2s for hashing.[3] It supports layer 3 for both IPv4 and IPv6 and can encapsulate v4-in-v6 and vice versa.[6]<br><img src="https://www.wireguard.com/img/wireguard.svg" alt=""><br>In May 2019, researchers from INRIA published a machine-checked proof of the protocol, produced using the CryptoVerif proof assistant.[7]</p>
+<a id="more"></a>
+<h1 id="History"><a href="#History" class="headerlink" title="History"></a>History</h1><p>Earliest snapshots of the code base exist from June 30, 2016. [8] Four early adopters of WireGuard were the VPN service providers Mullvad,[9] AzireVPN,[10] IVPN[11] and cryptostorm.[12] WireGuard has received donations from Mullvad, Private Internet Access, IVPN and the NLnet Foundation.[13]</p>
+<p>As of June 2018 the developers of WireGuard advise treating the code and protocol as experimental, and caution that they have not yet achieved a stable release compatible with CVE tracking of any security vulnerabilities that may be discovered.[14][15]</p>
+<p>On 9 December 2019, David Miller - primary maintainer of the Linux networking stack - accepted the WireGuard patches into the “net-next” maintainer tree, for inclusion in an upcoming kernel.[16][17][18] On 28 January 2020, Linus Torvalds merged David Miller’s net-next tree, and WireGuard enters mainline Linux kernel tree.[19]</p>
+<h1 id="Reception"><a href="#Reception" class="headerlink" title="Reception"></a>Reception</h1><p>Oregon senator Ron Wyden has recommended to the National Institute of Standards and Technology (NIST) that they evaluate WireGuard as a replacement for existing technologies like IPsec and OpenVPN.[20]</p>
+<h1 id="wireguard下载地址："><a href="#wireguard下载地址：" class="headerlink" title="wireguard下载地址："></a>wireguard下载地址：</h1><ul>
+<li><p><a href="https://www.wireguard.com/install/">https://www.wireguard.com/install/</a></p>
+</li>
+<li><p>原作者    Jason A. Donenfeld</p>
+</li>
+<li><p>开发者    Edge Security LLC.</p>
+<h1 id="wireguard视频教程："><a href="#wireguard视频教程：" class="headerlink" title="wireguard视频教程："></a>wireguard视频教程：</h1></li>
+<li><p>第一部分</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f0ddaYYCtiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</li>
+<li><p><a href="https://jianhuabao.info/2020/03/wireguardp1/">第二部分</a></p>
+</li>
+</ul>
+
       </div>
       
       
@@ -335,7 +358,8 @@
       </ul>
 
       <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel"> 
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Features"><span class="nav-number">1.</span> <span class="nav-text">Features</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Protocol"><span class="nav-number">2.</span> <span class="nav-text">Protocol</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#History"><span class="nav-number">3.</span> <span class="nav-text">History</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reception"><span class="nav-number">4.</span> <span class="nav-text">Reception</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#wireguard下载地址："><span class="nav-number">5.</span> <span class="nav-text">wireguard下载地址：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#wireguard视频教程："><span class="nav-number">6.</span> <span class="nav-text">wireguard视频教程：</span></a></li></ol></div> 
       </div>
       <!--/noindex-->
 
@@ -362,7 +386,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-count">104</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
