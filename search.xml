@@ -76,7 +76,7 @@
 <p>Click Import tunnel(s) from file. Select your client2.conf file.</p>
 <p>After the import of client2 is complete, click Activate. A notification appears to say WireGuard activated.</p>
 <p>Open a browser. Visit <a href="https://ipchicken.com">https://ipchicken.com</a> to check that your IP address is now the IP Address of your server.</p>
-]]></content>
+<h2 id="最后查看部署完成后的结果："><a href="#最后查看部署完成后的结果：" class="headerlink" title="最后查看部署完成后的结果："></a>最后查看部署完成后的结果：</h2><h2 id="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的-VPN-https-c5b9f47d-4dd9-4256-a311-669404c802d5-netrule-net-zh-refer-china-offer-id-235-amp-aff-id-4321）然后刷新网页"><a href="#若无法查看以下内嵌的YouTube视频，请先链接你已经购买的-VPN-https-c5b9f47d-4dd9-4256-a311-669404c802d5-netrule-net-zh-refer-china-offer-id-235-amp-aff-id-4321）然后刷新网页" class="headerlink" title="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的[VPN](https://c5b9f47d-4dd9-4256-a311-669404c802d5.netrule.net/zh/refer/china?offer_id=235&amp;aff_id=4321）然后刷新网页"></a>若无法查看以下内嵌的YouTube视频，请先链接你已经购买的[VPN](<a href="https://c5b9f47d-4dd9-4256-a311-669404c802d5.netrule.net/zh/refer/china?offer_id=235&amp;aff_id=4321）然后刷新网页">https://c5b9f47d-4dd9-4256-a311-669404c802d5.netrule.net/zh/refer/china?offer_id=235&amp;aff_id=4321）然后刷新网页</a></h2><iframe width="560" height="315" src="https://www.youtube.com/embed/30hEN_xf2Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
       <tags>
         <tag>wire guard</tag>
       </tags>
@@ -101,10 +101,13 @@
 <h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
 <li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Usage<br>First, get the script and make it executable :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
 Then run it :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
-It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</li>
+<blockquote>
+<p>若第一步无法执行，请先执行 apt install curl，安装curl模块<br>It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</p>
+</blockquote>
+</li>
 </ul>
-<p>Contributions are welcome!</p>
-]]></content>
+<h2 id="请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"><a href="#请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）" class="headerlink" title="请查看下面使用的digital ocean 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"></a>请查看下面使用的<a href="https://m.do.co/c/8cf4fa6580e4">digital ocean</a> 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/NuDo9GXmlZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Contributions are welcome!]]></content>
       <tags>
         <tag>wire guard</tag>
       </tags>
@@ -962,8 +965,8 @@ It will install wireguard on the server, configure, create a systemd service and
         <category>google</category>
       </categories>
       <tags>
-        <tag>vps</tag>
         <tag>YouTube</tag>
+        <tag>vps</tag>
         <tag>vpn</tag>
         <tag>gcp</tag>
       </tags>
@@ -1131,8 +1134,8 @@ It will install wireguard on the server, configure, create a systemd service and
       </categories>
       <tags>
         <tag>2000年</tag>
-        <tag>克里斯托弗•诺兰</tag>
         <tag>克里斯蒂安·贝尔</tag>
+        <tag>克里斯托弗•诺兰</tag>
         <tag>杰。休克曼</tag>
       </tags>
   </entry>
@@ -1335,8 +1338,8 @@ It will install wireguard on the server, configure, create a systemd service and
       <tags>
         <tag>剧情</tag>
         <tag>犯罪</tag>
-        <tag>法国</tag>
         <tag>爱情</tag>
+        <tag>法国</tag>
         <tag>让·雷诺</tag>
         <tag>吕克·贝松</tag>
         <tag>娜塔丽·波特曼</tag>
@@ -1388,11 +1391,11 @@ It will install wireguard on the server, configure, create a systemd service and
         <tag>动作</tag>
         <tag>剧情</tag>
         <tag>犯罪</tag>
-        <tag>悬疑</tag>
         <tag>惊悚</tag>
-        <tag>摩根•弗里曼</tag>
-        <tag>克里斯托弗•诺兰</tag>
+        <tag>悬疑</tag>
         <tag>克里斯蒂安·贝尔</tag>
+        <tag>克里斯托弗•诺兰</tag>
+        <tag>摩根•弗里曼</tag>
       </tags>
   </entry>
   <entry>
@@ -1598,8 +1601,8 @@ It will install wireguard on the server, configure, create a systemd service and
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>悬疑</tag>
         <tag>惊悚</tag>
+        <tag>悬疑</tag>
         <tag>阿尔弗雷德•希区柯克</tag>
       </tags>
   </entry>
@@ -1680,9 +1683,9 @@ It will install wireguard on the server, configure, create a systemd service and
         <tag>电影下载</tag>
         <tag>70年代</tag>
         <tag>剧情</tag>
-        <tag>巴西</tag>
         <tag>爱情</tag>
         <tag>荷兰</tag>
+        <tag>巴西</tag>
         <tag>战争</tag>
       </tags>
   </entry>
@@ -1825,10 +1828,10 @@ It will install wireguard on the server, configure, create a systemd service and
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>惊悚</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
         <tag>悬疑</tag>
-        <tag>惊悚</tag>
       </tags>
   </entry>
   <entry>
@@ -1848,9 +1851,9 @@ It will install wireguard on the server, configure, create a systemd service and
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>巴西</tag>
         <tag>2000年</tag>
         <tag>葡萄牙语</tag>
-        <tag>巴西</tag>
         <tag>法国</tag>
       </tags>
   </entry>
@@ -2062,11 +2065,11 @@ It will install wireguard on the server, configure, create a systemd service and
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>动作</tag>
-        <tag>悬疑</tag>
         <tag>惊悚</tag>
+        <tag>悬疑</tag>
         <tag>2000年</tag>
-        <tag>莱昂纳多•迪卡普里奥</tag>
         <tag>克里斯托弗•诺兰</tag>
+        <tag>莱昂纳多•迪卡普里奥</tag>
         <tag>汤姆•哈迪</tag>
       </tags>
   </entry>
@@ -2155,10 +2158,10 @@ It will install wireguard on the server, configure, create a systemd service and
         <tag>Favorite films</tag>
         <tag>动作</tag>
         <tag>剧情</tag>
+        <tag>惊悚</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
         <tag>悬疑</tag>
-        <tag>惊悚</tag>
       </tags>
   </entry>
   <entry>
@@ -2215,8 +2218,8 @@ It will install wireguard on the server, configure, create a systemd service and
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>传记</tag>
-        <tag>史蒂文·斯皮尔伯格</tag>
         <tag>战争</tag>
+        <tag>史蒂文·斯皮尔伯格</tag>
       </tags>
   </entry>
   <entry>
@@ -2261,6 +2264,31 @@ It will install wireguard on the server, configure, create a systemd service and
       </tags>
   </entry>
   <entry>
+    <title>文章分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[<p>categories：</p>
+<ul>
+<li>Google</li>
+<li>软件教学</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于我和网站</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<p>网站是我20年刚创建的，本来是用来写一些自己的日志的，提醒自己要坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
+<p>我平时喜欢用 <a href="http://www.soundcloud.com">www.soundcloud.com</a> 在上面找世界各地的cover者上传的音乐听歌,这是我一直使用的<a href="http://www.getvy.net/zh/refer/china?offer_id=235&aff_id=4321">VPN</a> </p>
+<blockquote>
+<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">更多自我介绍</a></p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签统计</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Contact me</title>
     <url>/contact-me/index.html</url>
     <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
@@ -2272,13 +2300,54 @@ It will install wireguard on the server, configure, create a systemd service and
 ]]></content>
   </entry>
   <entry>
-    <title>文章分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<p>categories：</p>
+    <title>这些年值得反复去看的imdb电影</title>
+    <url>/nofinskjnf/index.html</url>
+    <content><![CDATA[<h2 id="犯罪电影"><a href="#犯罪电影" class="headerlink" title="犯罪电影"></a>犯罪电影</h2><blockquote>
 <ul>
-<li>Google</li>
-<li>软件教学</li>
+<li><h4 id="1-低俗小说"><a href="#1-低俗小说" class="headerlink" title="1.低俗小说"></a>1.<a href="https://jianhuabao.info/2017/06/2017imdb--3/">低俗小说</a></h4></li>
+<li><h4 id="2-搏击俱乐部"><a href="#2-搏击俱乐部" class="headerlink" title="2.搏击俱乐部"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-10">搏击俱乐部</a></h4></li>
+<li><h4 id="3-肖申克的救赎"><a href="#3-肖申克的救赎" class="headerlink" title="3.肖申克的救赎"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb--1/">肖申克的救赎</a></h4></li>
+<li><h4 id="4-非常嫌疑犯"><a href="#4-非常嫌疑犯" class="headerlink" title="4.非常嫌疑犯"></a>4.<a href="https://jianhuabao.info/2017/06/2017imdb-24/">非常嫌疑犯</a></h4></li>
+<li><h4 id="5-沉默的羔羊"><a href="#5-沉默的羔羊" class="headerlink" title="5.沉默的羔羊"></a>5<a href="https://jianhuabao.info/2017/06/2017imdb-21/">.沉默的羔羊</a></h4></li>
+<li><h4 id="6-七宗罪"><a href="#6-七宗罪" class="headerlink" title="6.七宗罪"></a>6.<a href="https://jianhuabao.info/2017/06/2017imdb-20/">七宗罪</a></h4></li>
+<li><h4 id="7-上帝之城"><a href="#7-上帝之城" class="headerlink" title="7.上帝之城"></a>7.<a href="https://jianhuabao.info/2017/06/2017imdb-19/">上帝之城</a></h4></li>
+<li><h4 id="8-盗亦有道"><a href="#8-盗亦有道" class="headerlink" title="8.盗亦有道"></a>8.<a href="https://jianhuabao.info/2017/06/2017imdb-14/">盗亦有道</a></h4></li>
+<li><h4 id="9-十二怒汉"><a href="#9-十二怒汉" class="headerlink" title="9.十二怒汉"></a>9.<a href="https://jianhuabao.info/2017/06/2017imdb-7/">十二怒汉</a></h4></li>
+<li><h4 id="10-黄金三嫖客"><a href="#10-黄金三嫖客" class="headerlink" title="10..黄金三嫖客"></a>10.<a href="https://jianhuabao.info/2017/06/2017imdb--4/">.黄金三嫖客</a></h4></li>
+<li><h4 id="11-记忆碎片"><a href="#11-记忆碎片" class="headerlink" title="11.记忆碎片"></a>11.<a href="https://jianhuabao.info/2017/06/2017imdb-34_29/">记忆碎片</a></h4></li>
+<li><h4 id="12-美国X档案"><a href="#12-美国X档案" class="headerlink" title="12..美国X档案"></a>12..<a href="https://jianhuabao.info/2017/06/2017imdb-31/">美国X档案</a></h4></li>
+<li><h4 id="13-这个杀手不太冷"><a href="#13-这个杀手不太冷" class="headerlink" title="13.这个杀手不太冷"></a>13.<a href="https://jianhuabao.info/2017/06/2017imdb-29/">这个杀手不太冷</a></h4></li>
 </ul>
+<h2 id="惊悚电影"><a href="#惊悚电影" class="headerlink" title="惊悚电影"></a>惊悚电影</h2></blockquote>
+<blockquote>
+<ul>
+<li><h5 id="1-教父"><a href="#1-教父" class="headerlink" title="1.教父"></a>1<a href="https://jianhuabao.info/2017/06/2017imdb-2/">.教父</a></h5></li>
+<li><h5 id="2-教父2"><a href="#2-教父2" class="headerlink" title="2.教父2"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-2/">教父2</a></h5></li>
+<li><h5 id="3-蝙蝠侠前传2"><a href="#3-蝙蝠侠前传2" class="headerlink" title="3.蝙蝠侠前传2"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb-5/">蝙蝠侠前传2</a></h5></li>
+<li><h5 id="4-后窗"><a href="#4-后窗" class="headerlink" title="4. 后窗"></a>4. <a href="https://jianhuabao.info/2017/06/2017imdb-26/">后窗</a></h5></li>
+<li><h5 id="5-记忆碎片"><a href="#5-记忆碎片" class="headerlink" title="5.记忆碎片"></a>5.<a href="https://jianhuabao.info/2017/06/2017imdb-34/">记忆碎片</a></h5></li>
+<li><h5 id="6-盗梦空间"><a href="#6-盗梦空间" class="headerlink" title="6.盗梦空间"></a>6.<a href="https://jianhuabao.info/2017/06/2017imdb-13/">盗梦空间</a></h5></li>
+</ul>
+<h2 id="科幻电影"><a href="#科幻电影" class="headerlink" title="科幻电影"></a>科幻电影</h2><ul>
+<li><h4 id="1-蝙蝠侠前传2：黑暗骑士"><a href="#1-蝙蝠侠前传2：黑暗骑士" class="headerlink" title="1.蝙蝠侠前传2：黑暗骑士"></a>1.<a href="https://jianhuabao..info/2017/06/2017imdb-9/">蝙蝠侠前传2：黑暗骑士</a></h4></li>
+<li><h4 id="2-指环王：王者归来"><a href="#2-指环王：王者归来" class="headerlink" title="2.指环王：王者归来"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-9/">指环王：王者归来</a></h4></li>
+<li><h4 id="3-黑客帝国"><a href="#3-黑客帝国" class="headerlink" title="3.黑客帝国"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb-18/">黑客帝国</a></h4></li>
+<li><h4 id="4-星球大战第四集：新希望"><a href="#4-星球大战第四集：新希望" class="headerlink" title="4.星球大战第四集：新希望"></a>4.<a href="https://jianhuabao.info/2017/06/2017imdb-15/">星球大战第四集：新希望</a></h4></li>
+<li><h4 id="5-终结者2-审判日"><a href="#5-终结者2-审判日" class="headerlink" title="5.终结者2: 审判日"></a>5.<a href="https://jianhuabao.info/2017/06/2017imdb-34/">终结者2: 审判日</a></h4></li>
+<li><h4 id="6-星球大战-帝国反击战"><a href="#6-星球大战-帝国反击战" class="headerlink" title="6.星球大战 帝国反击战 "></a>6<a href="https://jianhuabao.info/2017/06/2017imdb-11/">.星球大战 帝国反击战 </a></h4></li>
+</ul>
+</blockquote>
+<blockquote>
+<h2 id="剧情电影"><a href="#剧情电影" class="headerlink" title="剧情电影"></a>剧情电影</h2><ul>
+<li><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="https://jianhuabao.info/2017/06/2017imdb-1/">肖申克的救赎</a></h4></li>
+<li><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-2/">教父</a></h4></li>
+<li><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb-3/">低俗小说</a></h4></li>
+<li><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://jianhuabao.info/2017/06/2017imdb-23/">卡萨布兰卡 </a></h4></li>
+<li><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://jianhuabao.info/2017/06/2017imdb-8/">辛德勒名单</a></h4></li>
+<li><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://jianhuabao.info/2017/06/2017imdb-32/">现代启示录</a></h4></li>
+<li><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://jianhuabao.info/2017/06/2017imdb-30/">日落大道</a></h4></li>
+</ul>
+</blockquote>
 ]]></content>
   </entry>
   <entry>
@@ -2329,21 +2398,6 @@ It will install wireguard on the server, configure, create a systemd service and
 </tr>
 </tbody></table>
 ]]></content>
-  </entry>
-  <entry>
-    <title>关于我和网站</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[<p>网站是我20年刚创建的，本来是用来写一些自己的日志的，提醒自己要坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
-<p>我平时喜欢用 <a href="http://www.soundcloud.com">www.soundcloud.com</a> 在上面找世界各地的cover者上传的音乐听歌,这是我一直使用的<a href="http://www.getvy.net/zh/refer/china?offer_id=235&aff_id=4321">VPN</a> </p>
-<blockquote>
-<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">更多自我介绍</a></p>
-</blockquote>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签统计</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>我的YouTube订阅资料库</title>
@@ -2462,57 +2516,6 @@ It will install wireguard on the server, configure, create a systemd service and
 </ul>
 <h1 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h1><blockquote>
 <p>YOUTUBE实在是太大了，加上我的个人能力和喜好等原因，我大部分浏览的还是主要以中文和英文的居多，所以目前我能做到的YouTube新手订阅频道的分类目录只有以上页面描述的这么多。当然，随着我YouTube网龄的增长，这个页面我也会持续更新<br><a href="https://jianhuabao.info/2020/03/bestofyoutube/"><img src="https://cdn.shopify.com/s/files/1/0390/6749/products/em-litho_1024x1024.png?v=1580256930" alt="未完待续" width="30%" height="30%" /></a></p>
-</blockquote>
-]]></content>
-  </entry>
-  <entry>
-    <title>这些年值得反复去看的imdb电影</title>
-    <url>/nofinskjnf/index.html</url>
-    <content><![CDATA[<h2 id="犯罪电影"><a href="#犯罪电影" class="headerlink" title="犯罪电影"></a>犯罪电影</h2><blockquote>
-<ul>
-<li><h4 id="1-低俗小说"><a href="#1-低俗小说" class="headerlink" title="1.低俗小说"></a>1.<a href="https://jianhuabao.info/2017/06/2017imdb--3/">低俗小说</a></h4></li>
-<li><h4 id="2-搏击俱乐部"><a href="#2-搏击俱乐部" class="headerlink" title="2.搏击俱乐部"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-10">搏击俱乐部</a></h4></li>
-<li><h4 id="3-肖申克的救赎"><a href="#3-肖申克的救赎" class="headerlink" title="3.肖申克的救赎"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb--1/">肖申克的救赎</a></h4></li>
-<li><h4 id="4-非常嫌疑犯"><a href="#4-非常嫌疑犯" class="headerlink" title="4.非常嫌疑犯"></a>4.<a href="https://jianhuabao.info/2017/06/2017imdb-24/">非常嫌疑犯</a></h4></li>
-<li><h4 id="5-沉默的羔羊"><a href="#5-沉默的羔羊" class="headerlink" title="5.沉默的羔羊"></a>5<a href="https://jianhuabao.info/2017/06/2017imdb-21/">.沉默的羔羊</a></h4></li>
-<li><h4 id="6-七宗罪"><a href="#6-七宗罪" class="headerlink" title="6.七宗罪"></a>6.<a href="https://jianhuabao.info/2017/06/2017imdb-20/">七宗罪</a></h4></li>
-<li><h4 id="7-上帝之城"><a href="#7-上帝之城" class="headerlink" title="7.上帝之城"></a>7.<a href="https://jianhuabao.info/2017/06/2017imdb-19/">上帝之城</a></h4></li>
-<li><h4 id="8-盗亦有道"><a href="#8-盗亦有道" class="headerlink" title="8.盗亦有道"></a>8.<a href="https://jianhuabao.info/2017/06/2017imdb-14/">盗亦有道</a></h4></li>
-<li><h4 id="9-十二怒汉"><a href="#9-十二怒汉" class="headerlink" title="9.十二怒汉"></a>9.<a href="https://jianhuabao.info/2017/06/2017imdb-7/">十二怒汉</a></h4></li>
-<li><h4 id="10-黄金三嫖客"><a href="#10-黄金三嫖客" class="headerlink" title="10..黄金三嫖客"></a>10.<a href="https://jianhuabao.info/2017/06/2017imdb--4/">.黄金三嫖客</a></h4></li>
-<li><h4 id="11-记忆碎片"><a href="#11-记忆碎片" class="headerlink" title="11.记忆碎片"></a>11.<a href="https://jianhuabao.info/2017/06/2017imdb-34_29/">记忆碎片</a></h4></li>
-<li><h4 id="12-美国X档案"><a href="#12-美国X档案" class="headerlink" title="12..美国X档案"></a>12..<a href="https://jianhuabao.info/2017/06/2017imdb-31/">美国X档案</a></h4></li>
-<li><h4 id="13-这个杀手不太冷"><a href="#13-这个杀手不太冷" class="headerlink" title="13.这个杀手不太冷"></a>13.<a href="https://jianhuabao.info/2017/06/2017imdb-29/">这个杀手不太冷</a></h4></li>
-</ul>
-<h2 id="惊悚电影"><a href="#惊悚电影" class="headerlink" title="惊悚电影"></a>惊悚电影</h2></blockquote>
-<blockquote>
-<ul>
-<li><h5 id="1-教父"><a href="#1-教父" class="headerlink" title="1.教父"></a>1<a href="https://jianhuabao.info/2017/06/2017imdb-2/">.教父</a></h5></li>
-<li><h5 id="2-教父2"><a href="#2-教父2" class="headerlink" title="2.教父2"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-2/">教父2</a></h5></li>
-<li><h5 id="3-蝙蝠侠前传2"><a href="#3-蝙蝠侠前传2" class="headerlink" title="3.蝙蝠侠前传2"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb-5/">蝙蝠侠前传2</a></h5></li>
-<li><h5 id="4-后窗"><a href="#4-后窗" class="headerlink" title="4. 后窗"></a>4. <a href="https://jianhuabao.info/2017/06/2017imdb-26/">后窗</a></h5></li>
-<li><h5 id="5-记忆碎片"><a href="#5-记忆碎片" class="headerlink" title="5.记忆碎片"></a>5.<a href="https://jianhuabao.info/2017/06/2017imdb-34/">记忆碎片</a></h5></li>
-<li><h5 id="6-盗梦空间"><a href="#6-盗梦空间" class="headerlink" title="6.盗梦空间"></a>6.<a href="https://jianhuabao.info/2017/06/2017imdb-13/">盗梦空间</a></h5></li>
-</ul>
-<h2 id="科幻电影"><a href="#科幻电影" class="headerlink" title="科幻电影"></a>科幻电影</h2><ul>
-<li><h4 id="1-蝙蝠侠前传2：黑暗骑士"><a href="#1-蝙蝠侠前传2：黑暗骑士" class="headerlink" title="1.蝙蝠侠前传2：黑暗骑士"></a>1.<a href="https://jianhuabao..info/2017/06/2017imdb-9/">蝙蝠侠前传2：黑暗骑士</a></h4></li>
-<li><h4 id="2-指环王：王者归来"><a href="#2-指环王：王者归来" class="headerlink" title="2.指环王：王者归来"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-9/">指环王：王者归来</a></h4></li>
-<li><h4 id="3-黑客帝国"><a href="#3-黑客帝国" class="headerlink" title="3.黑客帝国"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb-18/">黑客帝国</a></h4></li>
-<li><h4 id="4-星球大战第四集：新希望"><a href="#4-星球大战第四集：新希望" class="headerlink" title="4.星球大战第四集：新希望"></a>4.<a href="https://jianhuabao.info/2017/06/2017imdb-15/">星球大战第四集：新希望</a></h4></li>
-<li><h4 id="5-终结者2-审判日"><a href="#5-终结者2-审判日" class="headerlink" title="5.终结者2: 审判日"></a>5.<a href="https://jianhuabao.info/2017/06/2017imdb-34/">终结者2: 审判日</a></h4></li>
-<li><h4 id="6-星球大战-帝国反击战"><a href="#6-星球大战-帝国反击战" class="headerlink" title="6.星球大战 帝国反击战 "></a>6<a href="https://jianhuabao.info/2017/06/2017imdb-11/">.星球大战 帝国反击战 </a></h4></li>
-</ul>
-</blockquote>
-<blockquote>
-<h2 id="剧情电影"><a href="#剧情电影" class="headerlink" title="剧情电影"></a>剧情电影</h2><ul>
-<li><h4 id="1-肖申克的救赎"><a href="#1-肖申克的救赎" class="headerlink" title="1.肖申克的救赎"></a>1.<a href="https://jianhuabao.info/2017/06/2017imdb-1/">肖申克的救赎</a></h4></li>
-<li><h4 id="2-教父"><a href="#2-教父" class="headerlink" title="2.教父"></a>2.<a href="https://jianhuabao.info/2017/06/2017imdb-2/">教父</a></h4></li>
-<li><h4 id="3-低俗小说"><a href="#3-低俗小说" class="headerlink" title="3.低俗小说"></a>3.<a href="https://jianhuabao.info/2017/06/2017imdb-3/">低俗小说</a></h4></li>
-<li><h4 id="4-卡萨布兰卡"><a href="#4-卡萨布兰卡" class="headerlink" title="4.卡萨布兰卡 "></a>4.<a href="https://jianhuabao.info/2017/06/2017imdb-23/">卡萨布兰卡 </a></h4></li>
-<li><h4 id="5-辛德勒名单"><a href="#5-辛德勒名单" class="headerlink" title="5.辛德勒名单"></a>5.<a href="https://jianhuabao.info/2017/06/2017imdb-8/">辛德勒名单</a></h4></li>
-<li><h4 id="6-现代启示录"><a href="#6-现代启示录" class="headerlink" title="6.现代启示录"></a>6.<a href="https://jianhuabao.info/2017/06/2017imdb-32/">现代启示录</a></h4></li>
-<li><h4 id="7-日落大道"><a href="#7-日落大道" class="headerlink" title="7.日落大道"></a>7.<a href="https://jianhuabao.info/2017/06/2017imdb-30/">日落大道</a></h4></li>
-</ul>
 </blockquote>
 ]]></content>
   </entry>
