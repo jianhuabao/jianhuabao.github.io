@@ -51,8 +51,9 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;多个客户端同时登录wire-guard-VPN代码搭建教程&quot;&gt;&lt;a href=&quot;#多个客户端同时登录wire-guard-VPN代码搭建教程&quot; class=&quot;headerlink&quot; title=&quot;多个客户端同时登录wire guard VPN代码搭建教程&quot;&gt;&lt;/a&gt;多个客户端同时登录wire guard VPN代码搭建教程&lt;/h1&gt;&lt;h2 id=&quot;服务器要求：&quot;&gt;&lt;a href=&quot;#服务器要求：&quot; class=&quot;headerlink&quot; title=&quot;服务器要求：&quot;&gt;&lt;/a&gt;服务器要求：&lt;/h2&gt;&lt;ul&gt;
+      &lt;h1 id=&quot;多个客户端同时登录wire-guard-VPN代码搭建教程&quot;&gt;&lt;a href=&quot;#多个客户端同时登录wire-guard-VPN代码搭建教程&quot; class=&quot;headerlink&quot; title=&quot;多个客户端同时登录wire guard VPN代码搭建教程&quot;&gt;&lt;/a&gt;多个客户端同时登录wire guard VPN代码搭建教程&lt;/h1&gt;&lt;h2 id=&quot;服务器-amp-系统要求：&quot;&gt;&lt;a href=&quot;#服务器-amp-系统要求：&quot; class=&quot;headerlink&quot; title=&quot;服务器&amp;amp;系统要求：&quot;&gt;&lt;/a&gt;服务器&amp;amp;系统要求：&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Debian 10 Server&lt;/li&gt;
+&lt;li&gt;1核cpu,1gb 内存&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I recommend these cheap cloud providers for your VPN server:&lt;/p&gt;
 &lt;h2 id=&quot;Vultr&quot;&gt;&lt;a href=&quot;#Vultr&quot; class=&quot;headerlink&quot; title=&quot;Vultr:&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.vultr.com/?ref=8493501&quot;&gt;Vultr&lt;/a&gt;:&lt;/h2&gt;&lt;ul&gt;

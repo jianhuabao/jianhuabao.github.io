@@ -16,8 +16,9 @@
   <entry>
     <title>适用于Ubuntu，Windows，Android和iOS客户端的Debian 10 Server上的WireGuard VPN英文原版教程</title>
     <url>/2020/03/wireguard2/</url>
-    <content><![CDATA[<h1 id="多个客户端同时登录wire-guard-VPN代码搭建教程"><a href="#多个客户端同时登录wire-guard-VPN代码搭建教程" class="headerlink" title="多个客户端同时登录wire guard VPN代码搭建教程"></a>多个客户端同时登录wire guard VPN代码搭建教程</h1><h2 id="服务器要求："><a href="#服务器要求：" class="headerlink" title="服务器要求："></a>服务器要求：</h2><ul>
+    <content><![CDATA[<h1 id="多个客户端同时登录wire-guard-VPN代码搭建教程"><a href="#多个客户端同时登录wire-guard-VPN代码搭建教程" class="headerlink" title="多个客户端同时登录wire guard VPN代码搭建教程"></a>多个客户端同时登录wire guard VPN代码搭建教程</h1><h2 id="服务器-amp-系统要求："><a href="#服务器-amp-系统要求：" class="headerlink" title="服务器&amp;系统要求："></a>服务器&amp;系统要求：</h2><ul>
 <li>Debian 10 Server</li>
+<li>1核cpu,1gb 内存</li>
 </ul>
 <p>I recommend these cheap cloud providers for your VPN server:</p>
 <h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
@@ -76,7 +77,7 @@
 <p>Click Import tunnel(s) from file. Select your client2.conf file.</p>
 <p>After the import of client2 is complete, click Activate. A notification appears to say WireGuard activated.</p>
 <p>Open a browser. Visit <a href="https://ipchicken.com">https://ipchicken.com</a> to check that your IP address is now the IP Address of your server.</p>
-<h2 id="最后查看部署完成后的结果："><a href="#最后查看部署完成后的结果：" class="headerlink" title="最后查看部署完成后的结果："></a>最后查看部署完成后的结果：</h2><h2 id="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的-VPN-https-c5b9f47d-4dd9-4256-a311-669404c802d5-netrule-net-zh-refer-china-offer-id-235-amp-aff-id-4321）然后刷新网页"><a href="#若无法查看以下内嵌的YouTube视频，请先链接你已经购买的-VPN-https-c5b9f47d-4dd9-4256-a311-669404c802d5-netrule-net-zh-refer-china-offer-id-235-amp-aff-id-4321）然后刷新网页" class="headerlink" title="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的[VPN](https://c5b9f47d-4dd9-4256-a311-669404c802d5.netrule.net/zh/refer/china?offer_id=235&amp;aff_id=4321）然后刷新网页"></a>若无法查看以下内嵌的YouTube视频，请先链接你已经购买的[VPN](<a href="https://c5b9f47d-4dd9-4256-a311-669404c802d5.netrule.net/zh/refer/china?offer_id=235&amp;aff_id=4321）然后刷新网页">https://c5b9f47d-4dd9-4256-a311-669404c802d5.netrule.net/zh/refer/china?offer_id=235&amp;aff_id=4321）然后刷新网页</a></h2><iframe width="560" height="315" src="https://www.youtube.com/embed/30hEN_xf2Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
+<h2 id="最后查看部署完成后的结果："><a href="#最后查看部署完成后的结果：" class="headerlink" title="最后查看部署完成后的结果："></a>最后查看部署完成后的结果：</h2><h2 id="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的VPN-或者服务器，然后刷新网页"><a href="#若无法查看以下内嵌的YouTube视频，请先链接你已经购买的VPN-或者服务器，然后刷新网页" class="headerlink" title="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的VPN 或者服务器，然后刷新网页"></a>若无法查看以下内嵌的YouTube视频，请先链接你已经购买的<a href="https://10a2b488-189c-42d4-b457-6315713a48a7.netrule.net/zh/refer/china?offer_id=235&aff_id=4321">VPN</a> 或者服务器，然后刷新网页</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/30hEN_xf2Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
       <tags>
         <tag>wire guard</tag>
       </tags>
@@ -965,8 +966,8 @@ Contributions are welcome!]]></content>
         <category>google</category>
       </categories>
       <tags>
-        <tag>YouTube</tag>
         <tag>vps</tag>
+        <tag>YouTube</tag>
         <tag>vpn</tag>
         <tag>gcp</tag>
       </tags>
@@ -1133,9 +1134,9 @@ Contributions are welcome!]]></content>
         <category>看过的电影</category>
       </categories>
       <tags>
-        <tag>2000年</tag>
         <tag>克里斯蒂安·贝尔</tag>
         <tag>克里斯托弗•诺兰</tag>
+        <tag>2000年</tag>
         <tag>杰。休克曼</tag>
       </tags>
   </entry>
@@ -2067,8 +2068,8 @@ Contributions are welcome!]]></content>
         <tag>动作</tag>
         <tag>惊悚</tag>
         <tag>悬疑</tag>
-        <tag>2000年</tag>
         <tag>克里斯托弗•诺兰</tag>
+        <tag>2000年</tag>
         <tag>莱昂纳多•迪卡普里奥</tag>
         <tag>汤姆•哈迪</tag>
       </tags>
@@ -2264,16 +2265,6 @@ Contributions are welcome!]]></content>
       </tags>
   </entry>
   <entry>
-    <title>文章分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<p>categories：</p>
-<ul>
-<li>Google</li>
-<li>软件教学</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>关于我和网站</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>网站是我20年刚创建的，本来是用来写一些自己的日志的，提醒自己要坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
@@ -2284,11 +2275,6 @@ Contributions are welcome!]]></content>
 ]]></content>
   </entry>
   <entry>
-    <title>标签统计</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Contact me</title>
     <url>/contact-me/index.html</url>
     <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
@@ -2297,6 +2283,65 @@ Contributions are welcome!]]></content>
 <p>CAFAHC</p>
 <p>Portland, Oregon 97251-9600</p>
 <p>United states of America</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>best of eminem</title>
+    <url>/hiphop/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center"><iframe src="https://open.spotify.com/embed/track/0q2vG0UVuy6ajjcpkQHdZM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/0GQ5bFTVFFKpwNPc7KwQnB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/40YbWniIEmqy6s58fYXLUh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/4qNWEOMyexn7b8Icyk29t9" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/74gykWHknHDrg4eMdcmdRq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/3yfqSUWxFvZELEM4PmlwIR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/1dWimOlV5KUHDerWZVDv5l" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/7FIWs0pqAYbP91WWM0vlTQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/1lO9CZo6eDrOy0S7khgryG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/7ccTcabbJlCJiIqtrSSwBk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>文章分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[<p>categories：</p>
+<ul>
+<li>Google</li>
+<li>软件教学</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -2351,53 +2396,9 @@ Contributions are welcome!]]></content>
 ]]></content>
   </entry>
   <entry>
-    <title>best of eminem</title>
-    <url>/hiphop/index.html</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center"><iframe src="https://open.spotify.com/embed/track/0q2vG0UVuy6ajjcpkQHdZM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/0GQ5bFTVFFKpwNPc7KwQnB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/40YbWniIEmqy6s58fYXLUh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/4qNWEOMyexn7b8Icyk29t9" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/74gykWHknHDrg4eMdcmdRq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/3yfqSUWxFvZELEM4PmlwIR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/1dWimOlV5KUHDerWZVDv5l" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/7FIWs0pqAYbP91WWM0vlTQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/1lO9CZo6eDrOy0S7khgryG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/7ccTcabbJlCJiIqtrSSwBk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
+    <title>标签统计</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>我的YouTube订阅资料库</title>
