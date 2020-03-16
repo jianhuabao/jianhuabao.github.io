@@ -51,13 +51,12 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;在Linux使用vim 过程中，我们知道在vim
-        
-      
+      &lt;p&gt;在Linux使用vim 过程中，我们知道在vim 里面，粘贴复制的命令是y/p ，但是我们总会碰到这样的问题：如何把vim 里面复制的内容粘贴到vim 之外或者把vim 外面复制的内容粘贴到vim 里面？&lt;/p&gt;
+&lt;p&gt;经过网上多次的查阅资料，终于学会了怎么实现这个过程&lt;/p&gt;
+&lt;p&gt;首先，我们先了解这样一个概念：vim 缓冲区和系统剪贴板&lt;/p&gt;
+&lt;p&gt;vim 里面粘贴复制实际上是在vim 缓冲区 存取数据&lt;/p&gt;
+&lt;p&gt;而系统的ctry+c ctry+v 是与系统剪贴板之间的交互&lt;/p&gt;
+&lt;p&gt;我也不知道我这样描述准不准确，反正大概就是这个意思：vim 粘贴复制和系统粘贴复制操作的不是同一个东西，所以系统和vim 之间不是那么容易直接使用的&lt;/p&gt;
     
     </summary>
     
@@ -76,13 +75,10 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/images/vim.jpg&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;/images/vim.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;VIM常用命令速查-amp-详解&quot;&gt;&lt;a href=&quot;#VIM常用命令速查-amp-详解&quot; class=&quot;headerlink&quot; title=&quot;VIM常用命令速查&amp;amp;详解&quot;&gt;&lt;/a&gt;VIM常用命令速查&amp;amp;详解&lt;/h1&gt;&lt;p&gt;宏命令(Macros)&lt;br&gt;高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的：&lt;/p&gt;
+&lt;p&gt;:qx    开始记录宏，并将结果存入寄存器x&lt;br&gt;q    退出记录模式&lt;br&gt;@x    播放记录在x寄存器中的宏命令&lt;br&gt;稍微解释一下，当在normal模式下输入:qx后，你对文本的所有编辑动作将会被记录下来，再次输入q即退出了记录模式，然后输入@x对刚才记录下来的命令进行重复，此命令后可跟数字，表示要重复多少次，比如@x20，可以重复20次。这个在文本的批处理中是非常有用的。&lt;/p&gt;
+&lt;p&gt;同时编辑多个文件&lt;br&gt;在vim众多的插件中，有一个叫minibuffer的插件，就是下面所说的标签页功能了，可以支持同时编辑多个文件。&lt;/p&gt;
     
     </summary>
     
@@ -103,13 +99,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;服务器的选择真的是重中之重&quot;&gt;&lt;a
-        
-      
+      &lt;h1 id=&quot;服务器的选择真的是重中之重&quot;&gt;&lt;a href=&quot;#服务器的选择真的是重中之重&quot; class=&quot;headerlink&quot; title=&quot;服务器的选择真的是重中之重&quot;&gt;&lt;/a&gt;服务器的选择真的是重中之重&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;服务与质量要成正比的情况下，我目前建议这两家老牌大厂！&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/RW_NxuYXxqE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
     
     </summary>
     

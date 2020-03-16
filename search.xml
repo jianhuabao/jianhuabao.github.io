@@ -22,6 +22,7 @@
 <p>vim 里面粘贴复制实际上是在vim 缓冲区 存取数据</p>
 <p>而系统的ctry+c ctry+v 是与系统剪贴板之间的交互</p>
 <p>我也不知道我这样描述准不准确，反正大概就是这个意思：vim 粘贴复制和系统粘贴复制操作的不是同一个东西，所以系统和vim 之间不是那么容易直接使用的</p>
+<a id="more"></a>
 <p>但是，这个问题还是可以解决的</p>
 <ol>
 <li><p>用vim 打开一个文件，然后执行命令：reg 查看是否有 + 或者 × 号  或者执行：version 命令 查看是否有+clipboard</p>
@@ -51,6 +52,7 @@
 <h1 id="VIM常用命令速查-amp-详解"><a href="#VIM常用命令速查-amp-详解" class="headerlink" title="VIM常用命令速查&amp;详解"></a>VIM常用命令速查&amp;详解</h1><p>宏命令(Macros)<br>高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的：</p>
 <p>:qx    开始记录宏，并将结果存入寄存器x<br>q    退出记录模式<br>@x    播放记录在x寄存器中的宏命令<br>稍微解释一下，当在normal模式下输入:qx后，你对文本的所有编辑动作将会被记录下来，再次输入q即退出了记录模式，然后输入@x对刚才记录下来的命令进行重复，此命令后可跟数字，表示要重复多少次，比如@x20，可以重复20次。这个在文本的批处理中是非常有用的。</p>
 <p>同时编辑多个文件<br>在vim众多的插件中，有一个叫minibuffer的插件，就是下面所说的标签页功能了，可以支持同时编辑多个文件。</p>
+<a id="more"></a>
 <p>标签命令<br>:tabe fn    在一个新的标签页中编辑文件fn<br>gt    切换到下一个标签页<br>gT    切换到上一个标签页<br>:tabr    切换到第一个标签页<br>:tabl    切换到最后一个标签页<br>:tabm [N]    把当前tab移动到第N个tab之后<br>对，正如你所想象的那样，跟eclipse, ue等的标签页是一个意思！</p>
 <p>窗口命令<br>ctrl+w s    水平分割窗口<br>ctrl+w w    切换窗口<br>ctrl+w q    退出当前窗口(由于同时有多个文件，此命令不会影响其他窗口)<br>ctrl+w v    垂直分割窗口<br>其他<br>vim在保存之前不会对文件做实际的修改，只是加载到缓冲区中，对文件的编辑其实是对缓冲区的编辑，直到:w时才会存入物理文件。</p>
 <dl><dt>:e file    把file加载到新的缓冲区中<br>:bn    跳转到下一个缓冲区<br>:bd    删除缓冲区(关闭文件)<br>:sp fn    分割窗口，并将fn加载到新的窗口中<br>退出编辑器<br>:w    将缓冲区写入文件，即保存修改<br>:wq    保存修改并退出</dt><dd>x    保存修改并退出<br>:q    退出，如果对缓冲区进行过修改，则会提示<br>:q!    强制退出，放弃修改</dd></dl><h2 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h2><p>/pattern    向后搜索字符串pattern<br>?pattern    向前搜索字符串pattern<br>n    下一个匹配(如果是/搜索，则是向下的下一个，?搜索则是向上的下一个)<br>N    上一个匹配(同上)<br>:%s/old/new/g    搜索整个文件，将所有的old替换为new<br>:%s/old/new/gc    搜索整个文件，将所有的old替换为new，每次都要你确认是否替换</p>
@@ -82,10 +84,12 @@ ma    把当前位置存成标签a</code>a    跳转到标签a处<br>编辑<br>r
     <url>/2020/03/wireguardp3/</url>
     <content><![CDATA[<h1 id="服务器的选择真的是重中之重"><a href="#服务器的选择真的是重中之重" class="headerlink" title="服务器的选择真的是重中之重"></a>服务器的选择真的是重中之重</h1><ul>
 <li>服务与质量要成正比的情况下，我目前建议这两家老牌大厂！<iframe width="560" height="315" src="https://www.youtube.com/embed/RW_NxuYXxqE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a id="more"></a>
+## 这是我正在使用的服务器提供商V和D
 
 </li>
 </ul>
-<h2 id="这是我正在使用的服务器提供商V和D"><a href="#这是我正在使用的服务器提供商V和D" class="headerlink" title="这是我正在使用的服务器提供商V和D"></a>这是我正在使用的服务器提供商V和D</h2><h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
 <li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
 </ul>
 <h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
@@ -1121,8 +1125,8 @@ Contributions are welcome!]]></content>
         <category>google</category>
       </categories>
       <tags>
-        <tag>vps</tag>
         <tag>YouTube</tag>
+        <tag>vps</tag>
         <tag>vpn</tag>
         <tag>gcp</tag>
       </tags>
@@ -1289,9 +1293,9 @@ Contributions are welcome!]]></content>
         <category>看过的电影</category>
       </categories>
       <tags>
+        <tag>2000年</tag>
         <tag>克里斯蒂安·贝尔</tag>
         <tag>克里斯托弗•诺兰</tag>
-        <tag>2000年</tag>
         <tag>杰。休克曼</tag>
       </tags>
   </entry>
@@ -2223,8 +2227,8 @@ Contributions are welcome!]]></content>
         <tag>动作</tag>
         <tag>惊悚</tag>
         <tag>悬疑</tag>
-        <tag>克里斯托弗•诺兰</tag>
         <tag>2000年</tag>
+        <tag>克里斯托弗•诺兰</tag>
         <tag>莱昂纳多•迪卡普里奥</tag>
         <tag>汤姆•哈迪</tag>
       </tags>
@@ -2430,66 +2434,6 @@ Contributions are welcome!]]></content>
 ]]></content>
   </entry>
   <entry>
-    <title>Contact me</title>
-    <url>/contact-me/index.html</url>
-    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
-<p><a href="tel:+15038416478">+1503 841 6478</a></p>
-<p>12817 NE Airport Way STE 67593</p>
-<p>CAFAHC</p>
-<p>Portland, Oregon 97251-9600</p>
-<p>United states of America</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>best of eminem</title>
-    <url>/hiphop/index.html</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center"><iframe src="https://open.spotify.com/embed/track/0q2vG0UVuy6ajjcpkQHdZM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/0GQ5bFTVFFKpwNPc7KwQnB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/40YbWniIEmqy6s58fYXLUh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/4qNWEOMyexn7b8Icyk29t9" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/74gykWHknHDrg4eMdcmdRq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/3yfqSUWxFvZELEM4PmlwIR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/1dWimOlV5KUHDerWZVDv5l" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/7FIWs0pqAYbP91WWM0vlTQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/1lO9CZo6eDrOy0S7khgryG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><iframe src="https://open.spotify.com/embed/track/7ccTcabbJlCJiIqtrSSwBk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
     <title>文章分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[<p>categories：</p>
@@ -2551,9 +2495,64 @@ Contributions are welcome!]]></content>
 ]]></content>
   </entry>
   <entry>
-    <title>标签统计</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>best of eminem</title>
+    <url>/hiphop/index.html</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center"><iframe src="https://open.spotify.com/embed/track/0q2vG0UVuy6ajjcpkQHdZM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/0GQ5bFTVFFKpwNPc7KwQnB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/40YbWniIEmqy6s58fYXLUh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/4qNWEOMyexn7b8Icyk29t9" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/74gykWHknHDrg4eMdcmdRq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/3yfqSUWxFvZELEM4PmlwIR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/1dWimOlV5KUHDerWZVDv5l" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/7FIWs0pqAYbP91WWM0vlTQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/1lO9CZo6eDrOy0S7khgryG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><iframe src="https://open.spotify.com/embed/track/7ccTcabbJlCJiIqtrSSwBk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>Contact me</title>
+    <url>/contact-me/index.html</url>
+    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
+<p><a href="tel:+15038416478">+1503 841 6478</a></p>
+<p>12817 NE Airport Way STE 67593</p>
+<p>CAFAHC</p>
+<p>Portland, Oregon 97251-9600</p>
+<p>United states of America</p>
+]]></content>
   </entry>
   <entry>
     <title>我的YouTube订阅资料库</title>
@@ -2674,6 +2673,11 @@ Contributions are welcome!]]></content>
 <p>YOUTUBE实在是太大了，加上我的个人能力和喜好等原因，我大部分浏览的还是主要以中文和英文的居多，所以目前我能做到的YouTube新手订阅频道的分类目录只有以上页面描述的这么多。当然，随着我YouTube网龄的增长，这个页面我也会持续更新<br><a href="https://jianhuabao.info/2020/03/bestofyoutube/"><img src="https://cdn.shopify.com/s/files/1/0390/6749/products/em-litho_1024x1024.png?v=1580256930" alt="未完待续" width="30%" height="30%" /></a></p>
 </blockquote>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签统计</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Privacy policy</title>
