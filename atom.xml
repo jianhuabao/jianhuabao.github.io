@@ -43,6 +43,58 @@
   </entry>
   
   <entry>
+    <title>终端vim 如何与外界粘贴复制</title>
+    <link href="https://jianhuabao.info/2020/03/vim1/"/>
+    <id>https://jianhuabao.info/2020/03/vim1/</id>
+    <published>2020-03-16T11:50:10.000Z</published>
+    <updated>2020-03-16T11:50:10.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在Linux使用vim 过程中，我们知道在vim
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="vim" scheme="https://jianhuabao.info/tags/vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vim常用命令</title>
+    <link href="https://jianhuabao.info/2020/03/vim/"/>
+    <id>https://jianhuabao.info/2020/03/vim/</id>
+    <published>2020-03-16T11:41:45.000Z</published>
+    <updated>2020-03-16T11:41:45.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/vim.jpg&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="https://jianhuabao.info/tags/linux/"/>
+    
+      <category term="vim" scheme="https://jianhuabao.info/tags/vim/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建wire guardVPN单一用户版视频简介和搭建之前的准备&amp;服务器的选择</title>
     <link href="https://jianhuabao.info/2020/03/wireguardp3/"/>
     <id>https://jianhuabao.info/2020/03/wireguardp3/</id>
@@ -83,56 +135,6 @@
           &lt;h1 id=&quot;wireguard&quot;&gt;&lt;a
         
       
-    
-    </summary>
-    
-    
-    
-      <category term="wireguard" scheme="https://jianhuabao.info/tags/wireguard/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>wireguard VPN Debian10系统搭建教程第2部分</title>
-    <link href="https://jianhuabao.info/2020/03/wireguardp1/"/>
-    <id>https://jianhuabao.info/2020/03/wireguardp1/</id>
-    <published>2020-03-16T10:50:21.000Z</published>
-    <updated>2020-03-16T10:50:21.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;wireguard&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="wireguard" scheme="https://jianhuabao.info/tags/wireguard/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WireGuard-what is the WireGuard?</title>
-    <link href="https://jianhuabao.info/2020/03/wireguard3/"/>
-    <id>https://jianhuabao.info/2020/03/wireguard3/</id>
-    <published>2020-03-16T10:49:48.000Z</published>
-    <updated>2020-03-16T10:49:48.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; WireGuard是由Jason A. Donenfeld开发的开放源代码VPN程序及协议[2]，基于Linux内核实现，利用Curve25519进行密钥交换，ChaCha20用于加密，Poly1305用于数据认证，BLAKE2用于散列函数运算[2]，支持 IPv4和IPv6的第3层，并且可以封装v4-in-v6，反之亦然。[3]WireGuard旨在获得比IPsec和OpenVPN更好的性能[4]。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;WireGuard&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;Features&quot;&gt;&lt;a href=&quot;#Features&quot; class=&quot;headerlink&quot; title=&quot;Features&quot;&gt;&lt;/a&gt;Features&lt;/h1&gt;&lt;p&gt;WireGuard aims to provide a VPN that is both simple and highly effective. A review by ArsTechnica observed that popular VPN technologies such as OpenVPN and IPsec are often complex to set up, disconnect easily (in the absence of further configuration), take substantial time to negotiate reconnections, may use outdated ciphers, and have relatively massive code (400,000 to 600,000 lines of code for the two examples given) which makes it harder to find bugs.[5]&lt;/p&gt;
-&lt;p&gt;WireGuard’s design seeks to reduce these issues, making the tunnel more secure and easier to manage by default. By using versioning of cryptography packages, it focuses on ciphers believed to be among the most secure current encryption methods, and also has a codebase of around 4000 lines, about 1% of either OpenVPN or IPsec, making security audits easier. Ars Technica reported that in testing, stable tunnels were easy to create with WireGuard, compared to alternatives, and commented that it would be “hard to go back” to long reconnection delays, compared to WireGuard’s “no nonsense” instant reconnections.[5]&lt;/p&gt;
-&lt;h1 id=&quot;Protocol&quot;&gt;&lt;a href=&quot;#Protocol&quot; class=&quot;headerlink&quot; title=&quot;Protocol&quot;&gt;&lt;/a&gt;Protocol&lt;/h1&gt;&lt;p&gt;WireGuard utilizes Curve25519 for key exchange, ChaCha20 for encryption, and Poly1305 for data authentication, SipHash for hashtable keys, and BLAKE2s for hashing.[3] It supports layer 3 for both IPv4 and IPv6 and can encapsulate v4-in-v6 and vice versa.[6]&lt;br&gt;&lt;img src=&quot;https://www.wireguard.com/img/wireguard.svg&quot; alt=&quot;&quot;&gt;&lt;br&gt;In May 2019, researchers from INRIA published a machine-checked proof of the protocol, produced using the CryptoVerif proof assistant.[7]&lt;/p&gt;
     
     </summary>
     

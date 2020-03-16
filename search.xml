@@ -14,6 +14,70 @@
 ]]></content>
   </entry>
   <entry>
+    <title>终端vim 如何与外界粘贴复制</title>
+    <url>/2020/03/vim1/</url>
+    <content><![CDATA[<p>在Linux使用vim 过程中，我们知道在vim 里面，粘贴复制的命令是y/p ，但是我们总会碰到这样的问题：如何把vim 里面复制的内容粘贴到vim 之外或者把vim 外面复制的内容粘贴到vim 里面？</p>
+<p>经过网上多次的查阅资料，终于学会了怎么实现这个过程</p>
+<p>首先，我们先了解这样一个概念：vim 缓冲区和系统剪贴板</p>
+<p>vim 里面粘贴复制实际上是在vim 缓冲区 存取数据</p>
+<p>而系统的ctry+c ctry+v 是与系统剪贴板之间的交互</p>
+<p>我也不知道我这样描述准不准确，反正大概就是这个意思：vim 粘贴复制和系统粘贴复制操作的不是同一个东西，所以系统和vim 之间不是那么容易直接使用的</p>
+<p>但是，这个问题还是可以解决的</p>
+<ol>
+<li><p>用vim 打开一个文件，然后执行命令：reg 查看是否有 + 或者 × 号  或者执行：version 命令 查看是否有+clipboard</p>
+<p> 如果存在：</p>
+</li>
+</ol>
+<p>　　　则可以使用 “+y 将vim 里面的内容复制到系统剪贴板或者 +p 将系统剪贴板里面的内容复制到vim 里面</p>
+<p>　如果不存在：</p>
+<p>　　　则需要安装vim-gnome， 然后就可以用以上命令粘贴复制</p>
+<ol start="2">
+<li>可以在 /etc/vim/.vimrc 里面设置 clipboard=unnamedplus 这样就可以直接使用 y p命令直接粘贴复制了<h1 id="1-首先，查看vim版本是否支持clipboard"><a href="#1-首先，查看vim版本是否支持clipboard" class="headerlink" title="1.首先，查看vim版本是否支持clipboard"></a>1.首先，查看vim版本是否支持clipboard</h1>vim –version | grep “clipboard”</li>
+<li>如果不支持的话，需要安装图形化界面的vim，或者重新编译vim<br>sudo apt-get install vim-gnome<br>1<br>安装完成后再次执行：</li>
+</ol>
+<p>vim –version | grep “clipboard”<br>1<br>发现已经支持clipboard</p>
+<p>3.vim的寄存器<br>打开vim输入:reg查看vim的寄存器，当支持clipboard之后，会多出”+寄存器，表示系统剪切板，在vim中进入visual视图后使用”Ny(N表示特定寄存器编好)，将内容复制到特定的剪切板，那么我们的目的是要复制到系统剪切板则需要选中内容后输入命令：</p>
+<p>“+y<br>1<br>粘贴到特定的寄存器也是同理。例如”+p将系统剪切板的内容拷贝到vim中（非编辑模式下）</p>
+<h1 id="1-查看-vim-是否支持-clipboard-功能"><a href="#1-查看-vim-是否支持-clipboard-功能" class="headerlink" title="1. 查看 vim 是否支持 clipboard 功能"></a>1. 查看 vim 是否支持 clipboard 功能</h1><p>$ vim –version | grep clipboard2. 如果有 +clipboard 则跳过这一步; 如果显示的是 -clipboard 说明不支持, 需要Ubuntu$ sudo apt install vim-gtk因为默认安装的 vim 有些功能不支持, 安装 vim-gtk 包可以get the extra features</p>
+]]></content>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim常用命令</title>
+    <url>/2020/03/vim/</url>
+    <content><![CDATA[<p><img src="/images/vim.jpg" alt=""></p>
+<h1 id="VIM常用命令速查-amp-详解"><a href="#VIM常用命令速查-amp-详解" class="headerlink" title="VIM常用命令速查&amp;详解"></a>VIM常用命令速查&amp;详解</h1><p>宏命令(Macros)<br>高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的：</p>
+<p>:qx    开始记录宏，并将结果存入寄存器x<br>q    退出记录模式<br>@x    播放记录在x寄存器中的宏命令<br>稍微解释一下，当在normal模式下输入:qx后，你对文本的所有编辑动作将会被记录下来，再次输入q即退出了记录模式，然后输入@x对刚才记录下来的命令进行重复，此命令后可跟数字，表示要重复多少次，比如@x20，可以重复20次。这个在文本的批处理中是非常有用的。</p>
+<p>同时编辑多个文件<br>在vim众多的插件中，有一个叫minibuffer的插件，就是下面所说的标签页功能了，可以支持同时编辑多个文件。</p>
+<p>标签命令<br>:tabe fn    在一个新的标签页中编辑文件fn<br>gt    切换到下一个标签页<br>gT    切换到上一个标签页<br>:tabr    切换到第一个标签页<br>:tabl    切换到最后一个标签页<br>:tabm [N]    把当前tab移动到第N个tab之后<br>对，正如你所想象的那样，跟eclipse, ue等的标签页是一个意思！</p>
+<p>窗口命令<br>ctrl+w s    水平分割窗口<br>ctrl+w w    切换窗口<br>ctrl+w q    退出当前窗口(由于同时有多个文件，此命令不会影响其他窗口)<br>ctrl+w v    垂直分割窗口<br>其他<br>vim在保存之前不会对文件做实际的修改，只是加载到缓冲区中，对文件的编辑其实是对缓冲区的编辑，直到:w时才会存入物理文件。</p>
+<dl><dt>:e file    把file加载到新的缓冲区中<br>:bn    跳转到下一个缓冲区<br>:bd    删除缓冲区(关闭文件)<br>:sp fn    分割窗口，并将fn加载到新的窗口中<br>退出编辑器<br>:w    将缓冲区写入文件，即保存修改<br>:wq    保存修改并退出</dt><dd>x    保存修改并退出<br>:q    退出，如果对缓冲区进行过修改，则会提示<br>:q!    强制退出，放弃修改</dd></dl><h2 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h2><p>/pattern    向后搜索字符串pattern<br>?pattern    向前搜索字符串pattern<br>n    下一个匹配(如果是/搜索，则是向下的下一个，?搜索则是向上的下一个)<br>N    上一个匹配(同上)<br>:%s/old/new/g    搜索整个文件，将所有的old替换为new<br>:%s/old/new/gc    搜索整个文件，将所有的old替换为new，每次都要你确认是否替换</p>
+<h2 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h2><p>dd    删除光标所在行<br>dw    删除一个字(word)<br>x    删除当前字符<br>X    删除前一个字符<br>D    删除到行末<br>yy    复制一行，此命令前可跟数字，标识复制多行，如6yy，表示从当前行开始复制6行<br>yw    复制一个字<br>y$    复制到行末<br>p    粘贴粘贴板的内容到当前行的下面<br>P    粘贴粘贴板的内容到当前行的上面<br>]p    有缩进的粘贴，vim会自动调节代码的缩进<br>“a    将内容放入/存入a寄存器，可以支持多粘贴板<br>附：比如常用的一个寄存器就是系统寄存器，名称为+，所以从系统粘贴板粘贴到vim中的命令为”+p,注意此处的+不表示操作符，二十一个寄存器。</p>
+<h2 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h2><p>在vim中移动光标跟其他的编辑器中有很大的区别，不过一旦学会了，就会飞速的在文本中移动了。</p>
+<p>h,j,k,l    上，下，左，右<br>ctrl-f    上翻一页<br>ctrl-b    下翻一页<br>%    跳到与当前括号匹配的括号处，如当前在{，则跳转到与之匹配的}处<br>w    跳到下一个字首，按标点或单词分割<br>W    跳到下一个字首，长跳，如end-of-line被认为是一个字<br>e    跳到下一个字尾<br>E    跳到下一个字尾，长跳<br>b    跳到上一个字<br>B    跳到上一个字，长跳<br>0    跳至行首，不管有无缩进，就是跳到第0个字符<br>^    跳至行首的第一个字符<br>$    跳至行尾<br>gg    跳至文件的第一行<br>gd    跳至当前光标所在的变量的声明处<br>[N]G    跳到第N行，如0G，就等价于gg，100G就是第100行<br>fx    在当前行中找x字符，找到了就跳转至<br>;    重复上一个f命令，而不用重复的输入fx<br>tx    与fx类似，但是只是跳转到x的前一个字符处<br>Fx    跟fx的方向相反<br>),(    跳转到上/下一个语句</p>
+<ul>
+<li>查找光标所在处的单词，向下查找<h1 id="查找光标所在处的单词，向上查找"><a href="#查找光标所在处的单词，向上查找" class="headerlink" title="查找光标所在处的单词，向上查找"></a>查找光标所在处的单词，向上查找</h1><code>.    跳转至上次编辑位置
+在屏幕上移动
+H    移动光标到当前屏幕上最上边的一行
+M    移动光标到当前屏幕上中间的一行
+L    移动光标到当前屏幕上最下边的一行
+书签
+ma    把当前位置存成标签a</code>a    跳转到标签a处<br>编辑<br>r    替换一个字符<br>J    将下一行和当前行连接为一行<br>cc    删除当前行并进入编辑模式<br>cw    删除当前字，并进入编辑模式<br>c$    擦除从当前位置至行末的内容，并进入编辑模式<br>s    删除当前字符并进入编辑模式<br>S    删除光标所在行并进入编辑模式<br>xp    交换当前字符和下一个字符<br>u    撤销<br>ctrl+r    重做<br>.    重复上一个编辑命令<br>~    切换大小写，当前字符<br>g~iw    切换当前字的大小写<br>gUiw    将当前字变成大写<br>guiw    将当前字变成小写<blockquote>
+<blockquote>
+<p>   将当前行右移一个单位<br>&lt;&lt;    将当前行左移一个单位(一个tab符)<br>==    自动缩进当前行<br>插入模式<br>i    从当前光标处进入插入模式<br>I    进入插入模式，并置光标于行首<br>a    追加模式，置光标于当前光标之后<br>A    追加模式，置光标于行末<br>o    在当前行之下新加一行，并进入插入模式<br>O    在当前行之上新加一行，并进入插入模式<br>Esc    退出插入模式<br>可视模式<br>标记文本<br>v    进入可视模式，单字符模式<br>V    进入可视模式，行模式<br>ctrl+v    进入可视模式，列模式，类似于UE的列模式<br>o    跳转光标到选中块的另一个端点<br>U    将选中块中的内容转成大写<br>O    跳转光标到块的另一个端点<br>aw    选中一个字<br>ab    选中括号中的所有内容，包括括号本身<br>aB    选中{}括号中的所有内容<br>ib    选中括号中的内容，不含括号<br>iB    选中{}中的内容，不含{}<br>对标记进行动作<br>   块右移<br>&lt;    块左移<br>y    复制块<br>d    删除块<br>~    切换块中内容的大小写</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建wire guardVPN单一用户版视频简介和搭建之前的准备&amp;服务器的选择</title>
     <url>/2020/03/wireguardp3/</url>
     <content><![CDATA[<h1 id="服务器的选择真的是重中之重"><a href="#服务器的选择真的是重中之重" class="headerlink" title="服务器的选择真的是重中之重"></a>服务器的选择真的是重中之重</h1><ul>
@@ -140,13 +204,17 @@
 <p>vi wg0.conf<br>The configuration file for the wg0 server will contain the private key of the server, together with the public key of all four clients and the PSK for each client:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address &#x3D; 10.100.0.1&#x2F;24</span><br><span class="line">SaveConfig &#x3D; true</span><br><span class="line">PrivateKey &#x3D; wg0-privatekey-goes-here</span><br><span class="line">ListenPort &#x3D; 51820</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client1-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client1-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.2&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client2-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client2-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.3&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client3-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client3-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.4&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; client4-publickey-goes-here</span><br><span class="line">PresharedKey &#x3D; client4-psk-goes-here</span><br><span class="line">AllowedIPs &#x3D; 10.100.0.5&#x2F;32</span><br><span class="line">PersistentKeepalive &#x3D; 25</span><br></pre></td></tr></table></figure>
 <p>Press the keys :wq on your desktop keyboard to write the file to disk and quit the editor.</p>
-<p>Enable and start the WireGuard service with the wg0.conf configuration file:</p>
-<p>systemctl enable wg-quick@wg0<br>systemctl start wg-quick@wg0<br>Check the results:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wg show</span><br><span class="line">ip addr show</span><br><span class="line">ss -tulpn | grep 51820</span><br></pre></td></tr></table></figure>
-<p>Prepare Client Configuration Files<br>Still on the server, prepare the files for your Ubuntu, Windows, Android, and iOS Clients. Create a configuration file for the first client:</p>
-<p>vi client1.conf<br>Insert contents modeled on the following. The public IP address of the server (55.66.77.88 in our example) appears as the Endpoint of the peer from the client’s point of view:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address &#x3D; 10.100.0.2&#x2F;24</span><br><span class="line">DNS &#x3D; 1.1.1.1,1.0.0.1</span><br><span class="line">PrivateKey &#x3D; client1-private-key-goes-here</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; server-wg0-public-key-goes-here</span><br><span class="line">PresharedKey &#x3D; client1-PSK-goes-here</span><br><span class="line">AllowedIPs &#x3D; 0.0.0.0&#x2F;0</span><br><span class="line">Endpoint &#x3D; 55.66.77.88:51820&#96;</span><br></pre></td></tr></table></figure>
-<p>Press the keys <strong>:wq</strong> on your desktop keyboard to write the file to disk and quit the editor.</p>
+<h2 id="这一步如果有问题，请查看："><a href="#这一步如果有问题，请查看：" class="headerlink" title="这一步如果有问题，请查看："></a>这一步如果有问题，请查看：</h2><ul>
+<li><a href="https://jianhuabao.info/2020/03/wireguard3/">第1部分详解教程</a><blockquote>
+<p>没有请继续</p>
+</blockquote>
+</li>
+<li>Enable and start the WireGuard service with the wg0.conf configuration file:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl enable wg-quick@wg0</span><br><span class="line">systemctl start wg-quick@wg0</span><br></pre></td></tr></table></figure>
+Check the results:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wg show</span><br><span class="line">ip addr show</span><br><span class="line">ss -tulpn | grep 51820</span><br></pre></td></tr></table></figure>
+Prepare Client Configuration Files<br>Still on the server, prepare the files for your Ubuntu, Windows, Android, and iOS Clients. Create a configuration file for the first client:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi client1.conf</span><br></pre></td></tr></table></figure>
+Insert contents modeled on the following. The public IP address of the server (55.66.77.88 in our example) appears as the Endpoint of the peer from the client’s point of view:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address &#x3D; 10.100.0.2&#x2F;24</span><br><span class="line">DNS &#x3D; 1.1.1.1,1.0.0.1</span><br><span class="line">PrivateKey &#x3D; client1-private-key-goes-here</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey &#x3D; server-wg0-public-key-goes-here</span><br><span class="line">PresharedKey &#x3D; client1-PSK-goes-here</span><br><span class="line">AllowedIPs &#x3D; 0.0.0.0&#x2F;0</span><br><span class="line">Endpoint &#x3D; 55.66.77.88:51820&#96;</span><br></pre></td></tr></table></figure>
+Press the keys <strong>:wq</strong> on your desktop keyboard to write the file to disk and quit the editor.</li>
+</ul>
 <p>Repeat the process for client2.conf, client3.conf, and client4.conf.</p>
 <p>Make the configuration files readable for download:</p>
 <p>chmod go+r client*.conf<br>Your server work is complete for now. Exit your SSH session with the server:</p>

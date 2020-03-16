@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/firefox.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="V8hVh0XKT6DSIzOvDPajXMNEqyTM_7jpvIhqqw0QJo4">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jianhuabao.info","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"right","width":240,"display":"post","padding":12,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+
+  <meta name="description" content="VIM常用命令速查&amp;详解宏命令(Macros)高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的： :qx    开始记录宏，并将结果存入寄存器xq    退出记录模式@x    播放记录在x寄存器中的宏命令稍微解释一下，当在normal模式下输入:qx后，你对文本的所有编辑动作将会被记录下来，再次输入q即退出了记录模式，然后输入@x对刚才记录下来的命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vim常用命令">
+<meta property="og:url" content="https://jianhuabao.info/2020/03/vim/">
+<meta property="og:site_name" content="BE-HUMBLE">
+<meta property="og:description" content="VIM常用命令速查&amp;详解宏命令(Macros)高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的： :qx    开始记录宏，并将结果存入寄存器xq    退出记录模式@x    播放记录在x寄存器中的宏命令稍微解释一下，当在normal模式下输入:qx后，你对文本的所有编辑动作将会被记录下来，再次输入q即退出了记录模式，然后输入@x对刚才记录下来的命令">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jianhuabao.info/images/vim.jpg">
+<meta property="article:published_time" content="2020-03-16T11:41:45.000Z">
+<meta property="article:modified_time" content="2020-03-16T11:41:45.000Z">
+<meta property="article:author" content="JIANHUA">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="vim">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jianhuabao.info/images/vim.jpg">
+
+<link rel="canonical" href="https://jianhuabao.info/2020/03/vim/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>vim常用命令 | BE-HUMBLE
+  </title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159669438-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-159669438-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  
+ <link rel="alternate" href="/atom.xml" title="BE-HUMBLE" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BE-HUMBLE</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Highlight Tips Always</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-house-damage"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-youtube">
+
+    <a href="/youtube/" rel="section"><i class="fa fa-fw fa-youtube"></i>Youtube</a>
+
+  </li>
+        <li class="menu-item menu-item-movie">
+
+    <a href="/nofinskjnf/" rel="section"><i class="fa fa-fw fa-film"></i>Movie</a>
+
+  </li>
+        <li class="menu-item menu-item-hiphop">
+
+    <a href="/hiphop/" rel="section"><i class="fa fa-fw fa-spotify"></i>Hiphop</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-headphones"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-contact">
+
+    <a href="/contact-me/" rel="section"><i class="fa fa-fw fa-address-card"></i>Contact</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Sitemap</a>
+
+  </li>
+        <li class="menu-item menu-item-privacy-policy">
+
+    <a href="/privacy-policy/" rel="section"><i class="fa fa-fw fa-user-secret"></i>privacy-policy</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dingbu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="2863226391"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1 class="post-title" itemprop="name headline">vim常用命令
+</h1>
+
+<div class="post-meta">
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/2020/">2020</a></li>
+            <li><a href="/2020/03/">03</a></li>
+            <li><a href="/2020/03/vim/">VIM</a></li>
+            <li><a href="/2020/03/vim//"></a></li>
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <p><img src="/images/vim.jpg" alt=""></p>
+<h1 id="VIM常用命令速查-amp-详解"><a href="#VIM常用命令速查-amp-详解" class="headerlink" title="VIM常用命令速查&amp;详解"></a>VIM常用命令速查&amp;详解</h1><p>宏命令(Macros)<br>高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的：</p>
+<p>:qx    开始记录宏，并将结果存入寄存器x<br>q    退出记录模式<br>@x    播放记录在x寄存器中的宏命令<br>稍微解释一下，当在normal模式下输入:qx后，你对文本的所有编辑动作将会被记录下来，再次输入q即退出了记录模式，然后输入@x对刚才记录下来的命令进行重复，此命令后可跟数字，表示要重复多少次，比如@x20，可以重复20次。这个在文本的批处理中是非常有用的。</p>
+<p>同时编辑多个文件<br>在vim众多的插件中，有一个叫minibuffer的插件，就是下面所说的标签页功能了，可以支持同时编辑多个文件。</p>
+<p>标签命令<br>:tabe fn    在一个新的标签页中编辑文件fn<br>gt    切换到下一个标签页<br>gT    切换到上一个标签页<br>:tabr    切换到第一个标签页<br>:tabl    切换到最后一个标签页<br>:tabm [N]    把当前tab移动到第N个tab之后<br>对，正如你所想象的那样，跟eclipse, ue等的标签页是一个意思！</p>
+<p>窗口命令<br>ctrl+w s    水平分割窗口<br>ctrl+w w    切换窗口<br>ctrl+w q    退出当前窗口(由于同时有多个文件，此命令不会影响其他窗口)<br>ctrl+w v    垂直分割窗口<br>其他<br>vim在保存之前不会对文件做实际的修改，只是加载到缓冲区中，对文件的编辑其实是对缓冲区的编辑，直到:w时才会存入物理文件。</p>
+<dl><dt>:e file    把file加载到新的缓冲区中<br>:bn    跳转到下一个缓冲区<br>:bd    删除缓冲区(关闭文件)<br>:sp fn    分割窗口，并将fn加载到新的窗口中<br>退出编辑器<br>:w    将缓冲区写入文件，即保存修改<br>:wq    保存修改并退出</dt><dd>x    保存修改并退出<br>:q    退出，如果对缓冲区进行过修改，则会提示<br>:q!    强制退出，放弃修改</dd></dl><h2 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h2><p>/pattern    向后搜索字符串pattern<br>?pattern    向前搜索字符串pattern<br>n    下一个匹配(如果是/搜索，则是向下的下一个，?搜索则是向上的下一个)<br>N    上一个匹配(同上)<br>:%s/old/new/g    搜索整个文件，将所有的old替换为new<br>:%s/old/new/gc    搜索整个文件，将所有的old替换为new，每次都要你确认是否替换</p>
+<h2 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h2><p>dd    删除光标所在行<br>dw    删除一个字(word)<br>x    删除当前字符<br>X    删除前一个字符<br>D    删除到行末<br>yy    复制一行，此命令前可跟数字，标识复制多行，如6yy，表示从当前行开始复制6行<br>yw    复制一个字<br>y$    复制到行末<br>p    粘贴粘贴板的内容到当前行的下面<br>P    粘贴粘贴板的内容到当前行的上面<br>]p    有缩进的粘贴，vim会自动调节代码的缩进<br>“a    将内容放入/存入a寄存器，可以支持多粘贴板<br>附：比如常用的一个寄存器就是系统寄存器，名称为+，所以从系统粘贴板粘贴到vim中的命令为”+p,注意此处的+不表示操作符，二十一个寄存器。</p>
+<h2 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h2><p>在vim中移动光标跟其他的编辑器中有很大的区别，不过一旦学会了，就会飞速的在文本中移动了。</p>
+<p>h,j,k,l    上，下，左，右<br>ctrl-f    上翻一页<br>ctrl-b    下翻一页<br>%    跳到与当前括号匹配的括号处，如当前在{，则跳转到与之匹配的}处<br>w    跳到下一个字首，按标点或单词分割<br>W    跳到下一个字首，长跳，如end-of-line被认为是一个字<br>e    跳到下一个字尾<br>E    跳到下一个字尾，长跳<br>b    跳到上一个字<br>B    跳到上一个字，长跳<br>0    跳至行首，不管有无缩进，就是跳到第0个字符<br>^    跳至行首的第一个字符<br>$    跳至行尾<br>gg    跳至文件的第一行<br>gd    跳至当前光标所在的变量的声明处<br>[N]G    跳到第N行，如0G，就等价于gg，100G就是第100行<br>fx    在当前行中找x字符，找到了就跳转至<br>;    重复上一个f命令，而不用重复的输入fx<br>tx    与fx类似，但是只是跳转到x的前一个字符处<br>Fx    跟fx的方向相反<br>),(    跳转到上/下一个语句</p>
+<ul>
+<li>查找光标所在处的单词，向下查找<h1 id="查找光标所在处的单词，向上查找"><a href="#查找光标所在处的单词，向上查找" class="headerlink" title="查找光标所在处的单词，向上查找"></a>查找光标所在处的单词，向上查找</h1><code>.    跳转至上次编辑位置
+在屏幕上移动
+H    移动光标到当前屏幕上最上边的一行
+M    移动光标到当前屏幕上中间的一行
+L    移动光标到当前屏幕上最下边的一行
+书签
+ma    把当前位置存成标签a</code>a    跳转到标签a处<br>编辑<br>r    替换一个字符<br>J    将下一行和当前行连接为一行<br>cc    删除当前行并进入编辑模式<br>cw    删除当前字，并进入编辑模式<br>c$    擦除从当前位置至行末的内容，并进入编辑模式<br>s    删除当前字符并进入编辑模式<br>S    删除光标所在行并进入编辑模式<br>xp    交换当前字符和下一个字符<br>u    撤销<br>ctrl+r    重做<br>.    重复上一个编辑命令<br>~    切换大小写，当前字符<br>g~iw    切换当前字的大小写<br>gUiw    将当前字变成大写<br>guiw    将当前字变成小写<blockquote>
+<blockquote>
+<p>   将当前行右移一个单位<br>&lt;&lt;    将当前行左移一个单位(一个tab符)<br>==    自动缩进当前行<br>插入模式<br>i    从当前光标处进入插入模式<br>I    进入插入模式，并置光标于行首<br>a    追加模式，置光标于当前光标之后<br>A    追加模式，置光标于行末<br>o    在当前行之下新加一行，并进入插入模式<br>O    在当前行之上新加一行，并进入插入模式<br>Esc    退出插入模式<br>可视模式<br>标记文本<br>v    进入可视模式，单字符模式<br>V    进入可视模式，行模式<br>ctrl+v    进入可视模式，列模式，类似于UE的列模式<br>o    跳转光标到选中块的另一个端点<br>U    将选中块中的内容转成大写<br>O    跳转光标到块的另一个端点<br>aw    选中一个字<br>ab    选中括号中的所有内容，包括括号本身<br>aB    选中{}括号中的所有内容<br>ib    选中括号中的内容，不含括号<br>iB    选中{}中的内容，不含{}<br>对标记进行动作<br>   块右移<br>&lt;    块左移<br>y    复制块<br>d    删除块<br>~    切换块中内容的大小写</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/2020/">2020</a></li>
+            <li><a href="/2020/03/">03</a></li>
+            <li><a href="/2020/03/vim/">VIM</a></li>
+            <li><a href="/2020/03/vim//"></a></li>
+  </ul>
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dingbu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="2863226391"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#VIM常用命令速查-amp-详解"><span class="nav-number">1.</span> <span class="nav-text">VIM常用命令速查&amp;详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查找替换"><span class="nav-number">1.1.</span> <span class="nav-text">查找替换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复制粘贴"><span class="nav-number">1.2.</span> <span class="nav-text">复制粘贴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动光标"><span class="nav-number">1.3.</span> <span class="nav-text">移动光标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查找光标所在处的单词，向上查找"><span class="nav-number">2.</span> <span class="nav-text">查找光标所在处的单词，向上查找</span></a></li></ol></div> 
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JIANHUA"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">JIANHUA</p>
+  <div class="site-description" itemprop="description">very welcome to my blog and hope you guys love and enjoy it!Thanks</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">106</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:bjh27565@gmail.com" title="E-Mail → mailto:bjh27565@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/realjianhua" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;realjianhua" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/baojianhua" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;baojianhua" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://youtube.com/c/JIANHUABAO" title="YouTube → https:&#x2F;&#x2F;youtube.com&#x2F;c&#x2F;JIANHUABAO" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/baojoshua" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;baojoshua" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:bjh27565?call|chat" title="Skype → skype:bjh27565?call|chat" rel="noopener" target="_blank"><i class="fa fa-fw fa-skype"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- celan -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="3948259110"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JIANHUA</span>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- dibu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6033199950863877"
+     data-ad-slot="2125925454"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='107,105,214' opacity='0.6' zIndex='-1' count='24' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = false;
+    POWERMODE.shake = true;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = false;
+    POWERMODE.shake = true;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e676c05aba776ce"></script>
+   </body>
+</html>
