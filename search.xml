@@ -76,8 +76,8 @@ ma    把当前位置存成标签a</code>a    跳转到标签a处<br>编辑<br>r
 </ul>
 ]]></content>
       <tags>
-        <tag>linux</tag>
         <tag>vim</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -470,13 +470,11 @@ Contributions are welcome!]]></content>
 <li>具体的操作流程是，在网站上，选择广告单元-&gt;新建广告位-&gt;选择对应的广告类型-&gt;生成对应的广告代码。</li>
 </ul>
 <h2 id="个人博客网站直接选择广告单元模式的文字广告和文章内插入广告"><a href="#个人博客网站直接选择广告单元模式的文字广告和文章内插入广告" class="headerlink" title="个人博客网站直接选择广告单元模式的文字广告和文章内插入广告"></a>个人博客网站直接选择广告单元模式的文字广告和文章内插入广告</h2><p>1.插入侧边栏：将代码插入\themes\next\layout_macro\sidebar.swig 文件中&lt;div class=”sidebar-inner”最下策就okay</p>
+<a id="more"></a>
 <p>2，插入文章头部：在\themes\next\layout_custom\post.swig 目录下，新建google_adsense.swig，并将google提供的广告代码放入其中，然后将</p>
 <blockquote>
 <p>在themes/next/layout/_custom下新建google_adsense.swig文件， 将代码复制过去。</p>
 </blockquote>
-<a id="more"></a>
-
-
 <p><strong>最后大功告成</strong></p>
 <p><img src="/images/1.jpg" alt="googleadsense"></p>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -817,6 +815,7 @@ Contributions are welcome!]]></content>
 <p>◎语　　言　英语</p>
 <p>◎字　　幕　中字</p>
 <p>◎上映日期　2017-01-23(圣丹斯电影节)/2017-02-24(美国)</p>
+<!--more-->
 <p>◎豆瓣评分　7.9/10 from 4000 users</p>
 <p>◎IMDb评分　8.2/10 from 43397 users</p>
 <p>◎文件格式　x264 + ACC</p>
@@ -923,7 +922,8 @@ Contributions are welcome!]]></content>
     <title>整理：35个短信免费接收短信验证码平台分享</title>
     <url>/2019/05/jihdibiu/</url>
     <content><![CDATA[<h1 id="国内免费临时手机号"><a href="#国内免费临时手机号" class="headerlink" title="国内免费临时手机号"></a>国内免费临时手机号</h1><p>1、<a href="https://sms.cm/">https://sms.cm</a><br>2、<a href="https://www.pdflibr.com/">https://www.pdflibr.com</a><br>3、<a href="https://www.becmd.com/">https://www.becmd.com</a><br>4、<a href="http://www.smszk.com/">http://www.smszk.com</a><br>5.<a href="http://www.51ym.me/User/MobileSMSCode.aspx%EF%BC%88%E4%BB%98%E8%B4%B9%EF%BC%89">http://www.51ym.me/User/MobileSMSCode.aspx（付费）</a></p>
-<h1 id="国外免费临时手机号"><a href="#国外免费临时手机号" class="headerlink" title="国外免费临时手机号"></a>国外免费临时手机号</h1><p><a href="https://sms-receive.net/"><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-5.jpg" alt=""></a></p>
+<h1 id="国外免费临时手机号"><a href="#国外免费临时手机号" class="headerlink" title="国外免费临时手机号"></a>国外免费临时手机号</h1><a id="more"></a>
+<p><a href="https://sms-receive.net/"><img src="https://joshuabaoblog.files.wordpress.com/2019/05/sharedscreenshot-5.jpg" alt=""></a></p>
 <p>1、<a href="https://zh.mytrashmobile.xn--com%28%29-8n1h080l/">https://zh.mytrashmobile.com（中文）</a><br>2、<a href="https://ch.freephonenum.xn--com%28%29-8n1h080l/">https://ch.freephonenum.com（中文）</a><br>3、SMSReceiveFree：<a href="https://smsreceivefree.com/">https://smsreceivefree.com</a><br>4、Receive SMS Online for FREE：<a href="https://www.receive-sms-online.info/">https://www.receive-sms-online.info</a><br>5、Receive a SMS Online：<a href="https://receive-a-sms.com/">https://receive-a-sms.com</a><br>6、Free SMS Numbers Online：<a href="https://smsnumbersonline.com/">https://smsnumbersonline.com</a><br>7、Receive SMS online for Free：<a href="https://sms-online.co/receive-free-sms">https://sms-online.co/receive-free-sms</a><br>8、Receive-SMS：<a href="https://receive-sms.com/">https://receive-sms.com</a><br>9、Receive FREE SMS online：<a href="http://receivefreesms.com/">http://receivefreesms.com</a><br>10、RECEIVE SMS ONLINE：<a href="https://www.receivesmsonline.net/">https://www.receivesmsonline.net</a><br>11、Free Online Phone：<a href="https://www.freeonlinephone.org/">https://www.freeonlinephone.org</a><br>12、Receive SMS Online：<a href="http://receive-sms-online.com/">http://receive-sms-online.com</a><br>13、TextNow：<a href="https://www.textnow.com/">https://www.textnow.com</a><br>14、Textfree：<a href="https://www.pinger.com/text-free/">https://www.pinger.com/text-free/</a><br>15、SELLAITE：<a href="http://sms.sellaite.com/">http://sms.sellaite.com/</a><br>16、Twilio：<a href="https://www.twilio.com/">https://www.twilio.com/</a><br>17、<a href="https://receive-sms.com/">https://receive-sms.com/</a><br>18、<a href="http://receive-sms-online.com/">http://receive-sms-online.com/</a><br>19、<a href="http://sms.sellaite.com/">http://sms.sellaite.com/</a><br>20、<a href="http://hs3x.com/">http://hs3x.com/</a><br>21、<a href="http://receivefreesms.net/">http://receivefreesms.net</a><br>22、<a href="http://receivesmsonline.in/">http://receivesmsonline.in</a><br>23、<a href="http://www.receive-sms-now.com/">http://www.receive-sms-now.com</a><br>24、<a href="https://sms-receive.net/">https://sms-receive.net</a><br>25、<a href="https://www.receivesms.net/">https://www.receivesms.net</a><br>26、<a href="http://www.freesmsverifications.com/">http://www.freesmsverifications.com</a><br>27、<a href="http://receiveonlinesms.biz/">http://receiveonlinesms.biz</a><br>28、<a href="http://receivesmsverification.com/">http://receivesmsverification.com</a><br>29、<a href="https://www.receivesms.co/">https://www.receivesms.co</a><br>30、<a href="http://receiveonlinesms.com/">http://receiveonlinesms.com</a></p>
 <p><a href="https://open.spotify.com/track/32lItqlMi4LBhb4k0BaSaC?si=Bdk-816HRy2DK3p0RI6Lmw">https://open.spotify.com/track/32lItqlMi4LBhb4k0BaSaC?si=Bdk-816HRy2DK3p0RI6Lmw</a></p>
 <p>大部分都可以用来接收国外的互联网服务，例如telegram，Viber等，国内的网站大部分都被注册完了，但24，25测试更新手机号后短时间内可以注册微博账号</p>
@@ -962,6 +962,7 @@ Contributions are welcome!]]></content>
     <content><![CDATA[<h2 id="如何成功申请一个美国银行账号"><a href="#如何成功申请一个美国银行账号" class="headerlink" title="如何成功申请一个美国银行账号"></a><strong>如何成功申请一个美国银行账号</strong></h2><p><strong>最简单有效的方法就是注册一个payoneer账户。</strong></p>
 <p>[caption id=”attachment_media-245” align=”alignnone” width=”1880”]<img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-259200.jpeg" alt="bank blur business buy"> Photo by Pixabay on <a href="https://www.pexels.com/photo/bank-blur-business-buy-259200/">Pexels.com</a>[/caption] 注册payoneer十分简单，首先访问<a href="https://share.payoneer.com/nav/cLiD4qkyai7ujDhnT1C52WZ27GrDv7oBs-xKjPRNDx0wdKo13NmAbuwluRB6ZJXKDggUDKWp92Xw7NgWUE_O6Q2">payoneer官网</a>，他们提供中文界面，点击注册按钮：</p>
 <p>用英文填写你的名字、电子邮箱、出生日期</p>
+<a id="more"></a>
 <p><img src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fsince1989.org%2Fwp-content%2Fuploads%2F2016%2F03%2Fpayoneer%25E6%25B3%25A8%25E5%2586%258C%25E4%25B8%25AD%25E6%2596%2587.jpg&container=blogger&gadget=a&rewriteMime=image%2F*" alt="payoneer注册中文"></p>
 <p>用英文填写家庭地址、联系信息。地址翻译很简单，举例：上海市长宁路23弄8号302室 翻译成英文就是Room 302 No.8 Lane 23 Changning Road 填进“街道地址”那一栏，城市：Shanghai</p>
 <p><img src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fsince1989.org%2Fwp-content%2Fuploads%2F2016%2F03%2Fpayoneer%25E8%2581%2594%25E7%25B3%25BB%25E4%25BF%25A1%25E6%2581%25AF.jpg&container=blogger&gadget=a&rewriteMime=image%2F*" alt="payoneer联系信息"></p>
@@ -1011,6 +1012,7 @@ Contributions are welcome!]]></content>
 <p>750 小时的 <a href="https://aws.amazon.com/ec2">Amazon EC2</a> Linux 或 RHEL 或 SLES t2.micro 实例使用时间（配置为 1 GiB 的内存、32 位和 64 位平台支持），足够整月持续运行*</p>
 <p>750 小时的 <a href="https://aws.amazon.com/ec2">Amazon EC2</a> Microsoft Windows Server t2.micro 实例使用时间（配置为 1 GiB 内存、32 位和 64 位平台支持），足够小时以便每月持续运行*</p>
 <p>750 小时的 <a href="https://aws.amazon.com/elasticloadbalancing/">Elastic Load Balancer</a> 加上 15 GB 数据处理*</p>
+<a id="more"></a>
 <p>750 小时的 <a href="https://aws.amazon.com/rds/">Amazon RDS</a> 单可用区微型数据库实例使用时间，可用于运行 MySQL、MariaDB、PostgreSQL、Oracle BYOL 或 SQL Server Express Edition，足够整月持续运行数据库实例。您还可以获得 20GB 的数据库存储和 20GB 的备份存储。*</p>
 <p>750 小时的 <a href="https://aws.amazon.com/elasticache/">Amazon ElastiCache</a> 微型缓存节点使用时间 – 足够用户每月连续不间断地运行。*</p>
 <p>30 GB 的 <a href="https://aws.amazon.com/ebs">Amazon Elastic Block Storage</a>（以任意方式对通用型 (SSD) 或磁性介质型进行组合），附加 200 万次 I/O（采用 EBS 磁性介质）和 1 GB 快照存储***</p>
@@ -1235,7 +1237,6 @@ Contributions are welcome!]]></content>
     <title>Vypr VPN支持joox music and Netflix</title>
     <url>/2017/12/noifnoisfo/</url>
     <content><![CDATA[<h2 id="从Joox分析腾讯在国际扩张遇到的阻力"><a href="#从Joox分析腾讯在国际扩张遇到的阻力" class="headerlink" title="从Joox分析腾讯在国际扩张遇到的阻力"></a>从Joox分析腾讯在国际扩张遇到的阻力</h2><p>由于版权合约限制，中国大陆的腾讯公司在国际上的产品推广与扩张显得心有余而力不足，类似于qq音乐，视频之类的服务限制了除了大陆地区之外的其他所有地区的IP请求服务。因此它于11年推出的通讯软体微信成了在全球扩张的主要产品，英文版本为WeChat。 [caption id=”attachment_media-80” align=”alignnone” width=”1880”]<img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-2350327.jpeg" alt="group of people performing on stage using musical instruments"> Photo by Wendy Wei on <a href="https://www.pexels.com/photo/group-of-people-performing-on-stage-using-musical-instruments-2350327/">Pexels.com</a>[/caption] WeChat在play上的下载量已经超过一亿，相当于微信的海外注册用户已经超过一亿 。但是大部分用户分布在东南亚地区，因此WeChat的全球扩张并不是非常顺利，相当于WeChat的用户还大部分局限于大陆地区的中国人，以及生活在大陆以外其他地区的华人。 腾讯在进一步扩大市场上面受到了阻力，如何更好的扩大微信用户群体？腾讯即微信之后，很快在东南亚地区和香港又推出了joox音乐服务。JOOX取得了很大的市场，一年之内在泰国的安卓市下载场排行榜上升到第六位，仅次于Spotify的用户。JOOX成功很大部分原因来自为特别这几个国家和地区提供了优惠的音乐服务政策。 这里涉及到一个版权问题，什么是版权？14年，15年出现了好多戏剧性狗咬狗的版权事件，14年12月酷狗起诉网易云音乐称其侵权200首歌曲，15年1月网易云音乐又起诉酷狗音乐侵权37张专辑，共300首歌曲；2月酷狗音乐又起诉阿里音乐旗下天天动听侵权，6月阿里音乐又起诉酷狗涉嫌侵权歌曲260首。2015年7月，中国版权局发布关于责令网络音乐服务商停止未经授权传播音乐的通知。这个当然不是最近两三年来侵权事件少的原因。这种牵扯到音乐版权的事情还得从05年百度音乐侵权事件开始，环球，索尼，华纳，大西洋等唱片公司控诉百度MP3侵权，要求公开赔礼道歉，赔偿损失167万人名币。从开始一直至今，国产音乐服务提供商仍不断面临来自国外版权公司的法律诉讼。<strong>人家告你一次你下架一个专辑</strong>。这才是16年八月我在网易云音乐还能下载所有Eminem歌曲为MP3格式，而在17年2月Eminem的歌突然一首歌曲也不能下载，全部升级为VIP的真正原因。不能因为大陆自己把自己关起来，就以为自己是老大了，不能因为很少有人听Eminem的音乐，就无视人家的版权著作，shady records和aftermath还是要你吃官司的。所以版权意识不是我们习惯性认为的，理所当然的想听哪一首歌，在百度音乐搜索一下就能循环播放，好多歌曲还可以免费下载为没有加密的MP3格式。对于play music Spotify apple music sound cloud Pandora来说，这样的功能只有在每月付费9.9美元后才能享受到的服务，要么只能当作radio来听。Joox用户享受着大相当于陆人使用qq音乐一样的服务体验。并且joox还支持WeChat和Facebook登陆方式，用户如果每天在这两个特定的朋友圈分享一首歌曲还会赠送12hourVIP。 Joox这个跳板起到了一箭双雕的作用，即打开了东南亚的音乐服务市场，又扩宽完善了东南亚的WeChat市场，joox市场前景良好，17年joox已经将目标瞄准到南非市场，未来会不会继续将服务推广到南亚，西亚，北非等地区呢？ 但腾讯重点目的还是主流的通讯软体WeChat在国际上的推广，joox做的铺垫很成功，而且对WeChat的扩张最有利的是和Facebook有了合作。合作是必不可少的，腾讯需要到国际互联网上找到合适的合作伙伴。但是从现在的形势来看，似乎除了这个对一直大陆市场虎视眈眈，垂涎三尺且愿意为中共舔屁股的Facebook，也找不到其他愿意和腾讯合作的或者有可以合作的领域的互联网公司。Facebook已经于2017年5月悄无声息的进入了大陆市场，但肯定不是它的主流服务。是一个换了身马甲的中文名叫彩色气球的图片分享应用程序，原名Facebook moments，Facebook想拥有大陆的巨大市场，它需要低头，它也需要找到大陆的合作伙伴，WeChat想更加国际化也得找这个巨头老大哥当合作伙伴。合作很重要，希望两个臭味相投的互联网公司可以擦出更<strong>灿烂</strong>的火花！ 注意到的话，Joox音乐服务特别加入了香港地区，这也是一步为WeChat的推广做铺垫的棋子。WhatsApp先入为主，香港人可能没有WeChat的联系方式，但是他们一定会给你WhatsApp。这里面做多牵扯到使用习惯和隐私方面的问题。就算腾讯在香港的注册用户也进一步增加了，面对欧美等国家他们会不会因为文化原因而不接受WeChat呢，扩张会不会受阻呢？有个美国人说，微信不会再美国取得成功的，why?beacause this is a Chinese application.这其实就是一种文化认同，就是欧美国家对中共控制下的中国一种潜在的敌意与不认同。他们民众非常在意自己基本的人权和隐私保护，而WeChat提供给他们只是来自政府的高密度审查，他们当心背后有一群大兄弟在看着他们。尽管微信在隐私声明里面明确表示WeChat已经获得某个机构的信息安全保护认证。2017年5月，俄罗斯联邦通讯局将WeChat列入黑名单，11日解除。差点又失去一个巨大的大兄弟市场。 WeChat在国际扩张中步履维艰，还会有好多机遇和挑战，面对版权，合作伙伴，隐私等多种因素，它能破除阻力，更进一步吗？</p>
-<h2 id="俄羅斯2018世界杯最新頂級折扣链接："><a href="#俄羅斯2018世界杯最新頂級折扣链接：" class="headerlink" title="俄羅斯2018世界杯最新頂級折扣链接："></a>俄羅斯2018世界杯最新頂級折扣链接：</h2><p><a href="https://www.acceleratorcn.net/zh/vyprvpn/world-cup-special?offer\_id=235&amp;aff\_id=4321">https://www.acceleratorcn.net/zh/vyprvpn/world-cup-special?offer\_id=235&amp;aff\_id=4321</a> <a href="https://joshuabao.blogspot.com/2017/12/0.html">https://joshuabao.blogspot.com/2017/12/0.html</a></p>
 ]]></content>
       <categories>
         <category>软件使用推荐与分享</category>
@@ -1452,8 +1453,8 @@ Contributions are welcome!]]></content>
       </categories>
       <tags>
         <tag>英语</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>爱德华 诺顿</tag>
       </tags>
   </entry>
@@ -1482,8 +1483,8 @@ Contributions are welcome!]]></content>
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>70年代</tag>
         <tag>剧情</tag>
+        <tag>70年代</tag>
         <tag>黑色</tag>
       </tags>
   </entry>
@@ -1499,8 +1500,8 @@ Contributions are welcome!]]></content>
         <category>看过的电影</category>
       </categories>
       <tags>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>爱情</tag>
         <tag>法国</tag>
         <tag>让·雷诺</tag>
@@ -1512,7 +1513,9 @@ Contributions are welcome!]]></content>
     <title>imdb28</title>
     <url>/2017/06/2017imdb-28/</url>
     <content><![CDATA[<h2 id="28-惊魂记"><a href="#28-惊魂记" class="headerlink" title="28.惊魂记"></a>28.惊魂记</h2><p><a href="https://joshuabaoblog.files.wordpress.com/2017/06/51edc-veizwlc3f_1230042901.jpg"><img src="https://joshuabaoblog.files.wordpress.com/2017/06/51edc-veizwlc3f_1230042901.jpg" alt=""></a></p>
-<p>◎译　　名　惊魂记/精神病患者/触目惊心/精神病人<br>◎片　　名　Psycho<br>◎年　　代　1960<br>◎国　　家　美国<br>◎类　　别　悬疑/恐怖<br>◎语　　言　英语<br>◎字　　幕　中英双字幕<br>◎上映日期　1960-06-16(纽约首映) / 1960-09-08(美国)<br>◎豆瓣评分　8.8/10 from 65061 users<br>◎IMDb评分　8.5/10 from 425,681 users<br>◎文件格式　x264 + ACC<br>◎视频尺寸　1280 x 720<br>◎文件大小　1378MB<br>◎片　　长　109分钟<br>◎导　　演　阿尔弗雷德·希区柯克 Alfred Hitchcock<br>◎主　　演　珍妮特·利 Janet Leigh<br>　　　　　　安东尼·博金斯 Anthony Perkins<br>　　　　　　维拉·迈尔斯 Vera Miles<br>　　　　　　马丁·鲍尔萨姆 Martin Balsam<br>　　　　　　约翰·加文 John Gavin<br>　　　　　　弗兰克·艾伯森 Frank Albertson<br>　　　　　　阿尔弗雷德·希区柯克 Alfred Hitchcock<br>　　　　　　约翰·麦克因泰 John McIntire<br>◎简　　介<br>　　Marion（珍妮特·利 Janet Leigh 饰）在亚利桑那州凤凰城上班，每天中午都急匆匆地与男友幽会，然而男友却因为推说没钱给前妻赡养费而迟迟不肯离婚。这天Marion要替老板存进4万美元进银行，一时冲动之下她决定携款潜逃。沿途她换车后又遇下雨，身心备受煎熬的她见 到路边有一家贝兹汽车旅馆，便决定留下过夜。<br>　　贝兹汽车旅馆的老板Norman（安东尼·博金斯 Anthony Perkins 饰）是个个性良善的青年，只是面对房间中的母亲十分敬畏。Marion只想赶紧度过今晚，然而在她淋浴时被恐怖杀害。<br>　　Marion的妹妹Lila（维拉·迈尔斯 Vera Miles 饰）一路追踪失踪的姐姐过来，也住进了贝兹汽车旅馆，私家侦探Milton则帮助Lila将目标锁定在Norman身上。一切都似乎与Norman的母亲有关，那控制着儿子的母亲，到底是何方神圣？<br>◎拍摄花絮<br>·希区柯克用化名仅以9000美元就买下了小说的版权。<br>·在《西北偏北》、《迷魂记》两部成本较高的彩色片之后，希区柯克率其电视制作班底用极低的成本拍摄了这部黑白恐怖片。按希区柯克本人的说法是，他是不想此片显得过于血腥暴力（众所周知的浴室一段），而且想看看一部成本低廉的黑白电影会不会卖座。<br>·希区柯克制作的这部《精神病患者》只花费了80万美元，而首次公映之后很快就赢利了1500万美元。<br>·有趣的是希区柯克在拍摄影片时自己也在创造悬念。他要全体制作人员宣誓对剧情及故事的结局严格保密，绝不泄漏任何细节。此外，他还煞有介事地聘请了“母亲”的扮演者，并对外宣布了几位候选者的名单，实际上在剧本中根本没有“母亲”一角的场面。<br>·浴室杀人一场戏的高潮部分只有45秒，而希区柯克却花了差不多7天的时间来拍摄，摄影机的移位达60次之多。<br>·珍妮特·李回忆说，在拍摄《精神病患者》时，为了实验剧中的尸体够不够吓人，希区柯克干脆拿珍妮特当起了试验品。有时李在吃完午饭后推门走进化妆室，会发现坐在她椅子上的是一具可怕的“僵尸”。珍妮特·李说：“希区柯克会根据我每次尖叫的恐惧程度来决定究竟用哪一具假人来做尸体。”<br>·希区柯克支付给安东尼·珀金斯的片酬为4万美元，这也正是玛丽亚从公司偷去的巨款数额。<br>·希区柯克偏爱金发美女，他曾说过：“金发美女最适合被谋杀！想像一下，鲜红的血从她雪白的肌肤上流下来，衬着闪亮的金发是多么美阿！”此片中被杀掉的珍妮特·李当然也是金发。<br>◎幕后制作<br>关于电影<br>《精神病患者》可谓悬念大师希区柯克最具代表性的经典之作，这部空前成功的恐怖电影技巧大胆、画面惊人，即使在数十年后谋杀与血腥的场面仍吓得观众心惊肉跳。<br>这部现代恐怖片之母拍摄时成本很低，拍摄时间也很短，改编自劳勃·柏洛区（Robert Bloch）的小说，约瑟夫·史蒂法诺（Joseph Stefano）编剧，由希区柯克以纯熟的蒙太奇技巧游刃有余地操纵观众情绪，从而完成了一次完全意义上的纯电影表达。希区柯克抛弃了以前自己电影中已为人所熟知的一些套路，真正做到了完全通过视觉、而非剧情去刺激观众。片中的“浴室杀人”场面已成影史上的经典画面，共历时48秒，由78个快速切换的镜头组成，尽管连一个刀刺入人体的血腥画面都没有，但其恐怖效果却因蒙太奇、场面调度、节奏、灯光及音响手法的综合运用而达到了无以复加的境界。希区柯克的对这一场景的要求是：“挥砍，用刀猛砍，刀就像要撕碎银幕，冲出电影。”这种“逼真的恐怖”留给观众无尽的想象空间，正如希区柯克所认为的那样：“最紧张的不是那些恶心的死法，而是在人死之前酝酿的气氛。”<br>导演<br>“希区柯克”这一名字可谓悬疑惊悚的代名词，代表了一种电影手法的精神；正是这位举世公认的恐怖大师发明了“惊悚文艺类影片”（the thriller genre）这一电影类型。<br>希区柯克一生导演、监制了59部电影，300多部连续剧，绝大多数以紧张、焦虑、窥视欲、恐惧等人性的阴暗面为叙事主题，并熟练地将性感、悬疑、幽默融合于一体。希区柯克执导影片的最终目标是展现出人性最深层的恐怖和最异常的思想，因此与现代恐怖片不同，希区柯克的影片可称为惊悚片，所有的恐怖都在人与人之间存在和发生着，没有扭曲变形血流成河等令人作呕的画面，完全以精巧的情节安排和演员的卓越发挥取胜。<br>希区柯克1889年生于伦敦经营蔬菜批发的普通人家，1920年进入电影界，在经历了字幕设计、美术导演、编辑等工作后，于1926年导演了第一部悬疑影片《寄信人》，建立了在英国电影界的地位。1934年的《暗杀者之家》、1936年的《三十九级台阶》让希区柯克享有了国际名声。1940年，第一部好莱坞作品《蝴蝶梦》勇夺奥斯卡最佳作品奖，接着又拍摄了间谍剧《海外特派员》、心理悬疑片《断崖》和精神分析片《爱德华大夫》。1946年，希区柯克拍摄了这一时期的总结性作品《美人计》。<br>50年代，希区柯克在在艺术性和娱乐性上齐头并进，并在摄影技术上不断试验，拍出了《电话谋杀案》、《后窗》、《捉贼记》、《眩晕》、《西北偏北》等一系列优秀作品。1960年，希区柯克向新的恐怖挑战，以诡异的题材、意外的故事情节、低预算的黑白制作拍出了一部让全世界惊悚的《精神病患者》，从而使该片成为希区柯克电影生涯的一个里程碑。当时法国新浪潮的导演们或多或少都受到希区柯克的影响，新浪潮的大师们给予了他最高的评价：他就是电影。<br>希区柯克在生前即被公认为有史以来最伟大的电影导演之一，曾在1968年获特殊奥斯卡奖，同年获美国导演协会格里菲斯奖。为了表彰他对电影艺术作出的突出贡献，1979年，美国电影艺术与科学学院授予其终身成就奖。1980年，英国女王伊丽莎白二世封他为爵士，同年4月29日在洛杉矶去世。<br>演员<br>《精神病患者》培养出来一男一女两个全球级别明星，即珍妮特·李 (Janet Leigh)和安东尼·珀金斯。<br>珍妮特·李生于1927年，1947年同米高梅公司签约，出演了一些青春洋溢的少女角色，1951年与同为演员的托尼·寇蒂斯（《热情似火》）结婚后开始演绎成熟女人的角色。后由于在奥逊·威尔斯的《历劫佳人》和希区柯克的《精神病患者》中的出色表现而晋身一线女星，尤其是《精神病患者》更为其赢得当年的金球奖影后和奥斯卡最佳女配角提名。1999年，珍妮特·李得到法国政府颁予艺人的最高荣誉“艺术与文学司令”。珍妮特·李曾说过，在拍摄淋浴被杀的经典场面时，希区柯克剪接了70个不同角度的镜头来表达死前的恐惧感，而当她在戏院看罢那场戏后竟感到毛骨悚然，自此之后她再也不敢淋浴了。据悉，李在该片的片酬只有2.5万美元，而此后也一直改用浴缸浸浴。此外，该片中的恐惧表情也被英国电影杂志《TotalFilm》评为历史上最经典的死亡镜头。<br>《精神病患者》还捧红了男星安东尼·珀金斯，并使其所饰演的角色诺曼·贝茨成为一个家喻户晓的名字。美国著名演员安东尼·珀金斯（1932—1992）生于纽约，早在大学时代即热衷于表演，一次在百老汇演出时被大导演威廉·惠勒看中，穗请他与著名影星贾利·古柏合演《友好的劝说》，此片获六项奥斯卡奖提名。此后他在希区柯克导演的《精神病患者》中演绎了一位具有双重性格的年轻人，奠定了其在影坛的地位，从此驰骋影坛30年之久。在大西洋两岸，他主演了《孤独的人》、《绿厦》、《审判》、《巴黎战火》等片。<br>配乐<br>此片的配乐也居功甚伟，伯纳德·赫尔曼（Bernard Herrmann）为《精神病患者》专门配器的刺锐弦乐也对烘托电影的紧张气氛有着不可磨灭的贡献。在浴室被杀的场面中，刀刀看似都切入玛丽亚的肉体，其实一刀也没有，其出色的效果完全依靠的是凌厉快速的剪接、多角度的镜头，此外最大的功臣莫过于伯纳德·赫尔曼的配乐，极为尖锐刺耳，不断重复的小提琴尖刻的声响几乎能将人的皮肉切开。希区柯克原本在这一段打算不使用额外的音响效果，但在听了赫尔曼的演奏之后立即改变了主意。  </p>
+<p>◎译　　名　惊魂记/精神病患者/触目惊心/精神病人<br>◎片　　名　Psycho<br>◎年　　代　1960<br>◎国　　家　美国<br>◎类　　别　悬疑/恐怖<br>◎语　　言　英语<br>◎字　　幕　中英双字幕<br>◎上映日期　1960-06-16(纽约首映) / 1960-09-08(美国)<br>◎豆瓣评分　8.8/10 from 65061 users<br>◎IMDb评分　8.5/10 from 425,681 users<br>◎文件格式　x264 + ACC<br>◎视频尺寸　1280 x 720<br>◎文件大小　1378MB<br>◎片　　长　109分钟<br>◎导　　演　阿尔弗雷德·希区柯克 Alfred Hitchcock<br>◎主　　演　珍妮特·利 Janet Leigh<br>　　　　　　安东尼·博金斯 Anthony Perkins<br>　　　　　　维拉·迈尔斯 Vera Miles<br>　　　　　　马丁·鲍尔萨姆 Martin Balsam<br>　　　　　　约翰·加文 John Gavin<br>　　　　　　弗兰克·艾伯森 Frank Albertson<br>　　　　　　阿尔弗雷德·希区柯克 Alfred Hitchcock<br>　　　　　　约翰·麦克因泰 John McIntire<br>◎简　　介  </p>
+<a id="more"></a>
+<p>　　Marion（珍妮特·利 Janet Leigh 饰）在亚利桑那州凤凰城上班，每天中午都急匆匆地与男友幽会，然而男友却因为推说没钱给前妻赡养费而迟迟不肯离婚。这天Marion要替老板存进4万美元进银行，一时冲动之下她决定携款潜逃。沿途她换车后又遇下雨，身心备受煎熬的她见 到路边有一家贝兹汽车旅馆，便决定留下过夜。<br>　　贝兹汽车旅馆的老板Norman（安东尼·博金斯 Anthony Perkins 饰）是个个性良善的青年，只是面对房间中的母亲十分敬畏。Marion只想赶紧度过今晚，然而在她淋浴时被恐怖杀害。<br>　　Marion的妹妹Lila（维拉·迈尔斯 Vera Miles 饰）一路追踪失踪的姐姐过来，也住进了贝兹汽车旅馆，私家侦探Milton则帮助Lila将目标锁定在Norman身上。一切都似乎与Norman的母亲有关，那控制着儿子的母亲，到底是何方神圣？<br>◎拍摄花絮<br>·希区柯克用化名仅以9000美元就买下了小说的版权。<br>·在《西北偏北》、《迷魂记》两部成本较高的彩色片之后，希区柯克率其电视制作班底用极低的成本拍摄了这部黑白恐怖片。按希区柯克本人的说法是，他是不想此片显得过于血腥暴力（众所周知的浴室一段），而且想看看一部成本低廉的黑白电影会不会卖座。<br>·希区柯克制作的这部《精神病患者》只花费了80万美元，而首次公映之后很快就赢利了1500万美元。<br>·有趣的是希区柯克在拍摄影片时自己也在创造悬念。他要全体制作人员宣誓对剧情及故事的结局严格保密，绝不泄漏任何细节。此外，他还煞有介事地聘请了“母亲”的扮演者，并对外宣布了几位候选者的名单，实际上在剧本中根本没有“母亲”一角的场面。<br>·浴室杀人一场戏的高潮部分只有45秒，而希区柯克却花了差不多7天的时间来拍摄，摄影机的移位达60次之多。<br>·珍妮特·李回忆说，在拍摄《精神病患者》时，为了实验剧中的尸体够不够吓人，希区柯克干脆拿珍妮特当起了试验品。有时李在吃完午饭后推门走进化妆室，会发现坐在她椅子上的是一具可怕的“僵尸”。珍妮特·李说：“希区柯克会根据我每次尖叫的恐惧程度来决定究竟用哪一具假人来做尸体。”<br>·希区柯克支付给安东尼·珀金斯的片酬为4万美元，这也正是玛丽亚从公司偷去的巨款数额。<br>·希区柯克偏爱金发美女，他曾说过：“金发美女最适合被谋杀！想像一下，鲜红的血从她雪白的肌肤上流下来，衬着闪亮的金发是多么美阿！”此片中被杀掉的珍妮特·李当然也是金发。<br>◎幕后制作<br>关于电影<br>《精神病患者》可谓悬念大师希区柯克最具代表性的经典之作，这部空前成功的恐怖电影技巧大胆、画面惊人，即使在数十年后谋杀与血腥的场面仍吓得观众心惊肉跳。<br>这部现代恐怖片之母拍摄时成本很低，拍摄时间也很短，改编自劳勃·柏洛区（Robert Bloch）的小说，约瑟夫·史蒂法诺（Joseph Stefano）编剧，由希区柯克以纯熟的蒙太奇技巧游刃有余地操纵观众情绪，从而完成了一次完全意义上的纯电影表达。希区柯克抛弃了以前自己电影中已为人所熟知的一些套路，真正做到了完全通过视觉、而非剧情去刺激观众。片中的“浴室杀人”场面已成影史上的经典画面，共历时48秒，由78个快速切换的镜头组成，尽管连一个刀刺入人体的血腥画面都没有，但其恐怖效果却因蒙太奇、场面调度、节奏、灯光及音响手法的综合运用而达到了无以复加的境界。希区柯克的对这一场景的要求是：“挥砍，用刀猛砍，刀就像要撕碎银幕，冲出电影。”这种“逼真的恐怖”留给观众无尽的想象空间，正如希区柯克所认为的那样：“最紧张的不是那些恶心的死法，而是在人死之前酝酿的气氛。”<br>导演<br>“希区柯克”这一名字可谓悬疑惊悚的代名词，代表了一种电影手法的精神；正是这位举世公认的恐怖大师发明了“惊悚文艺类影片”（the thriller genre）这一电影类型。<br>希区柯克一生导演、监制了59部电影，300多部连续剧，绝大多数以紧张、焦虑、窥视欲、恐惧等人性的阴暗面为叙事主题，并熟练地将性感、悬疑、幽默融合于一体。希区柯克执导影片的最终目标是展现出人性最深层的恐怖和最异常的思想，因此与现代恐怖片不同，希区柯克的影片可称为惊悚片，所有的恐怖都在人与人之间存在和发生着，没有扭曲变形血流成河等令人作呕的画面，完全以精巧的情节安排和演员的卓越发挥取胜。<br>希区柯克1889年生于伦敦经营蔬菜批发的普通人家，1920年进入电影界，在经历了字幕设计、美术导演、编辑等工作后，于1926年导演了第一部悬疑影片《寄信人》，建立了在英国电影界的地位。1934年的《暗杀者之家》、1936年的《三十九级台阶》让希区柯克享有了国际名声。1940年，第一部好莱坞作品《蝴蝶梦》勇夺奥斯卡最佳作品奖，接着又拍摄了间谍剧《海外特派员》、心理悬疑片《断崖》和精神分析片《爱德华大夫》。1946年，希区柯克拍摄了这一时期的总结性作品《美人计》。<br>50年代，希区柯克在在艺术性和娱乐性上齐头并进，并在摄影技术上不断试验，拍出了《电话谋杀案》、《后窗》、《捉贼记》、《眩晕》、《西北偏北》等一系列优秀作品。1960年，希区柯克向新的恐怖挑战，以诡异的题材、意外的故事情节、低预算的黑白制作拍出了一部让全世界惊悚的《精神病患者》，从而使该片成为希区柯克电影生涯的一个里程碑。当时法国新浪潮的导演们或多或少都受到希区柯克的影响，新浪潮的大师们给予了他最高的评价：他就是电影。<br>希区柯克在生前即被公认为有史以来最伟大的电影导演之一，曾在1968年获特殊奥斯卡奖，同年获美国导演协会格里菲斯奖。为了表彰他对电影艺术作出的突出贡献，1979年，美国电影艺术与科学学院授予其终身成就奖。1980年，英国女王伊丽莎白二世封他为爵士，同年4月29日在洛杉矶去世。<br>演员<br>《精神病患者》培养出来一男一女两个全球级别明星，即珍妮特·李 (Janet Leigh)和安东尼·珀金斯。<br>珍妮特·李生于1927年，1947年同米高梅公司签约，出演了一些青春洋溢的少女角色，1951年与同为演员的托尼·寇蒂斯（《热情似火》）结婚后开始演绎成熟女人的角色。后由于在奥逊·威尔斯的《历劫佳人》和希区柯克的《精神病患者》中的出色表现而晋身一线女星，尤其是《精神病患者》更为其赢得当年的金球奖影后和奥斯卡最佳女配角提名。1999年，珍妮特·李得到法国政府颁予艺人的最高荣誉“艺术与文学司令”。珍妮特·李曾说过，在拍摄淋浴被杀的经典场面时，希区柯克剪接了70个不同角度的镜头来表达死前的恐惧感，而当她在戏院看罢那场戏后竟感到毛骨悚然，自此之后她再也不敢淋浴了。据悉，李在该片的片酬只有2.5万美元，而此后也一直改用浴缸浸浴。此外，该片中的恐惧表情也被英国电影杂志《TotalFilm》评为历史上最经典的死亡镜头。<br>《精神病患者》还捧红了男星安东尼·珀金斯，并使其所饰演的角色诺曼·贝茨成为一个家喻户晓的名字。美国著名演员安东尼·珀金斯（1932—1992）生于纽约，早在大学时代即热衷于表演，一次在百老汇演出时被大导演威廉·惠勒看中，穗请他与著名影星贾利·古柏合演《友好的劝说》，此片获六项奥斯卡奖提名。此后他在希区柯克导演的《精神病患者》中演绎了一位具有双重性格的年轻人，奠定了其在影坛的地位，从此驰骋影坛30年之久。在大西洋两岸，他主演了《孤独的人》、《绿厦》、《审判》、《巴黎战火》等片。<br>配乐<br>此片的配乐也居功甚伟，伯纳德·赫尔曼（Bernard Herrmann）为《精神病患者》专门配器的刺锐弦乐也对烘托电影的紧张气氛有着不可磨灭的贡献。在浴室被杀的场面中，刀刀看似都切入玛丽亚的肉体，其实一刀也没有，其出色的效果完全依靠的是凌厉快速的剪接、多角度的镜头，此外最大的功臣莫过于伯纳德·赫尔曼的配乐，极为尖锐刺耳，不断重复的小提琴尖刻的声响几乎能将人的皮肉切开。希区柯克原本在这一段打算不使用额外的音响效果，但在听了赫尔曼的演奏之后立即改变了主意。  </p>
 <p><strong>【迅雷下载地址】</strong></p>
 <p><a href="//QUFmdHA6Ly9qOmpAZy5keWdvZDE4LmNvbTo3OTc4L+aDiumtguiusEJE5Lit6Iux5Y+M5a2XW+eUteW9seWkqeWggnd3dy5keTIwMTguY29tXS5tcDRaWg==/" title="迅雷专用高速下载">ftp://j:j@g.dygod18.com:7978/惊魂记BD中英双字[电影天堂www.dy2018.com].mp4</a></p>
 ]]></content>
@@ -1520,8 +1523,8 @@ Contributions are welcome!]]></content>
         <category>看过的电影</category>
       </categories>
       <tags>
-        <tag>悬疑</tag>
         <tag>阿尔弗雷德•希区柯克</tag>
+        <tag>悬疑</tag>
         <tag>恐怖</tag>
       </tags>
   </entry>
@@ -1552,8 +1555,8 @@ Contributions are welcome!]]></content>
         <tag>电影下载</tag>
         <tag>科幻</tag>
         <tag>动作</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
         <tag>悬疑</tag>
         <tag>克里斯蒂安·贝尔</tag>
@@ -1605,8 +1608,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>布鲁斯·威利斯</tag>
         <tag>昆廷·塔伦蒂诺</tag>
       </tags>
@@ -1721,8 +1724,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>摩根•弗里曼</tag>
       </tags>
   </entry>
@@ -1765,8 +1768,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>惊悚</tag>
-        <tag>悬疑</tag>
         <tag>阿尔弗雷德•希区柯克</tag>
+        <tag>悬疑</tag>
       </tags>
   </entry>
   <entry>
@@ -1805,8 +1808,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
         <tag>神秘</tag>
         <tag>德国</tag>
@@ -1844,8 +1847,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>70年代</tag>
         <tag>剧情</tag>
+        <tag>70年代</tag>
         <tag>爱情</tag>
         <tag>荷兰</tag>
         <tag>巴西</tag>
@@ -1989,12 +1992,12 @@ Contributions are welcome!]]></content>
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>Favorite films</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
+        <tag>悬疑</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
-        <tag>悬疑</tag>
       </tags>
   </entry>
   <entry>
@@ -2012,8 +2015,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>巴西</tag>
         <tag>2000年</tag>
         <tag>葡萄牙语</tag>
@@ -2175,8 +2178,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>传记</tag>
       </tags>
   </entry>
@@ -2260,8 +2263,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>70年代</tag>
         <tag>剧情</tag>
+        <tag>70年代</tag>
       </tags>
   </entry>
   <entry>
@@ -2322,9 +2325,9 @@ Contributions are welcome!]]></content>
         <tag>动作</tag>
         <tag>剧情</tag>
         <tag>惊悚</tag>
+        <tag>悬疑</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
-        <tag>悬疑</tag>
       </tags>
   </entry>
   <entry>
@@ -2381,8 +2384,8 @@ Contributions are welcome!]]></content>
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>传记</tag>
-        <tag>史蒂文·斯皮尔伯格</tag>
         <tag>战争</tag>
+        <tag>史蒂文·斯皮尔伯格</tag>
       </tags>
   </entry>
   <entry>
@@ -2399,8 +2402,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>best movie</tag>
         <tag>Favorite films</tag>
-        <tag>剧情</tag>
         <tag>犯罪</tag>
+        <tag>剧情</tag>
         <tag>惊悚</tag>
       </tags>
   </entry>
@@ -2427,6 +2430,17 @@ Contributions are welcome!]]></content>
       </tags>
   </entry>
   <entry>
+    <title>Contact me</title>
+    <url>/contact-me/index.html</url>
+    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
+<p><a href="tel:+15038416478">+1503 841 6478</a></p>
+<p>12817 NE Airport Way STE 67593</p>
+<p>CAFAHC</p>
+<p>Portland, Oregon 97251-9600</p>
+<p>United states of America</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于我和网站</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>网站是我20年刚创建的，本来是用来写一些自己的日志的，提醒自己要坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
@@ -2437,14 +2451,13 @@ Contributions are welcome!]]></content>
 ]]></content>
   </entry>
   <entry>
-    <title>Contact me</title>
-    <url>/contact-me/index.html</url>
-    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
-<p><a href="tel:+15038416478">+1503 841 6478</a></p>
-<p>12817 NE Airport Way STE 67593</p>
-<p>CAFAHC</p>
-<p>Portland, Oregon 97251-9600</p>
-<p>United states of America</p>
+    <title>文章分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[<p>categories：</p>
+<ul>
+<li>Google</li>
+<li>软件教学</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -2497,16 +2510,6 @@ Contributions are welcome!]]></content>
 ]]></content>
   </entry>
   <entry>
-    <title>文章分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<p>categories：</p>
-<ul>
-<li>Google</li>
-<li>软件教学</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>这些年值得反复去看的imdb电影</title>
     <url>/nofinskjnf/index.html</url>
     <content><![CDATA[<h2 id="犯罪电影"><a href="#犯罪电影" class="headerlink" title="犯罪电影"></a>犯罪电影</h2><blockquote>
@@ -2555,6 +2558,11 @@ Contributions are welcome!]]></content>
 </ul>
 </blockquote>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签统计</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>我的YouTube订阅资料库</title>
@@ -2675,11 +2683,6 @@ Contributions are welcome!]]></content>
 <p>YOUTUBE实在是太大了，加上我的个人能力和喜好等原因，我大部分浏览的还是主要以中文和英文的居多，所以目前我能做到的YouTube新手订阅频道的分类目录只有以上页面描述的这么多。当然，随着我YouTube网龄的增长，这个页面我也会持续更新<br><a href="https://jianhuabao.info/2020/03/bestofyoutube/"><img src="https://cdn.shopify.com/s/files/1/0390/6749/products/em-litho_1024x1024.png?v=1580256930" alt="未完待续" width="30%" height="30%" /></a></p>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签统计</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Privacy policy</title>
