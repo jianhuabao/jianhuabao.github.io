@@ -71,8 +71,6 @@
     
       &lt;p&gt;&lt;img src=&quot;/images/vim.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;VIM常用命令速查-amp-详解&quot;&gt;&lt;a href=&quot;#VIM常用命令速查-amp-详解&quot; class=&quot;headerlink&quot; title=&quot;VIM常用命令速查&amp;amp;详解&quot;&gt;&lt;/a&gt;VIM常用命令速查&amp;amp;详解&lt;/h1&gt;&lt;p&gt;宏命令(Macros)&lt;br&gt;高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的：&lt;/p&gt;
-&lt;p&gt;:qx    开始记录宏，并将结果存入寄存器x&lt;br&gt;q    退出记录模式&lt;br&gt;@x    播放记录在x寄存器中的宏命令&lt;br&gt;稍微解释一下，当在normal模式下输入:qx后，你对文本的所有编辑动作将会被记录下来，再次输入q即退出了记录模式，然后输入@x对刚才记录下来的命令进行重复，此命令后可跟数字，表示要重复多少次，比如@x20，可以重复20次。这个在文本的批处理中是非常有用的。&lt;/p&gt;
-&lt;p&gt;同时编辑多个文件&lt;br&gt;在vim众多的插件中，有一个叫minibuffer的插件，就是下面所说的标签页功能了，可以支持同时编辑多个文件。&lt;/p&gt;
     
     </summary>
     
