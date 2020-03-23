@@ -515,75 +515,14 @@
           <h1 id="Custom-domains-and-SSL-TLS-Certificates"><a href="#Custom-domains-and-SSL-TLS-Certificates" class="headerlink" title="Custom domains and SSL/TLS Certificates"></a>Custom domains and SSL/TLS Certificates</h1><p>Setting up GitLab Pages with custom domains, and adding SSL/TLS certificates to them, are optional features of GitLab Pages.<br>To use one or more custom domain names with your Pages site, you can:</p>
 <p>Add a custom root domain or a subdomain.<br>Add SSL/TLS certification.</p>
 <p>Set up Pages with a custom domain<br>To set up Pages with a custom domain name, read the requirements<br>and steps below.</p>
-<p>Requirements</p>
-<p>A GitLab Pages website up and running, served under the default Pages domain<br>(*.gitlab.io, for GitLab.com).<br>A custom domain name example.com or subdomain subdomain.example.com.<br>Access to your domain’s server control panel to set up DNS records:</p>
-<p>A DNS A or CNAME record pointing your domain to GitLab Pages server.<br>A DNS TXT record to verify your domain’s ownership.</p>
-<p>Steps<br>Follow the steps below to add your custom domain to Pages. See also<br>this document for an overview on DNS records.</p>
-<ol>
-<li>Add a custom domain to Pages<br>Navigate to your project’s Setting &gt; Pages and click + New domain<br>to add your custom domain to GitLab Pages. You can choose whether to:</li>
-</ol>
-<p>Add an SSL/TLS certificate.<br>Leave it blank (it can be added later).</p>
-<p>Click Create New Domain.</p>
-<ol start="2">
-<li>Get the verification code<br>Once you have added a new domain to Pages, the verification code will be prompted to you. Copy the values from GitLab and paste them in your domain’s control panel as a TXT record on the next step.</li>
-</ol>
-<ol start="3">
-<li>Set up DNS records for Pages<br>Read this document for an overview of DNS records for Pages.<br>If you’re familiar with the subject, follow the instructions below<br>according to the type of domain you want to use with your Pages site:</li>
-</ol>
-<p>For root domains, example.com.</p>
-<p>For subdomains, subdomain.example.com.</p>
-<p>For both.</p>
-<p>For root domains<br>Root domains (example.com) require:</p>
-<p>A DNS A record pointing your domain to the Pages server.<br>A TXT record to verify your domain’s ownership.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">一个记录：</span><br><span class="line">姓名 ：@</span><br><span class="line"></span><br><span class="line">价值 ：35.185.44.232</span><br><span class="line"></span><br><span class="line">CNAME：</span><br><span class="line">名称 ：example.com</span><br><span class="line"></span><br><span class="line">值 ：username.gitlab.io</span><br><span class="line"></span><br><span class="line">TXT记录：</span><br><span class="line">姓名 ：@</span><br><span class="line"></span><br><span class="line">价值 ：gitlab-pages-verification-code &#x3D; 00112233445566778899aabbccddeeff</span><br><span class="line"></span><br><span class="line">通过Gitlab验证，还有：</span><br><span class="line"></span><br><span class="line">dig -t txt +short example.com</span><br></pre></td></tr></table></figure>
-<p>From<br>DNS Record<br>To</p>
-<p>example.com<br>A<br>35.185.44.232</p>
-<p>_gitlab-pages-verification-code.example.com<br>TXT<br>gitlab-pages-verification-code=00112233445566778899aabbccddeeff</p>
-<p>For projects on GitLab.com, this IP is 35.185.44.232.<br>For projects living in other GitLab instances (CE or EE), please contact<br>your sysadmin asking for this information (which IP address is Pages<br>server running on your instance).</p>
-<blockquote>
-<p>CAUTION: Caution:<br>Note that if you use your root domain for your GitLab Pages website<br>only, and if your domain registrar supports this feature, you can<br>add a DNS apex CNAME record instead of an A record. The main<br>advantage of doing so is that when GitLab Pages IP on GitLab.com<br>changes for whatever reason, you don’t need to update your A record.<br>There may be a few exceptions, but this method is not recommended<br>as it most likely won’t work if you set an MX record for your root domain.</p>
-</blockquote>
-<p>For subdomains<br>Subdomains (subdomain.example.com) require:</p>
-<p>A DNS CNAME record record pointing your subdomain to the Pages server.<br>A DNS TXT record to verify your domain’s ownership.</p>
-<p>From<br>DNS Record<br>To</p>
-<p>subdomain.example.com<br>CNAME<br>namespace.gitlab.io</p>
-<p>_gitlab-pages-verification-code.subdomain.example.com<br>TXT<br>gitlab-pages-verification-code=00112233445566778899aabbccddeeff</p>
-<blockquote>
-<p>Note that, whether it’s a user or a project website, the CNAME<br>should point to your Pages domain (namespace.gitlab.io),<br>without any /project-name.</p>
-</blockquote>
-<p>For both root and subdomains<br>There are a few cases where you need point both subdomain and root<br>domain to the same website, for instance, example.com and <a href="http://www.example.com">www.example.com</a>.<br>They require:</p>
-<p>A DNS A record for the domain.<br>A DNS CNAME record for the subdomain.<br>A DNS TXT record for each.</p>
-<p>From<br>DNS Record<br>To</p>
-<p>example.com<br>A<br>35.185.44.232</p>
-<p>_gitlab-pages-verification-code.example.com<br>TXT<br>gitlab-pages-verification-code=00112233445566778899aabbccddeeff</p>
-<p>——————————————–+——————————————–</p>
-<p><a href="http://www.example.com">www.example.com</a><br>CNAME<br>namespace.gitlab.io</p>
-<p>_gitlab-pages-verification-code.<a href="http://www.example.com">www.example.com</a><br>TXT<br>gitlab-pages-verification-code=00112233445566778899aabbccddeeff</p>
-<h2 id="删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。"><a href="#删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。" class="headerlink" title="删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。"></a>删除你的CNAME记录。此外，删除URL重定向和您的第一条TXT记录。你不应该同时使用两者CNAME和A记录。</h2><p>如果使用DNS A记录，则可以将TXT记录直接放在域下。如果使用DNS CNAME记录，则两种记录类型将不会共存，因此您需要将TXT记录放在其自己的特殊子域中。[ 来源 ]</p>
-<p>所以你的最终配置是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A Record        @   35.185.44.232</span><br><span class="line">TXT Record      @   gitlab-pages-verification-code&#x3D;XXXXXX</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="If-you’re-using-CloudFlare-check"><a href="#If-you’re-using-CloudFlare-check" class="headerlink" title="If you’re using CloudFlare, check"></a>If you’re using CloudFlare, check</h2><p>Redirecting <a href="http://www.domain.com">www.domain.com</a> to domain.com with Cloudflare.</p>
-<p>Notes:</p>
-<p>Do not use a CNAME record if you want to point your<br>domain.com to your GitLab Pages site. Use an A record instead.</p>
-<blockquote>
-<p>Do not add any special chars after the default Pages<br>domain. E.g., don’t point subdomain.domain.com to<br>or namespace.gitlab.io/. Some domain hosting providers may request a trailing dot (namespace.gitlab.io.), though.<br>GitLab Pages IP on GitLab.com was changed in 2017.<br>GitLab Pages IP on GitLab.com has changed<br>from 52.167.214.135 to 35.185.44.232 in 2018.</p>
-</blockquote>
-<ol start="4">
-<li>Verify the domain’s ownership<br>Once you have added all the DNS records:</li>
-</ol>
-<p>Go back at your project’s Settings &gt; Pages.<br>Locate your domain name and click Details.<br>Click the Retry verification button to activate your new domain.</p>
-<p>As soon as your domain becomes active, your website will be available<br>through your domain name.<br>CAUTION: Caution:<br>Considering GitLab instances with domain verification enabled,<br>if the domain cannot be verified for 7 days, it will be removed<br>from the GitLab project.</p>
-<h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes:"></a>Notes:</h2><p>Domain verification is required for GitLab.com users;<br>for GitLab self-managed instances, your GitLab administrator has the option<br>to disabled custom domain verification.</p>
-<p>DNS propagation may take some time (up to 24h),<br>although it’s usually a matter of minutes to complete. Until it does, verification<br>will fail and attempts to visit your domain will respond with a 404.<br>Once your domain has been verified, leave the verification record<br>in place: your domain will be periodically reverified, and may be<br>disabled if the record is removed.</p>
-<h2 id="Troubleshooting-Pages-domain-verification"><a href="#Troubleshooting-Pages-domain-verification" class="headerlink" title="Troubleshooting Pages domain verification"></a>Troubleshooting Pages domain verification</h2><p>To manually verify that you have properly configured the domain verification<br>TXT DNS entry, you can run the following command in your terminal:<br>dig _gitlab-pages-verification-code.<YOUR-PAGES-DOMAIN> TXT<br>Expect the output:<br>;; ANSWER SECTION:<br>_gitlab-pages-verification-code.<YOUR-PAGES-DOMAIN>. 300 IN TXT “gitlab-pages-verification-code=<YOUR-VERIFICATION-CODE>“</p>
-<p>Adding more domain aliases<br>You can add more than one alias (custom domains and subdomains) to the same project.<br>An alias can be understood as having many doors leading to the same room.<br>All the aliases you’ve set to your site will be listed on Setting &gt; Pages.<br>From that page, you can view, add, and remove them.</p>
-<h2 id="Redirecting-www-domain-com-to-domain-com-with-Cloudflare"><a href="#Redirecting-www-domain-com-to-domain-com-with-Cloudflare" class="headerlink" title="Redirecting www.domain.com to domain.com with Cloudflare"></a>Redirecting <a href="http://www.domain.com">www.domain.com</a> to domain.com with Cloudflare</h2><p>If you use Cloudflare, you can redirect www to domain.com<br>without adding both <a href="http://www.domain.com">www.domain.com</a> and domain.com to GitLab.<br>To do so, you can use Cloudflare’s page rules associated to a<br>CNAME record to redirect <a href="http://www.domain.com">www.domain.com</a> to domain.com. You<br>can use the following setup:</p>
-<p>In Cloudflare, create a DNS A record pointing domain.com to 35.185.44.232.<br>In GitLab, add the domain to GitLab Pages and get the verification code.<br>In Cloudflare, create a DNS TXT record to verify your domain.<br>In GitLab, verify your domain.<br>In Cloudflare, create a DNS CNAME record pointing www to domain.com.<br>In Cloudflare, add a Page Rule pointing <a href="http://www.domain.com">www.domain.com</a> to domain.com:</p>
-<p>Navigate to your domain’s dashboard and click Page Rules<br>on the top nav.<br>Click Create Page Rule.<br>Enter the domain <a href="http://www.domain.com">www.domain.com</a> and click + Add a Setting.<br>From the dropdown menu, choose Forwarding URL, then select the<br>status code 301 - Permanent Redirect.<br>Enter the destination URL <a href="https://domain.com">https://domain.com</a>.</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/gitlabdomains/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
 	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- dibu -->
@@ -654,15 +593,14 @@
           <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;init blog&quot;</span><br><span class="line">git remote add origin git@gitlab.com:username&#x2F;username.gitlab.io.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 <p>将本地项目添加至远程仓库</p>
 <p>$ cd my-blog  #打开项目目录<br>$ git init  #设置项目目录为git仓库<br>$ git remote add origin <a href="mailto:git@gitlab.com">git@gitlab.com</a>:user/blog.git  #连接远程仓库<br>$ git add .  #添加文件<br>$ git commit -m ‘msg’  #添加注释并合并至本地git仓库<br>$ git push  #提交至远程仓库</p>
-<h1 id="Generating-a-new-SSH-key-pair"><a href="#Generating-a-new-SSH-key-pair" class="headerlink" title="Generating a new SSH key pair"></a>Generating a new SSH key pair</h1><p>Before creating an SSH key pair, make sure to understand the<br>different types of keys.<br>To create a new SSH key pair:</p>
-<p>Open a terminal on Linux or macOS, or Git Bash / WSL on Windows.</p>
-<p>Generate a new ED25519 SSH key pair:<br>ssh-keygen -t ed25519 -C “<a href="mailto:email@example.com">email@example.com</a>“<br>Or, if you want to use RSA:<br>ssh-keygen -t rsa -b 4096 -C “<a href="mailto:email@example.com">email@example.com</a>“</p>
-<blockquote>
-<p>If, in any case, you want to add or change the password of your SSH key pair,<br>you can use the -p flag:<br>ssh-keygen -p -f <keyname></p>
-</blockquote>
-<h1 id="Adding-an-SSH-key-to-your-GitLab-account"><a href="#Adding-an-SSH-key-to-your-GitLab-account" class="headerlink" title="Adding an SSH key to your GitLab account"></a>Adding an SSH key to your GitLab account</h1><p>Copy your public SSH key to the clipboard by using one of the commands below<br>depending on your Operating System:<br>macOS:<br>pbcopy &lt; ~/.ssh/id_ed25519.pub<br>WSL / GNU/Linux (requires the xclip package):<br>xclip -sel clip &lt; ~/.ssh/id_ed25519.pub<br>Git Bash on Windows:<br>cat ~/.ssh/id_ed25519.pub | clip</p>
-<h1 id="Testing-that-everything-is-set-up-correctly"><a href="#Testing-that-everything-is-set-up-correctly" class="headerlink" title="Testing that everything is set up correctly"></a>Testing that everything is set up correctly</h1><p>To test whether your SSH key was added correctly, run the following command in<br>your terminal (replacing gitlab.com with your GitLab’s instance domain):<br>ssh -T <a href="mailto:git@gitlab.com">git@gitlab.com</a><br>The first time you connect to GitLab via SSH, you will be asked to verify the<br>authenticity of the GitLab host you are connecting to.<br>For example, when connecting to GitLab.com, answer yes to add GitLab.com to<br>the list of trusted hosts:<br>The authenticity of host ‘gitlab.com (35.231.145.151)’ can’t be established.<br>ECDSA key fingerprint is SHA256:HbW3g8zUjNSksFbqTiUWPWg2Bq1x8xdGUrliXFzSnUw.<br>Are you sure you want to continue connecting (yes/no)? yes<br>Warning: Permanently added ‘gitlab.com’ (ECDSA) to the list of known hosts.</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/gitlabcommand/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
 	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- dibu -->

@@ -255,6 +255,7 @@
           <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;init blog&quot;</span><br><span class="line">git remote add origin git@gitlab.com:username&#x2F;username.gitlab.io.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 <p>将本地项目添加至远程仓库</p>
 <p>$ cd my-blog  #打开项目目录<br>$ git init  #设置项目目录为git仓库<br>$ git remote add origin <a href="mailto:git@gitlab.com">git@gitlab.com</a>:user/blog.git  #连接远程仓库<br>$ git add .  #添加文件<br>$ git commit -m ‘msg’  #添加注释并合并至本地git仓库<br>$ git push  #提交至远程仓库</p>
+<a id="more"></a>
 <h1 id="Generating-a-new-SSH-key-pair"><a href="#Generating-a-new-SSH-key-pair" class="headerlink" title="Generating a new SSH key pair"></a>Generating a new SSH key pair</h1><p>Before creating an SSH key pair, make sure to understand the<br>different types of keys.<br>To create a new SSH key pair:</p>
 <p>Open a terminal on Linux or macOS, or Git Bash / WSL on Windows.</p>
 <p>Generate a new ED25519 SSH key pair:<br>ssh-keygen -t ed25519 -C “<a href="mailto:email@example.com">email@example.com</a>“<br>Or, if you want to use RSA:<br>ssh-keygen -t rsa -b 4096 -C “<a href="mailto:email@example.com">email@example.com</a>“</p>
