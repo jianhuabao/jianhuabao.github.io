@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</title>
+    <url>/2021/03/wireguard1/</url>
+    <content><![CDATA[<h1 id="WireGuard-installer"><a href="#WireGuard-installer" class="headerlink" title="WireGuard installer"></a>WireGuard installer</h1><p>Easily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP.</p>
+<p>Requirements<br>Supported distributions:</p>
+<ul>
+<li>Ubuntu</li>
+<li>Debian</li>
+<li>Fedora</li>
+<li>Centos</li>
+<li>Arch Linux<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://abopen.com/app/uploads/2018/04/debian-logo.jpg" /></a><br>I recommend these cheap cloud providers for your VPN server:<a id="more"></a>
+
+</li>
+</ul>
+<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
+</ul>
+<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
+<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Usage<br>First, get the script and make it executable :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
+Then run it :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>若第一步无法执行，请先执行 apt install curl，安装curl模块<br>It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"><a href="#请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）" class="headerlink" title="请查看下面使用的digital ocean 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"></a>请查看下面使用的<a href="https://m.do.co/c/8cf4fa6580e4">digital ocean</a> 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/NuDo9GXmlZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Contributions are welcome!]]></content>
+      <tags>
+        <tag>wire guard</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Welcome guys and hope you enjoy here</title>
-    <url>/2022/01/hello-world/</url>
+    <url>/2021/01/hello-world/</url>
     <content><![CDATA[<ul>
 <li>致所有的外国朋友：</li>
 </ul>
@@ -76,8 +107,8 @@ ma    把当前位置存成标签a</code>a    跳转到标签a处<br>编辑<br>r
 </ul>
 ]]></content>
       <tags>
-        <tag>vim</tag>
         <tag>linux</tag>
+        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -238,37 +269,6 @@ Press the keys <strong>:wq</strong> on your desktop keyboard to write the file t
 <p>After the import of client2 is complete, click Activate. A notification appears to say WireGuard activated.</p>
 <p>Open a browser. Visit <a href="https://ipchicken.com">https://ipchicken.com</a> to check that your IP address is now the IP Address of your server.</p>
 <h2 id="最后查看部署完成后的结果："><a href="#最后查看部署完成后的结果：" class="headerlink" title="最后查看部署完成后的结果："></a>最后查看部署完成后的结果：</h2><h2 id="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的VPN-或者服务器，然后刷新网页"><a href="#若无法查看以下内嵌的YouTube视频，请先链接你已经购买的VPN-或者服务器，然后刷新网页" class="headerlink" title="若无法查看以下内嵌的YouTube视频，请先链接你已经购买的VPN 或者服务器，然后刷新网页"></a>若无法查看以下内嵌的YouTube视频，请先链接你已经购买的<a href="https://10a2b488-189c-42d4-b457-6315713a48a7.netrule.net/zh/refer/china?offer_id=235&aff_id=4321">VPN</a> 或者服务器，然后刷新网页</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/30hEN_xf2Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
-      <tags>
-        <tag>wire guard</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</title>
-    <url>/2020/03/wireguard1/</url>
-    <content><![CDATA[<h1 id="WireGuard-installer"><a href="#WireGuard-installer" class="headerlink" title="WireGuard installer"></a>WireGuard installer</h1><p>Easily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP.</p>
-<p>Requirements<br>Supported distributions:</p>
-<ul>
-<li>Ubuntu</li>
-<li>Debian</li>
-<li>Fedora</li>
-<li>Centos</li>
-<li>Arch Linux<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://abopen.com/app/uploads/2018/04/debian-logo.jpg" /></a><br>I recommend these cheap cloud providers for your VPN server:<a id="more"></a>
-
-</li>
-</ul>
-<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
-<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
-</ul>
-<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
-<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Usage<br>First, get the script and make it executable :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
-Then run it :<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>若第一步无法执行，请先执行 apt install curl，安装curl模块<br>It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"><a href="#请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）" class="headerlink" title="请查看下面使用的digital ocean 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"></a>请查看下面使用的<a href="https://m.do.co/c/8cf4fa6580e4">digital ocean</a> 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/NuDo9GXmlZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Contributions are welcome!]]></content>
       <tags>
         <tag>wire guard</tag>
       </tags>
@@ -1455,8 +1455,8 @@ Contributions are welcome!]]></content>
       </categories>
       <tags>
         <tag>英语</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>爱德华 诺顿</tag>
       </tags>
   </entry>
@@ -1485,8 +1485,8 @@ Contributions are welcome!]]></content>
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>剧情</tag>
         <tag>70年代</tag>
+        <tag>剧情</tag>
         <tag>黑色</tag>
       </tags>
   </entry>
@@ -1502,8 +1502,8 @@ Contributions are welcome!]]></content>
         <category>看过的电影</category>
       </categories>
       <tags>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>爱情</tag>
         <tag>法国</tag>
         <tag>让·雷诺</tag>
@@ -1525,8 +1525,8 @@ Contributions are welcome!]]></content>
         <category>看过的电影</category>
       </categories>
       <tags>
-        <tag>阿尔弗雷德•希区柯克</tag>
         <tag>悬疑</tag>
+        <tag>阿尔弗雷德•希区柯克</tag>
         <tag>恐怖</tag>
       </tags>
   </entry>
@@ -1557,10 +1557,10 @@ Contributions are welcome!]]></content>
         <tag>电影下载</tag>
         <tag>科幻</tag>
         <tag>动作</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
-        <tag>惊悚</tag>
+        <tag>犯罪</tag>
         <tag>悬疑</tag>
+        <tag>惊悚</tag>
         <tag>克里斯蒂安·贝尔</tag>
         <tag>克里斯托弗•诺兰</tag>
         <tag>摩根•弗里曼</tag>
@@ -1610,8 +1610,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>布鲁斯·威利斯</tag>
         <tag>昆廷·塔伦蒂诺</tag>
       </tags>
@@ -1726,8 +1726,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>摩根•弗里曼</tag>
       </tags>
   </entry>
@@ -1769,9 +1769,9 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
+        <tag>悬疑</tag>
         <tag>惊悚</tag>
         <tag>阿尔弗雷德•希区柯克</tag>
-        <tag>悬疑</tag>
       </tags>
   </entry>
   <entry>
@@ -1810,8 +1810,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>惊悚</tag>
         <tag>神秘</tag>
         <tag>德国</tag>
@@ -1849,8 +1849,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>电影</tag>
         <tag>电影下载</tag>
-        <tag>剧情</tag>
         <tag>70年代</tag>
+        <tag>剧情</tag>
         <tag>爱情</tag>
         <tag>荷兰</tag>
         <tag>巴西</tag>
@@ -1994,12 +1994,12 @@ Contributions are welcome!]]></content>
         <tag>best movie</tag>
         <tag>电影</tag>
         <tag>Favorite films</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
-        <tag>惊悚</tag>
-        <tag>悬疑</tag>
+        <tag>犯罪</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
+        <tag>悬疑</tag>
+        <tag>惊悚</tag>
       </tags>
   </entry>
   <entry>
@@ -2017,8 +2017,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>巴西</tag>
         <tag>2000年</tag>
         <tag>葡萄牙语</tag>
@@ -2180,8 +2180,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>传记</tag>
       </tags>
   </entry>
@@ -2233,8 +2233,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>动作</tag>
-        <tag>惊悚</tag>
         <tag>悬疑</tag>
+        <tag>惊悚</tag>
         <tag>2000年</tag>
         <tag>克里斯托弗•诺兰</tag>
         <tag>莱昂纳多•迪卡普里奥</tag>
@@ -2265,8 +2265,8 @@ Contributions are welcome!]]></content>
         <tag>电影</tag>
         <tag>电影下载</tag>
         <tag>Favorite films</tag>
-        <tag>剧情</tag>
         <tag>70年代</tag>
+        <tag>剧情</tag>
       </tags>
   </entry>
   <entry>
@@ -2326,10 +2326,10 @@ Contributions are welcome!]]></content>
         <tag>Favorite films</tag>
         <tag>动作</tag>
         <tag>剧情</tag>
-        <tag>惊悚</tag>
-        <tag>悬疑</tag>
         <tag>大卫 芬奇</tag>
         <tag>布拉德 皮特</tag>
+        <tag>悬疑</tag>
+        <tag>惊悚</tag>
       </tags>
   </entry>
   <entry>
@@ -2386,8 +2386,8 @@ Contributions are welcome!]]></content>
         <tag>Favorite films</tag>
         <tag>剧情</tag>
         <tag>传记</tag>
-        <tag>战争</tag>
         <tag>史蒂文·斯皮尔伯格</tag>
+        <tag>战争</tag>
       </tags>
   </entry>
   <entry>
@@ -2404,8 +2404,8 @@ Contributions are welcome!]]></content>
       <tags>
         <tag>best movie</tag>
         <tag>Favorite films</tag>
-        <tag>犯罪</tag>
         <tag>剧情</tag>
+        <tag>犯罪</tag>
         <tag>惊悚</tag>
       </tags>
   </entry>
@@ -2432,14 +2432,13 @@ Contributions are welcome!]]></content>
       </tags>
   </entry>
   <entry>
-    <title>Contact me</title>
-    <url>/contact-me/index.html</url>
-    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
-<p><a href="tel:+15038416478">+1503 841 6478</a></p>
-<p>12817 NE Airport Way STE 67593</p>
-<p>CAFAHC</p>
-<p>Portland, Oregon 97251-9600</p>
-<p>United states of America</p>
+    <title>文章分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[<p>categories：</p>
+<ul>
+<li>Google</li>
+<li>软件教学</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -2450,16 +2449,6 @@ Contributions are welcome!]]></content>
 <blockquote>
 <p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">更多自我介绍</a></p>
 </blockquote>
-]]></content>
-  </entry>
-  <entry>
-    <title>文章分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<p>categories：</p>
-<ul>
-<li>Google</li>
-<li>软件教学</li>
-</ul>
 ]]></content>
   </entry>
   <entry>
@@ -2565,6 +2554,17 @@ Contributions are welcome!]]></content>
     <title>标签统计</title>
     <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Contact me</title>
+    <url>/contact-me/index.html</url>
+    <content><![CDATA[<p><a href="mailto:joshua_bao@protonmail.com">joshua_bao@protonmail.com</a></p>
+<p><a href="tel:+15038416478">+1503 841 6478</a></p>
+<p>12817 NE Airport Way STE 67593</p>
+<p>CAFAHC</p>
+<p>Portland, Oregon 97251-9600</p>
+<p>United states of America</p>
+]]></content>
   </entry>
   <entry>
     <title>我的YouTube订阅资料库</title>

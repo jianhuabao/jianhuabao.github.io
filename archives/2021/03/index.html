@@ -21,23 +21,22 @@
   </script>
 
 
-  <meta name="description" content="WireGuard installerEasily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP. RequirementsSupported distributions:  Ubuntu Debian Fedora Centos Arch LinuxI recommend these">
-<meta property="og:type" content="article">
-<meta property="og:title" content="搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程">
-<meta property="og:url" content="https://jianhuabao.info/2020/03/wireguard1/">
+  <meta name="description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BE-HUMBLE">
+<meta property="og:url" content="https://jianhuabao.info/archives/2021/03/">
 <meta property="og:site_name" content="BE-HUMBLE">
-<meta property="og:description" content="WireGuard installerEasily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP. RequirementsSupported distributions:  Ubuntu Debian Fedora Centos Arch LinuxI recommend these">
+<meta property="og:description" content="very welcome to my blog and hope you guys love and enjoy it!Thanks">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://abopen.com/app/uploads/2018/04/debian-logo.jpg">
-<meta property="og:image" content="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg">
-<meta property="article:published_time" content="2020-03-15T04:10:42.000Z">
-<meta property="article:modified_time" content="2020-03-15T04:10:42.000Z">
 <meta property="article:author" content="JIANHUA">
-<meta property="article:tag" content="wire guard">
+<meta property="article:tag" content="jianhua">
+<meta property="article:tag" content="jianhuabao">
+<meta property="article:tag" content="joshuabao">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="idea">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://abopen.com/app/uploads/2018/04/debian-logo.jpg">
 
-<link rel="canonical" href="https://jianhuabao.info/2020/03/wireguard1/">
+<link rel="canonical" href="https://jianhuabao.info/archives/2021/03/">
 
 
 <script id="page-configurations">
@@ -45,12 +44,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true
+    isPost: false
   };
 </script>
 
-  <title>搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程 | BE-HUMBLE
-  </title>
+  <title>Archive | BE-HUMBLE</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159669438-1"></script>
     <script>
@@ -217,86 +215,50 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="en">
-      <header class="post-header">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- dingbu -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6033199950863877"
-     data-ad-slot="2863226391"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<h1 class="post-title" itemprop="name headline">搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程
-</h1>
-
-<div class="post-meta">
   
-  <ul class="breadcrumb">
-          
-            <li><a href="/2020/">2020</a></li>
-            <li><a href="/2020/03/">03</a></li>
-            <li><a href="/2020/03/wireguard1/">WIREGUARD1</a></li>
-            <li><a href="/2020/03/wireguard1//"></a></li>
-  </ul>
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <h1 id="WireGuard-installer"><a href="#WireGuard-installer" class="headerlink" title="WireGuard installer"></a>WireGuard installer</h1><p>Easily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP.</p>
-<p>Requirements<br>Supported distributions:</p>
-<ul>
-<li>Ubuntu</li>
-<li>Debian</li>
-<li>Fedora</li>
-<li>Centos</li>
-<li>Arch Linux<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://abopen.com/app/uploads/2018/04/debian-logo.jpg" /></a><br>I recommend these cheap cloud providers for your VPN server:<a id="more"></a>
-
-</li>
-</ul>
-<h2 id="Vultr"><a href="#Vultr" class="headerlink" title="Vultr:"></a><a href="https://www.vultr.com/?ref=8493501">Vultr</a>:</h2><ul>
-<li>Worldwide locations, IPv6 support, starting at $3.50/month</li>
-</ul>
-<h2 id="Digital-Ocean"><a href="#Digital-Ocean" class="headerlink" title="Digital Ocean:"></a><a href="https://m.do.co/c/8cf4fa6580e4">Digital Ocean</a>:</h2><ul>
-<li>Worldwide locations, IPv6 support, starting at $5/month<br><a href="https://m.do.co/c/8cf4fa6580e4"><img src="https://miro.medium.com/max/1280/0*RqCaEwGbty-dMq87.jpg" /></a><br>Usage<br>First, get the script and make it executable :<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -O https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;angristan&#x2F;wireguard-install&#x2F;master&#x2F;wireguard-install.sh</span><br><span class="line">chmod +x wireguard-install.sh</span><br></pre></td></tr></table></figure>
-Then run it :<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;wireguard-install.sh</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>若第一步无法执行，请先执行 apt install curl，安装curl模块<br>It will install wireguard on the server, configure, create a systemd service and a client configuration file. Mutliple clients are not yet supported.</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"><a href="#请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）" class="headerlink" title="请查看下面使用的digital ocean 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"></a>请查看下面使用的<a href="https://m.do.co/c/8cf4fa6580e4">digital ocean</a> 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/NuDo9GXmlZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Contributions are welcome!
+  
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        
+        <span class="collection-header">Nice! 75 posts in total. Keep on posting.</span>
       </div>
-      
-      
-      
-    </div>
-    
-  <ul class="breadcrumb">
-          
-            <li><a href="/2020/">2020</a></li>
-            <li><a href="/2020/03/">03</a></li>
-            <li><a href="/2020/03/wireguard1/">WIREGUARD1</a></li>
-            <li><a href="/2020/03/wireguard1//"></a></li>
-  </ul>
 
-    
-    
-    
+      
+    <div class="collection-year">
+      <h1 class="collection-header">2021</h1>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2021-03-15T12:10:42+08:00"
+              content="2021-03-15">
+          03-15
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2021/03/wireguard1/" itemprop="url">
+            <span itemprop="name">搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+
+    </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -384,8 +346,7 @@ Contributions are welcome!
       </ul>
 
       <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#WireGuard-installer"><span class="nav-number">1.</span> <span class="nav-text">WireGuard installer</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vultr"><span class="nav-number">1.1.</span> <span class="nav-text">Vultr:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Digital-Ocean"><span class="nav-number">1.2.</span> <span class="nav-text">Digital Ocean:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请查看下面使用的digital-ocean-已经被玩烂的服务器搭建wire-guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）"><span class="nav-number">1.3.</span> <span class="nav-text">请查看下面使用的digital ocean 已经被玩烂的服务器搭建wire guard的YouTube速度测试视频，4k完全没有问题！！！（若没有加载内嵌视频，请先开启VPN刷新网页就可以了）</span></a></li></ol></li></ol></div> 
+      <div class="post-toc-wrap sidebar-panel"> 
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- celan -->
 <ins class="adsbygoogle"

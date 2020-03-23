@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jianhuabao.info/"/>
-  <updated>2021-12-31T17:00:59.000Z</updated>
+  <updated>2021-03-15T04:10:42.000Z</updated>
   <id>https://jianhuabao.info/</id>
   
   <author>
@@ -17,10 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>搭建目前最牛逼的wire guardVPN单一用户版英文原版代码教程</title>
+    <link href="https://jianhuabao.info/2021/03/wireguard1/"/>
+    <id>https://jianhuabao.info/2021/03/wireguard1/</id>
+    <published>2021-03-15T04:10:42.000Z</published>
+    <updated>2021-03-15T04:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;WireGuard-installer&quot;&gt;&lt;a href=&quot;#WireGuard-installer&quot; class=&quot;headerlink&quot; title=&quot;WireGuard installer&quot;&gt;&lt;/a&gt;WireGuard installer&lt;/h1&gt;&lt;p&gt;Easily set up a dual-stack WireGuard VPN on a Linux server. See the issues for the WIP.&lt;/p&gt;
+&lt;p&gt;Requirements&lt;br&gt;Supported distributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu&lt;/li&gt;
+&lt;li&gt;Debian&lt;/li&gt;
+&lt;li&gt;Fedora&lt;/li&gt;
+&lt;li&gt;Centos&lt;/li&gt;
+&lt;li&gt;Arch Linux&lt;br&gt;&lt;a href=&quot;https://m.do.co/c/8cf4fa6580e4&quot;&gt;&lt;img src=&quot;https://abopen.com/app/uploads/2018/04/debian-logo.jpg&quot; /&gt;&lt;/a&gt;&lt;br&gt;I recommend these cheap cloud providers for your VPN server:
+    
+    </summary>
+    
+    
+    
+      <category term="wire guard" scheme="https://jianhuabao.info/tags/wire-guard/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Welcome guys and hope you enjoy here</title>
-    <link href="https://jianhuabao.info/2022/01/hello-world/"/>
-    <id>https://jianhuabao.info/2022/01/hello-world/</id>
-    <published>2021-12-31T17:00:59.000Z</published>
+    <link href="https://jianhuabao.info/2021/01/hello-world/"/>
+    <id>https://jianhuabao.info/2021/01/hello-world/</id>
+    <published>2020-12-31T17:00:59.000Z</published>
     <updated>2021-12-31T17:00:59.000Z</updated>
     
     <summary type="html">
@@ -76,9 +102,9 @@
     
     
     
-      <category term="vim" scheme="https://jianhuabao.info/tags/vim/"/>
-    
       <category term="linux" scheme="https://jianhuabao.info/tags/linux/"/>
+    
+      <category term="vim" scheme="https://jianhuabao.info/tags/vim/"/>
     
   </entry>
   
@@ -93,31 +119,6 @@
     
       &lt;h1 id=&quot;服务器的选择真的是重中之重&quot;&gt;&lt;a href=&quot;#服务器的选择真的是重中之重&quot; class=&quot;headerlink&quot; title=&quot;服务器的选择真的是重中之重&quot;&gt;&lt;/a&gt;服务器的选择真的是重中之重&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;服务与质量要成正比的情况下，我目前建议这两家老牌大厂！&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/RW_NxuYXxqE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="wireguard" scheme="https://jianhuabao.info/tags/wireguard/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>wireguard VPN Debian10系统搭建教程第3部分</title>
-    <link href="https://jianhuabao.info/2020/03/wireguardp2/"/>
-    <id>https://jianhuabao.info/2020/03/wireguardp2/</id>
-    <published>2020-03-16T10:50:34.000Z</published>
-    <updated>2020-03-16T10:50:34.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;wireguard&quot;&gt;&lt;a
-        
-      
     
     </summary>
     
