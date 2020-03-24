@@ -2804,4 +2804,63 @@ Press the keys <strong>:wq</strong> on your desktop keyboard to write the file t
 <h2 id="We-keep-your-personal-information-private-and-safe-—-and-put-you-in-control"><a href="#We-keep-your-personal-information-private-and-safe-—-and-put-you-in-control" class="headerlink" title="We keep your personal information private and safe — and put you in control."></a>We keep your personal information private and safe — and put you in control.</h2><p><a href="https://privacy.google.com/?hl=en">Learn more about our commitments to your privacy and security.</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>kobebryant</title>
+    <url>/gallery/index.html</url>
+    <content><![CDATA[<div class="gallery-page">
+    <div class="gallery-list">
+        <div class="gallery-column">
+                <div class="gallery-item">
+                        <a href="kobe8"><img src="img/kobe8.jpg" width="32%" height="32%">
+                        </a>
+                        <p>- kobe8 -</p>
+                 </div>
+        </div>
+        <div class="gallery-column">
+                <div class="gallery-item">
+                        <a href="mamba24"><img src="img/mamba24.jpg">
+                        </a>
+                        <p>- mamba24 -</p>
+                </div>
+        </div>
+    </div>
+</div>
+]]></content>
+  </entry>
+  <entry>
+    <title>kobe8</title>
+    <url>/gallery/kobe8/index.html</url>
+    <content><![CDATA[<div class="gallery-page">
+    <div class="img-list">
+        <div class="img-column">
+            <a href="img/kobe8.jpg" target="_Blank"><img src="img/kobe8-s.jpg" width="80%" height="80%"></a>
+            </div>
+        <div class="img-column">
+            <a href="img/kobe8-1.jpg" target="_Blank"><img src="img/kobe8-s.jpg" width="80%" height="80%"></a>
+            </div>
+        <div class="img-column">
+            <a href="img/kobe8-2.jpg" target="_Blank"><img src="img/kobe8-s.jpg" width="80%" height="80%"></a>
+        </div>
+    </div>
+</div>
+]]></content>
+  </entry>
+  <entry>
+    <title>mamba24</title>
+    <url>/gallery/mamba24/index.html</url>
+    <content><![CDATA[<div class="gallery-page">
+    <div class="img-list">
+        <div class="img-column">
+            <a href="img/mamba24.jpg" target="_Blank"><img src="img/mamba24-s.jpg" width="80%" height="80%"></a>
+        </div>
+        <div class="img-column">
+            <a href="img/mamba24-2.jpg" target="_Blank"><img src="img/mamba24-s.jpg" width="80%" height="80%"></a>
+        </div>
+        <div class="img-column">
+            <a href="img/mamba24-1.jpg" target="_Blank"><img src="img/mamba24-s.jpg" width="80%" height="80%"></a>
+        </div>
+    </div>
+</div>
+]]></content>
+  </entry>
 </search>
