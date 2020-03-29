@@ -63,6 +63,65 @@
   </entry>
   
   <entry>
+    <title>coolwebforcoder</title>
+    <link href="https://jianhuabao.info/2020/03/coolwebforcoder/"/>
+    <id>https://jianhuabao.info/2020/03/coolwebforcoder/</id>
+    <published>2020-03-29T15:13:58.000Z</published>
+    <updated>2020-03-29T15:13:58.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;可以在畅玩中学习技能的很酷的网站&quot;&gt;&lt;a href=&quot;#可以在畅玩中学习技能的很酷的网站&quot; class=&quot;headerlink&quot; title=&quot;可以在畅玩中学习技能的很酷的网站&quot;&gt;&lt;/a&gt;可以在畅玩中学习技能的很酷的网站&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://free-for.dev/&quot;&gt;free-for.dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.mydevice.io/&quot;&gt;mydevice.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://regexr.com/&quot;&gt;RegExr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://flexboxfroggy.com/&quot;&gt;Flexbox Froggy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cssgridgarden.com/&quot;&gt;Grid Garden&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/&quot;&gt;Flexbox Playground&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://visualgo.net/en&quot;&gt;VisuAlgo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;持续收录中…&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="软件的分享与使用" scheme="https://jianhuabao.info/categories/%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%88%86%E4%BA%AB%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="blog" scheme="https://jianhuabao.info/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可以学习的超级屌的网站！老外开源了</title>
+    <link href="https://jianhuabao.info/2020/03/dopewebsite/"/>
+    <id>https://jianhuabao.info/2020/03/dopewebsite/</id>
+    <published>2020-03-29T14:57:47.000Z</published>
+    <updated>2020-03-29T14:57:47.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;让人膜拜的大神创造的开源项目，发现老外编代码已经到了不为赚钱的地步了&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://bruno-simon.com/&quot;&gt;bruno-simon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.swimming.jp&quot;&gt;Swimming.jp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://species-in-pieces.com&quot;&gt;In Pieces&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://nipponcolors.com/&quot;&gt;Nippon Colors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://orgasmsoundlibrary.com/#gallery&quot;&gt;Orgasm Library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;持续收录中…&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="软件的分享与使用" scheme="https://jianhuabao.info/categories/%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%88%86%E4%BA%AB%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="blog" scheme="https://jianhuabao.info/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
     <title>终端vim 如何与外界粘贴复制</title>
     <link href="https://jianhuabao.info/2020/03/vim1/"/>
     <id>https://jianhuabao.info/2020/03/vim1/</id>
@@ -83,48 +142,6 @@
     
     
       <category term="vim" scheme="https://jianhuabao.info/tags/vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vim常用命令</title>
-    <link href="https://jianhuabao.info/2020/03/vim/"/>
-    <id>https://jianhuabao.info/2020/03/vim/</id>
-    <published>2020-03-16T11:41:45.000Z</published>
-    <updated>2020-03-16T11:41:45.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/vim.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;VIM常用命令速查-amp-详解&quot;&gt;&lt;a href=&quot;#VIM常用命令速查-amp-详解&quot; class=&quot;headerlink&quot; title=&quot;VIM常用命令速查&amp;amp;详解&quot;&gt;&lt;/a&gt;VIM常用命令速查&amp;amp;详解&lt;/h1&gt;&lt;p&gt;宏命令(Macros)&lt;br&gt;高级一些的编辑器，都会包含宏功能，vim当然不能缺少了，在vim中使用宏是非常方便的：&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="linux" scheme="https://jianhuabao.info/tags/linux/"/>
-    
-      <category term="vim" scheme="https://jianhuabao.info/tags/vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建wire guardVPN单一用户版视频简介和搭建之前的准备&amp;服务器的选择</title>
-    <link href="https://jianhuabao.info/2020/03/wireguardp3/"/>
-    <id>https://jianhuabao.info/2020/03/wireguardp3/</id>
-    <published>2020-03-16T10:50:55.000Z</published>
-    <updated>2020-03-16T10:50:55.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;服务器的选择真的是重中之重&quot;&gt;&lt;a href=&quot;#服务器的选择真的是重中之重&quot; class=&quot;headerlink&quot; title=&quot;服务器的选择真的是重中之重&quot;&gt;&lt;/a&gt;服务器的选择真的是重中之重&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;服务与质量要成正比的情况下，我目前建议这两家老牌大厂！&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/RW_NxuYXxqE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="wireguard" scheme="https://jianhuabao.info/tags/wireguard/"/>
     
   </entry>
   
