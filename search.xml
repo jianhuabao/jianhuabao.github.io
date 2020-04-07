@@ -32,17 +32,37 @@ Contributions are welcome!]]></content>
       </tags>
   </entry>
   <entry>
+    <title>Linux systemctl命令</title>
+    <url>/2020/04/systemctl/</url>
+    <content><![CDATA[<h1 id="linux-systemctl命令进程和作业管理"><a href="#linux-systemctl命令进程和作业管理" class="headerlink" title="linux systemctl命令进程和作业管理"></a>linux systemctl命令进程和作业管理</h1><p>systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。</p>
+<p>任务    旧指令    新指令<br>使某服务自动启动    chkconfig –level 3 httpd on    systemctl enable httpd.service<br>使某服务不自动启动    chkconfig –level 3 httpd off    systemctl disable httpd.service<br>检查服务状态    service httpd status    systemctl status httpd.service （服务详细信息） systemctl is-active httpd.service （仅显示是否 Active)<br>显示所有已启动的服务    chkconfig –list    systemctl list-units –type=service<br>启动某服务    service httpd start    systemctl start httpd.service<br>停止某服务    service httpd stop    systemctl stop httpd.service<br>重启某服务    service httpd restart    systemctl restart httpd.service</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><h2 id="1-启动nfs服务"><a href="#1-启动nfs服务" class="headerlink" title="1.启动nfs服务"></a>1.启动nfs服务</h2><p>systemctl start nfs-server.service</p>
+<h2 id="2-设置开机自启动"><a href="#2-设置开机自启动" class="headerlink" title="2.设置开机自启动"></a>2.设置开机自启动</h2><p>systemctl enable nfs-server.service</p>
+<h2 id="3-停止开机自启动"><a href="#3-停止开机自启动" class="headerlink" title="3.停止开机自启动"></a>3.停止开机自启动</h2><p>systemctl disable nfs-server.service</p>
+<h2 id="4-查看服务当前状态"><a href="#4-查看服务当前状态" class="headerlink" title="4.查看服务当前状态"></a>4.查看服务当前状态</h2><p>systemctl status nfs-server.service</p>
+<h2 id="5-重新启动某服务"><a href="#5-重新启动某服务" class="headerlink" title="5.重新启动某服务"></a>5.重新启动某服务</h2><p>systemctl restart nfs-server.service</p>
+<h2 id="6-查看所有已启动的服务"><a href="#6-查看所有已启动的服务" class="headerlink" title="6.查看所有已启动的服务"></a>6.查看所有已启动的服务</h2><p>systemctl list -units –type=service</p>
+<h2 id="开启防火墙22端口"><a href="#开启防火墙22端口" class="headerlink" title="开启防火墙22端口"></a>开启防火墙22端口</h2><p>iptables -I INPUT -p tcp –dport 22 -j accept</p>
+<h2 id="如果仍然有问题，就可能是SELinux导致的"><a href="#如果仍然有问题，就可能是SELinux导致的" class="headerlink" title="如果仍然有问题，就可能是SELinux导致的"></a>如果仍然有问题，就可能是SELinux导致的</h2><h2 id="关闭SElinux："><a href="#关闭SElinux：" class="headerlink" title="关闭SElinux："></a>关闭SElinux：</h2><p>修改/etc/selinux/config文件中的SELINUX=””为disabled，然后重启。</p>
+<p>彻底关闭防火墙：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo systemctl status firewalld.service</span><br><span class="line">sudo systemctl stop firewalld.service          </span><br><span class="line">sudo systemctl disable firewalld.service</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>防火墙</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Welcome guys and hope you enjoy here</title>
-    <url>/2021/01/hello-world/</url>
+    <url>/2020/04/helloworld/</url>
     <content><![CDATA[<ul>
 <li>致所有的外国朋友：</li>
 </ul>
-<p>Very Welcome to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!<br><img src="https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-908301.jpeg" alt="thank you"></p>
+<p>Very Welcome to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!<br><img src="https://images-na.ssl-images-amazon.com/images/I/713bBJXXG3L._AC_SL1500_.jpg" alt="thank you"></p>
 <a id="more"></a>
 <ul>
 <li>致所有的中国朋友：</li>
 </ul>
-<p>爱好：热爱的歌手EMINEM喜欢的电影《老无所依》喜爱的运动篮球 22，喜欢上网，安卓粉，业余拍照。只分享一些真正有用，好用的东西 频道初衷:让更多人认识到世界很大，惊奇又美好，并不是只有为中国人专门定制的百度，qq，微信等特色玩意儿. 视频原则:不推荐任何毒瘤，垃圾软体或服务，视频中也不会出现任何来自大陆的类似360，腾讯，百度的流氓软体 心愿:希望中国的年轻一代都要以独立的人格为前提，对任何事物能拥有清晰的逻辑思维能力，不随波逐流，思想自由，兼容并包。也欢迎大家指支持和订阅我的部落格！</p>
+<p>爱好：热爱的歌手：Eminem喜欢的电影《老无所依》喜爱的运动篮球 23，喜欢上网，安卓粉。只分享一些真正有用，好用的东西 频道初衷:让更多人认识到世界很大，惊奇又美好，并不是只有为中国人专门定制的百度，qq，微信等特色玩意儿. 视频原则:不推荐任何毒瘤，垃圾软体或服务，视频中也不会出现任何来自大陆的类似360，腾讯，百度的流氓软体 心愿:希望中国的年轻一代都要以独立的人格为前提，对任何事物能拥有清晰的逻辑思维能力，不随波逐流，思想自由，兼容并包。也欢迎大家指支持和订阅我的部落格！</p>
 ]]></content>
   </entry>
   <entry>
@@ -1235,7 +1255,7 @@ Press the keys <strong>:wq</strong> on your desktop keyboard to write the file t
   </entry>
   <entry>
     <title>Why Google Cloud Platform?</title>
-    <url>/2018/01/why-google-cloud-platform/</url>
+    <url>/2018/01/whygooglecloud/</url>
     <content><![CDATA[<h2 id="利用Googlecloudplatform搭建自己的vps"><a href="#利用Googlecloudplatform搭建自己的vps" class="headerlink" title="利用Googlecloudplatform搭建自己的vps"></a>利用Googlecloudplatform搭建自己的vps</h2><p>1：前提条件，拥有一张国际支付信用卡，Visa，MasterCard or JCB</p>
 <p>2：之后需要去用自己的谷歌账号去免费注册Googlecloud，之后会赠送你有限期为一年的300美元使用金，这笔钱对于你个人来说，一年时间真是绰绰有余，算下来，每月估计你有90g左右的vps流量可供使用。</p>
 <p>3:必备Windows 应用程序shadowsocksR 下载地址：</p>

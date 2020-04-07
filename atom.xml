@@ -43,18 +43,45 @@
   </entry>
   
   <entry>
+    <title>Linux systemctl命令</title>
+    <link href="https://jianhuabao.info/2020/04/systemctl/"/>
+    <id>https://jianhuabao.info/2020/04/systemctl/</id>
+    <published>2020-04-07T10:50:55.000Z</published>
+    <updated>2020-04-07T10:50:55.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="https://jianhuabao.info/tags/linux/"/>
+    
+      <category term="防火墙" scheme="https://jianhuabao.info/tags/%E9%98%B2%E7%81%AB%E5%A2%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Welcome guys and hope you enjoy here</title>
-    <link href="https://jianhuabao.info/2021/01/hello-world/"/>
-    <id>https://jianhuabao.info/2021/01/hello-world/</id>
-    <published>2020-12-31T17:00:59.000Z</published>
-    <updated>2021-12-31T17:00:59.000Z</updated>
+    <link href="https://jianhuabao.info/2020/04/helloworld/"/>
+    <id>https://jianhuabao.info/2020/04/helloworld/</id>
+    <published>2020-04-06T17:00:59.000Z</published>
+    <updated>2020-04-07T05:00:59.000Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
 &lt;li&gt;致所有的外国朋友：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Very Welcome to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!&lt;br&gt;&lt;img src=&quot;https://joshuabaoblog.files.wordpress.com/2019/05/pexels-photo-908301.jpeg&quot; alt=&quot;thank you&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Very Welcome to my blog to all the viewers from other countries! #I LOVE YOUTUBE AND I MAKE VIDEO SOMETIMES but I also want you guys to it’s so difficult for me to come into the YouTube world, I am a Chinese living in China and as you know China blocked everything you know including YouTube! so you guys can see some of my shit are about doing the VPN reviews, I just want to help the people who have a freedom heart to access the outside world! please subscribe the blog for supporting me, thanks!&lt;br&gt;&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/713bBJXXG3L._AC_SL1500_.jpg&quot; alt=&quot;thank you&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -118,30 +145,6 @@
     
     
       <category term="blog" scheme="https://jianhuabao.info/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>终端vim 如何与外界粘贴复制</title>
-    <link href="https://jianhuabao.info/2020/03/vim1/"/>
-    <id>https://jianhuabao.info/2020/03/vim1/</id>
-    <published>2020-03-16T11:50:10.000Z</published>
-    <updated>2020-03-16T11:50:10.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在Linux使用vim 过程中，我们知道在vim 里面，粘贴复制的命令是y/p ，但是我们总会碰到这样的问题：如何把vim 里面复制的内容粘贴到vim 之外或者把vim 外面复制的内容粘贴到vim 里面？&lt;/p&gt;
-&lt;p&gt;经过网上多次的查阅资料，终于学会了怎么实现这个过程&lt;/p&gt;
-&lt;p&gt;首先，我们先了解这样一个概念：vim 缓冲区和系统剪贴板&lt;/p&gt;
-&lt;p&gt;vim 里面粘贴复制实际上是在vim 缓冲区 存取数据&lt;/p&gt;
-&lt;p&gt;而系统的ctry+c ctry+v 是与系统剪贴板之间的交互&lt;/p&gt;
-&lt;p&gt;我也不知道我这样描述准不准确，反正大概就是这个意思：vim 粘贴复制和系统粘贴复制操作的不是同一个东西，所以系统和vim 之间不是那么容易直接使用的&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="vim" scheme="https://jianhuabao.info/tags/vim/"/>
     
   </entry>
   
