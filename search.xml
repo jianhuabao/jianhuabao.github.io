@@ -32,6 +32,24 @@ Contributions are welcome!]]></content>
       </tags>
   </entry>
   <entry>
+    <title>nftables常用编辑命令</title>
+    <url>/2020/04/nftables/</url>
+    <content><![CDATA[<h1 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h1><h2 id="创建一个新的表："><a href="#创建一个新的表：" class="headerlink" title="创建一个新的表："></a>创建一个新的表：</h2><h1 id="nft-add-table-family-table"><a href="#nft-add-table-family-table" class="headerlink" title="nft add table family table"></a>nft add table family table</h1><h2 id="列出表"><a href="#列出表" class="headerlink" title="列出表"></a>列出表</h2><p>列出所有表：</p>
+<h1 id="nft-list-tables"><a href="#nft-list-tables" class="headerlink" title="nft list tables"></a>nft list tables</h1><a id="more"></a>
+<h2 id="列出表中的链和规则"><a href="#列出表中的链和规则" class="headerlink" title="列出表中的链和规则"></a>列出表中的链和规则</h2><p>列出指定表中的所有链和规则：</p>
+<h1 id="nft-list-table-family-table"><a href="#nft-list-table-family-table" class="headerlink" title="nft list table family table"></a>nft list table family table</h1><p>例如，要列出inet簇中filter表中的所有规则：</p>
+<h1 id="nft-list-table-inet-filter"><a href="#nft-list-table-inet-filter" class="headerlink" title="nft list table inet filter"></a>nft list table inet filter</h1><h2 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h2><p>删除一个表：</p>
+<h1 id="nft-delete-table-family-table"><a href="#nft-delete-table-family-table" class="headerlink" title="nft delete table family table"></a>nft delete table family table</h1><p>只能删除不包含链的表。</p>
+<h1 id="清空表"><a href="#清空表" class="headerlink" title="清空表"></a>清空表</h1><p>要清空一个表中的所有规则：</p>
+<h1 id="nft-flush-table-family-table"><a href="#nft-flush-table-family-table" class="headerlink" title="nft flush table family table"></a>nft flush table family table</h1><h2 id="自动重载"><a href="#自动重载" class="headerlink" title="自动重载"></a>自动重载</h2><h2 id="清空当前规则集："><a href="#清空当前规则集：" class="headerlink" title="清空当前规则集："></a>清空当前规则集：</h2><h1 id="echo-“flush-ruleset”-gt-tmp-nftables"><a href="#echo-“flush-ruleset”-gt-tmp-nftables" class="headerlink" title="echo “flush ruleset” &gt; /tmp/nftables"></a>echo “flush ruleset” &gt; /tmp/nftables</h1><p>导出当前规则集：</p>
+<h1 id="nft-list-ruleset-gt-gt-tmp-nftables"><a href="#nft-list-ruleset-gt-gt-tmp-nftables" class="headerlink" title="nft list ruleset &gt;&gt; /tmp/nftables"></a>nft list ruleset &gt;&gt; /tmp/nftables</h1><p>可以直接修改/tmp/nftables文件，使更改生效则运行：</p>
+<h1 id="nft-f-tmp-nftables"><a href="#nft-f-tmp-nftables" class="headerlink" title="nft -f /tmp/nftables"></a>nft -f /tmp/nftables</h1>]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>wire guard</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux systemctl命令</title>
     <url>/2020/04/systemctl/</url>
     <content><![CDATA[<h1 id="linux-systemctl命令进程和作业管理"><a href="#linux-systemctl命令进程和作业管理" class="headerlink" title="linux systemctl命令进程和作业管理"></a>linux systemctl命令进程和作业管理</h1><p>systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。</p>
