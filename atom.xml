@@ -43,7 +43,7 @@
   </entry>
   
   <entry>
-    <title>installgitlabonubuntu</title>
+    <title>如何在Ubuntu 18.04上安装和配置GitLab</title>
     <link href="https://jianhuabao.info/2020/04/installgitlabonubuntu/"/>
     <id>https://jianhuabao.info/2020/04/installgitlabonubuntu/</id>
     <published>2020-04-12T09:24:16.000Z</published>
@@ -51,9 +51,22 @@
     
     <summary type="html">
     
+      &lt;h1 id=&quot;前提条件&quot;&gt;&lt;a href=&quot;#前提条件&quot; class=&quot;headerlink&quot; title=&quot;前提条件&quot;&gt;&lt;/a&gt;前提条件&lt;/h1&gt;&lt;p&gt;For this tutorial, you will need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;An Ubuntu 18.04 server with a non-root sudo user and basic firewall. To set this up, follow our Ubuntu 18.04 initial server setup guide.&lt;br&gt;The published GitLab hardware requirements recommend using a server with:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2 cores&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;8GB of RAM&lt;br&gt;Although you may be able to get by with substituting some swap space for RAM, it is not recommended. For this guide we will assume that you have the above resources as a minimum.&lt;br&gt;&lt;img src=&quot;https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/git_lab_image.png?1531147272&quot; alt=&quot;&quot;&gt;&lt;br&gt;A domain name pointed at your server. For more information, see our documentation on how to get started with DNS on DigitalOcean. This tutorial will use the domain name example.com.&lt;/p&gt;
+&lt;h1 id=&quot;第1步-安装依赖项&quot;&gt;&lt;a href=&quot;#第1步-安装依赖项&quot; class=&quot;headerlink&quot; title=&quot;第1步-安装依赖项&quot;&gt;&lt;/a&gt;第1步-安装依赖项&lt;/h1&gt;&lt;p&gt;Before we can install GitLab itself, it is important to install some of the software that it leverages during installation and on an ongoing basis. Fortunately, all of the required software can be easily installed from Ubuntu’s default package repositories.&lt;/p&gt;
+    
     </summary>
     
     
+    
+      <category term="gitlab" scheme="https://jianhuabao.info/tags/gitlab/"/>
+    
+      <category term="lunix" scheme="https://jianhuabao.info/tags/lunix/"/>
     
   </entry>
   
