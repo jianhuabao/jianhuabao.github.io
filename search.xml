@@ -32,6 +32,11 @@ Contributions are welcome!]]></content>
       </tags>
   </entry>
   <entry>
+    <title>installgitlabonubuntu</title>
+    <url>/2020/04/installgitlabonubuntu/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>nftables常用编辑命令</title>
     <url>/2020/04/nftables/</url>
     <content><![CDATA[<h1 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h1><h2 id="创建一个新的表："><a href="#创建一个新的表：" class="headerlink" title="创建一个新的表："></a>创建一个新的表：</h2><h1 id="nft-add-table-family-table"><a href="#nft-add-table-family-table" class="headerlink" title="nft add table family table"></a>nft add table family table</h1><h2 id="列出表"><a href="#列出表" class="headerlink" title="列出表"></a>列出表</h2><p>列出所有表：</p>
@@ -2577,14 +2582,18 @@ Press the keys <strong>:wq</strong> on your desktop keyboard to write the file t
   <entry>
     <title>关于我和网站</title>
     <url>/about/index.html</url>
-    <content><![CDATA[<p>网站是我20年刚创建的，本来是用来写一些日志用来备忘的，提醒自己要坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
+    <content><![CDATA[<p>  网站是我20年刚创建的，本来是用来写一些日志用来备忘的，提醒自己要坚持下去更新，后来在YouTube上面做一些视频，关于各类软件教学和使用技巧的，同时会在我的博客更新一些干货文字内容的分享，希望对更多的人有帮助！喜欢的话欢迎支持和鼓励我，及时订阅我的网站和YouTube频道，祝大家各方面越来越好！！😀😀</p>
 <p>我平时喜欢用 <a href="https://www.soundcloud.com/">Soundcloud</a> 在上面找世界各地的cover者上传的音乐听歌,这是我一直使用的<a href="http://www.getvy.net/zh/refer/china?offer_id=235&aff_id=4321">VPN</a> </p>
 <blockquote>
 <p>最喜欢的网站：<a href="https://www.android.com/">https://www.android.com/</a> （被墙？？我都不知道为啥被墙，lg,sony,nokia,google pixel, saunsung 咱一个华为给他全干趴下！）</p>
 </blockquote>
 <blockquote>
-<p><a href="https://www.youtube.com/watch?v=PeKATbM0aDE">更多自我介绍</a></p>
+<p>[更多自我介绍]</p>
 </blockquote>
+<ul>
+<li>(<a href="https://www.youtube.com/watch?v=PeKATbM0aDE">https://www.youtube.com/watch?v=PeKATbM0aDE</a>)</li>
+<li><a href="https://jianhuabao.info/about/">其他</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
