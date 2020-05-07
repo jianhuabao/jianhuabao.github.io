@@ -32,6 +32,22 @@ Contributions are welcome!]]></content>
       </tags>
   </entry>
   <entry>
+    <title>OMG!!!这么快？今天vyprvpn竟然有了一个期待很久的重大更新-4.0版本</title>
+    <url>/2020/05/vyprvpnwireguard/</url>
+    <content><![CDATA[<h1 id="vyprvpn突然而来的更新vyprvpn4-0"><a href="#vyprvpn突然而来的更新vyprvpn4-0" class="headerlink" title="vyprvpn突然而来的更新vyprvpn4.0"></a><a href="https://e83b6016-831b-430a-9507-96221b2d00b5.netrule.net/zh/refer/china?offer_id=235&aff_id=4321">vyprvpn</a>突然而来的更新<a href="https://e83b6016-831b-430a-9507-96221b2d00b5.netrule.net/zh/refer/china?offer_id=235&aff_id=4321">vyprvpn4.0</a></h1><p> 离我上次做wirguard官方的单独开服务器部署wire guard的时间才过了一个月左右，我用了快4年的vyprvpn竟然有了突然的更新<br>  今天像往常一下打开google play 进行必要的手机系统软件的更新，发现vyprVPN也在更新的列表里面，因为最近的链接不是太好，会经常被gfw干扰断开，于是我好奇的点进去,期待看它有什么重要的更新的内容，结果一看介绍，里面竟然有我上阵子介绍的最新的wire guardVPN，没想到vyprpvn这家瑞士的公司可以在这么短的时间内将这个协议集成到他们的服务里面去，真的很nice！请看截图<br><img src="/images/687f2793-f421-4297-888e-9b9d0a29aa04.jpg" alt=""></p>
+<a id="more"></a>
+
+<p>于是我优先选择vypr进行更新，满怀期待很快就下载好了，打开软件界面的左菜单栏，焕然一新，直接看到了优先的wire guard协议，漂亮，立马开始测试！<br>perfect！完美，链接没有任何问题！速度也很快，轻松YouTube1080p,链接上vypr更新Googleplay的其他软件下载速度也有2m/s<br><img src="/images/a95ba761-25d3-4a71-a441-16a42a2d21de.jpg" alt=""><br><img src="/images/93ecdf5d-9441-40de-bb43-e7037749da27.jpg" alt=""><br>忘了说了，在Google play要收到此更新的话，需要先加入到beta测试版用户，很简单，点一下这个界面的中间一个按钮就可以加入了，然后过一会会提示你让你更新，版本为最新的vyprVPN4.0，<br><img src="/images/1170c9ee-742a-4559-b635-8e17e39bb1e7.jpg" alt=""><br><img src="/images/a8b259a0-ed1d-486c-96f4-3cc24765d4a6.jpg" alt=""><br>之后我进入他们的官网，发现iOS的客户端已经提前于安卓系统一段时间加入了wire guard的模块！哈哈，不管怎样，从去年期盼已久的wire guard终于慢慢集成到了我一直信赖的vyprvpn服务程式里面，发光发热！奇迹再现！</p>
+<ul>
+<li><a href="https://support.fanqiangvy.com/hc/zh-cn">官网日志说明链接</a><h2 id="期待Windows"><a href="#期待Windows" class="headerlink" title="期待Windows"></a>期待Windows</h2><img src="/images/SharedScreenshot.jpg" alt=""></li>
+</ul>
+<h2 id="VyprVPN最新官方81-折扣直达"><a href="#VyprVPN最新官方81-折扣直达" class="headerlink" title="VyprVPN最新官方81%折扣直达"></a><a href="https://e83b6016-831b-430a-9507-96221b2d00b5.netrule.net/zh/refer/china?offer_id=235&aff_id=4321">VyprVPN最新官方81%折扣直达</a></h2>]]></content>
+      <tags>
+        <tag>vyprvpn</tag>
+        <tag>wireguard</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何在Ubuntu 18.04上安装和配置GitLab</title>
     <url>/2020/04/installgitlabonubuntu/</url>
     <content><![CDATA[<h1 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h1><p>For this tutorial, you will need:</p>
