@@ -170,6 +170,7 @@ Contributions are welcome!]]></content>
     <url>/2020/04/systemctl/</url>
     <content><![CDATA[<h1 id="linux-systemctl命令进程和作业管理"><a href="#linux-systemctl命令进程和作业管理" class="headerlink" title="linux systemctl命令进程和作业管理"></a>linux systemctl命令进程和作业管理</h1><p>systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。</p>
 <p>任务    旧指令    新指令<br>使某服务自动启动    chkconfig –level 3 httpd on    systemctl enable httpd.service<br>使某服务不自动启动    chkconfig –level 3 httpd off    systemctl disable httpd.service<br>检查服务状态    service httpd status    systemctl status httpd.service （服务详细信息） systemctl is-active httpd.service （仅显示是否 Active)<br>显示所有已启动的服务    chkconfig –list    systemctl list-units –type=service<br>启动某服务    service httpd start    systemctl start httpd.service<br>停止某服务    service httpd stop    systemctl stop httpd.service<br>重启某服务    service httpd restart    systemctl restart httpd.service</p>
+<a id="more"></a>
 <h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><h2 id="1-启动nfs服务"><a href="#1-启动nfs服务" class="headerlink" title="1.启动nfs服务"></a>1.启动nfs服务</h2><p>systemctl start nfs-server.service</p>
 <h2 id="2-设置开机自启动"><a href="#2-设置开机自启动" class="headerlink" title="2.设置开机自启动"></a>2.设置开机自启动</h2><p>systemctl enable nfs-server.service</p>
 <h2 id="3-停止开机自启动"><a href="#3-停止开机自启动" class="headerlink" title="3.停止开机自启动"></a>3.停止开机自启动</h2><p>systemctl disable nfs-server.service</p>

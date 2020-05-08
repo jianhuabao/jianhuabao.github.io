@@ -122,13 +122,8 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1
-        
-      
+      &lt;h1 id=&quot;linux-systemctl命令进程和作业管理&quot;&gt;&lt;a href=&quot;#linux-systemctl命令进程和作业管理&quot; class=&quot;headerlink&quot; title=&quot;linux systemctl命令进程和作业管理&quot;&gt;&lt;/a&gt;linux systemctl命令进程和作业管理&lt;/h1&gt;&lt;p&gt;systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。&lt;/p&gt;
+&lt;p&gt;任务    旧指令    新指令&lt;br&gt;使某服务自动启动    chkconfig –level 3 httpd on    systemctl enable httpd.service&lt;br&gt;使某服务不自动启动    chkconfig –level 3 httpd off    systemctl disable httpd.service&lt;br&gt;检查服务状态    service httpd status    systemctl status httpd.service （服务详细信息） systemctl is-active httpd.service （仅显示是否 Active)&lt;br&gt;显示所有已启动的服务    chkconfig –list    systemctl list-units –type=service&lt;br&gt;启动某服务    service httpd start    systemctl start httpd.service&lt;br&gt;停止某服务    service httpd stop    systemctl stop httpd.service&lt;br&gt;重启某服务    service httpd restart    systemctl restart httpd.service&lt;/p&gt;
     
     </summary>
     
